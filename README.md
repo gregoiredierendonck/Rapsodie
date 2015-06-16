@@ -59,3 +59,7 @@ Static site starter template for [Middleman](http://middlemanapp.com).
 `$ rake publish`
 
 Thanks to [neo](https://github.com/neo/middleman-gh-pages) for the dpeloyment method. More information available there.
+
+## Launch middleman server
+
+  bundle exec middleman s
