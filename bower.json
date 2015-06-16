@@ -1,18 +1,7 @@
 {
-  "name": "slimmer",
-  "version": "0.0.1",
-  "homepage": "https://github.com/polymatt/slimmer",
-  "authors": [
-    "polymatt <matt@polymathic.me>"
-  ],
-  "description": "Slim/Sass/Coffee Starter template for Middleman",
-  "license": "MIT",
-  "private": false,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "name": "gregoiredierendonck",
+  "version": "1.0.0",
+  "dependencies": {
+    "headroom.js":            "~0.7.0"
+  }
 }

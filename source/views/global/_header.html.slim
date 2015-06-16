@@ -1,14 +1,13 @@
-header.globalheader
-	div.topbar
-		div.container-medium
-			h1 = link_to data.index.title, '/', :class => "changepage"
-			nav#firstnav
-				h1.visuallyhidden First navigation
-				ul
-					li.history = link_to data.legroupe.title, '/legroupe', :class => "changepage"
-					li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
-					li.history = link_to data.albums.title, '/albums', :class => "changepage"
-					li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
-					li.history = link_to data.presse.title, '/presse', :class => "changepage"
-					li.history = link_to data.contact.title, '/contact', :class => "changepage"
-				button.linear.secondarybutton#menubutton type="button" Menu
+header.globalheader.headroom#header
+	div.container-medium
+		h1 = link_to data.index.title, '/', :class => "changepage"
+		nav#firstnav
+			h1.visuallyhidden First navigation
+			ul
+				li.history = link_to data.legroupe.title, '/legroupe', :class => "changepage"
+				li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
+				li.history = link_to data.albums.title, '/albums', :class => "changepage"
+				li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
+				li.history = link_to data.presse.title, '/presse', :class => "changepage"
+				li.history = link_to data.contact.title, '/contact', :class => "changepage"
+			button.linear.secondarybutton#menubutton type="button" Menu
