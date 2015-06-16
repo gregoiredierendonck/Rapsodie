@@ -1,0 +1,153 @@
+@mixin buttons {
+	font-family: $font-family;
+	color: $white;
+	background-color: $black;
+	border: $base-border solid $black;
+	font-size: $font-size-s;
+	text-transform: uppercase;
+	box-shadow: $button-box-shadow;
+	padding: $button-padding;
+	cursor: pointer;
+	outline:0;
+	margin: $buttons-margin-big 0;
+	&:focus, &:hover {
+		border-color: lighten($black, 10%);
+		background-color: lighten($black, 10%);
+		box-shadow: $button-box-shadow-big;
+	}
+	&:active {
+		border-color: darken($black, 10%);
+		background-color: darken($black, 10%);
+		box-shadow: $button-box-shadow-small;
+	}
+}
+
+//BASE
+.button-primary {
+	@include buttons;
+	background-color: $primary-color;
+	border-color: $primary-color;
+	&:focus, &:hover {
+		border-color: lighten($primary-color, 5%);
+		background-color: lighten($primary-color, 5%);
+	}
+	&:active {
+		border-color: darken($primary-color, 5%);
+		background-color: darken($primary-color, 5%);
+	}
+}
+.button-black {
+	@include buttons;
+	background-color: $black;
+	border-color: $black;
+	&:focus, &:hover {
+		border-color: lighten($black, 5%);
+		background-color: lighten($black, 5%);
+	}
+	&:active {
+		border-color: darken($black, 5%);
+		background-color: darken($black, 5%);
+	}
+}
+.button-color-2 {
+	@include buttons;
+	background-color: $color-2;
+	border-color: $color-2;
+	&:focus, &:hover {
+		border-color: lighten($color-2, 5%);
+		background-color: lighten($color-2, 5%);
+	}
+	&:active {
+		border-color: darken($color-2, 5%);
+		background-color: darken($color-2, 5%);
+	}
+}
+.button-color-3 {
+	@include buttons;
+	background-color: $color-3;
+	border-color: $color-3;
+	&:focus, &:hover {
+		border-color: lighten($color-3, 5%);
+		background-color: lighten($color-3, 5%);
+	}
+	&:active {
+		border-color: darken($color-3, 5%);
+		background-color: darken($color-3, 5%);
+	}
+}
+.button-color-4 {
+	@include buttons;
+	background-color: $color-4;
+	border-color: $color-4;
+	&:focus, &:hover {
+		border-color: lighten($color-4, 5%);
+		background-color: lighten($color-4, 5%);
+	}
+	&:active {
+		border-color: darken($color-4, 5%);
+		background-color: darken($color-4, 5%);
+	}
+}
+.button-color-5 {
+	@include buttons;
+	background-color: $color-5;
+	border-color: $color-5;
+	&:focus, &:hover {
+		border-color: lighten($color-5, 5%);
+		background-color: lighten($color-5, 5%);
+	}
+	&:active {
+		border-color: darken($color-5, 5%);
+		background-color: darken($color-5, 5%);
+	}
+}
+
+//LINEAR
+.linear {
+	background-color: transparent;
+	border: $base-border solid inherit;
+	&:focus, &:hover {color: $white !important;}
+	&.button-primary {
+		border-color: $primary-color;
+		color: $primary-color;
+		&:hover, &:focus {background-color: lighten($primary-color, 5%);}
+		&:active {background-color: darken($primary-color, 5%);}
+	}
+	&.button-black {
+		border-color: $black;
+		color: $black;
+		&:hover, &:focus {background-color: lighten($black, 5%);}
+		&:active {background-color: darken($black, 5%);}
+	}
+	&.button-color-2 {
+		border-color: $color-2;
+		color: $color-2;
+		&:hover, &:focus {background-color: lighten($color-2, 5%);}
+		&:active {background-color: darken($color-2, 5%);}
+	}
+	&.button-color-3 {
+		border-color: $color-3;
+		color: $color-3;
+		&:hover, &:focus {background-color: lighten($color-3, 5%);}
+		&:active {background-color: darken($color-3, 5%);}
+	}
+	&.button-color-4 {
+		border-color: $color-4;
+		color: $color-4;
+		&:hover, &:focus {background-color: lighten($color-4, 5%);}
+		&:active {background-color: darken($color-4, 5%);}
+	}
+	&.button-color-5 {
+		border-color: $color-5;
+		color: $color-5;
+		&:hover, &:focus {background-color: lighten($color-5, 5%);}
+		&:active {background-color: darken($color-5, 5%);}
+	}
+}
+
+// MARGIN
+button + button {
+	margin-left: $buttons-margin-big !important;
+}
+
+

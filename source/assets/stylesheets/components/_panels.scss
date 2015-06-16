@@ -1,0 +1,9 @@
+.grid.panel, .panel {
+	padding: 20px;
+	border: $base-border solid $grey-lighter;
+}
+.dark-panel {
+	background-color: $grey-darker;
+	color: white;
+	border: none;
+}

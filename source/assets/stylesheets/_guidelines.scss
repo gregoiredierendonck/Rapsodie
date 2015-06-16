@@ -1,0 +1,78 @@
+.guidelines {
+  .guidelines-title {
+    width: 100%;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid $black;
+  }
+
+  // COLORS
+  .colors-placement {
+    width: 100%;
+    display: inline-block
+  }
+  .block-colors {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 10px 1%;
+    vertical-align: top;
+    float: left;
+    position: relative;
+    &.light, &.dark {
+      width: 50%;
+      height: 30%;
+      display: inline-block;
+      float: left;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin-bottom: 0;
+    }
+    &.dark {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .text-colors {
+    margin: 10px 0;
+    float: left;
+    position: relative;
+    width: auto;
+    float: left;
+    padding: 5px 10px;
+  }
+
+  // BUTTONS
+  button {
+    margin: $buttons-margin-big 0;
+  }
+
+  // GRID
+  .guidelines-grid {
+    .grid-table {
+      margin-top: -1px;
+      .grid {
+        margin-top: -1px;
+        border: 1px solid $grey-lighter;
+        border-right: none;
+        border-bottom: none;
+        text-align: center;
+        padding: 5px;
+        color: $grey;
+        &:last-child {
+          border-right: 1px solid $grey-lighter;
+        }
+      }
+      &:last-child {
+        border-bottom: 1px solid $grey-lighter;
+      }
+    }
+  }
+}

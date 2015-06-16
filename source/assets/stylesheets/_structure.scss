@@ -1,0 +1,32 @@
+// GLOBAL
+body {
+}
+
+.globalcontainer {
+	width: 100%;
+  	max-width: 1000px;
+  	display: inline-block;
+  	position: relative;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+
+.content {
+	width: 100%;
+	display: inline-block;
+	margin-top: $header-height;
+	padding-bottom: $player-height + 20;
+	background-image: image-url("shattered.jpg");
+}
+
+// CONTAINERS
+.container-small, .container-medium, .container-full {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	float: left;
+}
+.container-small {width: 100%; max-width: 750px;}
+.container-medium {width: 100%; max-width: 1000px;}
+.container-full {width: 100%; max-width: 100%;}

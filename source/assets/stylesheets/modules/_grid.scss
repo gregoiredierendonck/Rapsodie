@@ -1,0 +1,30 @@
+.grid {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	float: left;
+	vertical-align: top;
+	position: relative;
+
+	&.grid-two {width: 50%;}
+	&.grid-three {width: 33.33%;}
+	&.grid-four {width: 25%;}
+	&.grid-five {width: 20%;}
+	&.grid-six {width: 16.66%;}
+	&.grid-seven {width: 14.28%;}
+	&.grid-eight {width: 12.5%;}
+	&.grid-nine {width: 11.11%;}
+	&.grid-ten {width: 10%;}
+
+	img {display: block; margin: 0 auto;}
+}
+
+.grid-table {
+	width: 100%;
+	display: table;
+	.grid {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+	}
+}

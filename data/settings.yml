@@ -1,0 +1,26 @@
+site:
+  title: Rapsodie
+  introduction: description
+  i18n: en
+  # url: 'https://github.com/flexbox/codeless'
+  # author: David Leuliette
+
+albums:
+  title: Rapsodie
+  introduction: description
+
+ateliers:
+  title: Rapsodie
+  introduction: description
+
+presse:
+  title: Rapsodie
+  introduction: description
+
+contact:
+  title: Rapsodie
+  introduction: description
+
+legroupe:
+  title: Rapsodie
+  introduction: description

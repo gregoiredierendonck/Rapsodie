@@ -1,0 +1,68 @@
+// BACKGROUND
+.block-colors.color-primary {
+  background-color: $primary-color;
+  &.light {background-color: lighten($primary-color, 10%);}
+  &.dark {background-color: darken( $primary-color, 10%);}
+}
+.block-colors.color-2 {
+  background-color: $color-2;
+  &.light {background-color: lighten( $color-2, 10%);}
+  &.dark {background-color: darken( $color-2, 10%);}
+}
+.block-colors.color-3 {
+  background-color: $color-3;
+  &.light {background-color: lighten( $color-3, 10%);}
+  &.dark {background-color: darken( $color-3, 10%);}
+}
+.block-colors.color-4 {
+  background-color: $color-4;
+  &.light {background-color: lighten( $color-4, 10%);}
+  &.dark {background-color: darken( $color-4, 10%);}
+}
+.block-colors.color-5 {
+  background-color: $color-5;
+  &.light {background-color: lighten( $color-5, 10%);}
+  &.dark {background-color: darken( $color-5, 10%);}
+}
+
+.block-colors.black {background-color: $black;}
+.block-colors.grey-darker {background-color: $grey-darker;}
+.block-colors.grey-dark {background-color: $grey-dark;}
+.block-colors.grey {background-color: $grey;}
+.block-colors.grey-light {background-color: $grey-light;}
+.block-colors.grey-lighter {background-color: $grey-lighter;}
+
+
+// TEXTS
+.text-colors.color-primary {
+  color: $primary-color;
+  &.light{color: lighten($primary-color, 10%);}
+  &.dark{ color: darken($primary-color, 10%);}
+}
+.text-colors.color-2 {
+  color: $color-2;
+  &.light{color: lighten($color-2, 10%);}
+  &.dark{ color: darken($color-2, 10%);}
+}
+.text-colors.color-3 {
+  color: $color-3;
+  &.light{color: lighten($color-3, 10%);}
+  &.dark{ color: darken($color-3, 10%);}
+}
+.text-colors.color-4 {
+  color: $color-4;
+  &.light{color: lighten($color-4, 10%);}
+  &.dark{ color: darken($color-4, 10%);}
+}
+.text-colors.color-5 {
+  color: $color-5;
+  &.light{color: lighten($color-5, 10%);}
+  &.dark{ color: darken($color-5, 10%);}
+}
+
+.text-colors.black {color: $black;}
+.text-colors.grey-darker {color: $grey-darker;}
+.text-colors.grey-dark {color: $grey-dark;}
+.text-colors.grey {color: $grey;}
+.text-colors.grey-light {color: $grey-light;}
+.text-colors.grey-lighter {color: $grey-lighter;}

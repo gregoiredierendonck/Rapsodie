@@ -1,0 +1,72 @@
+// COLORS
+$white: #FFFFFF;
+$black: #202020;
+
+$grey-lighter: lighten($black, 80%);
+$grey-light: lighten($black, 65%);
+$grey: lighten($black, 50%);
+$grey-dark: lighten($black, 35%);
+$grey-darker: lighten($black, 20%);
+
+$primary-color: #E53935;
+$color-2: #795548;
+$color-3: #607D8B;
+$color-4: #FF9800;
+$color-5: #FF5722;
+
+// BORDERS
+$base-border: 1px;
+
+
+// FONTS
+$font-family: 'Roboto Slab', serif;
+
+$font-weight-light: 100;
+$font-weight: 300;
+$font-weight-bold: 400;
+
+$font-size-s: 14px;
+$font-size: 16px;
+$font-size-l: 18px;
+
+$font-size-h1: 30px;
+$font-size-h2: 24px;
+$font-size-h3: 22px;
+$font-size-h4: 18px;
+
+$line-height: 160%;
+$line-height-h1: 130%;
+$line-height-h2: 120%;
+
+$title-margin-small: 20px 0;
+$title-margin: 30px 0;
+$title-margin-big: 50px 0;
+
+
+//BUTTONS
+$buttons-margin-small: 10px;
+$buttons-margin-big: 5px;
+
+$button-padding: 10px 20px;
+
+$button-box-shadow-small: 0 0 0 rgba(0, 0, 0, 0);
+$button-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+$button-box-shadow-big: 0 0 4px rgba(0, 0, 0, 0.5);
+
+
+//SIZES
+$header-height: 70px;
+$player-height: 70px;
+
+
+
+
+//TRANSITION
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+// .box {@include transition(all, 0.2s, ease-in-out);}
