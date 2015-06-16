@@ -15,3 +15,6 @@
 
 # Ignore Bower Folder
 /bower
+/bower_components
+
+Gemfile.lock

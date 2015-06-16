@@ -1,6 +1,6 @@
-Middleman Slimmer
-===
-Static site starter template for [Middleman](http://middlemanapp.com).
+# Rapsodie
+
+### A fresh website for the band Rapsodie, made with [Middleman](http://middlemanapp.com) and [slimmer](https://github.com/polymatt/slimmer) template.
 
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
@@ -14,52 +14,3 @@ Static site starter template for [Middleman](http://middlemanapp.com).
 
 ###### Other
 - [SublimeText](http://www.sublimetext.com) *[basic project file]*
-
-
-## Getting Started
-
-1. Install Middleman
-
-  ```
-  $ gem install middleman
-  ```
-
-2. Install slimmer template
-
-  ```
-  $ mkdir ~/.middleman #if it doesn't exist yet
-  $ cd ~/.middleman
-  $ git clone git@github.com:polymatt/slimmer.git slimmer
-  ```
-
-3. Start your project
-
-  ```
-  $ cd ~/path/to/your/project
-  $ middleman init PROJECT_NAME --template=slimmer
-  ```
-
-## Using Bower
-
-1. Find and install the packages you need...
-
-  ```
-  $ bower search PACKAGE_NAME
-  $ bower install ACTUAL_PACKAGE_NAME -S
-  ```
-
-2. Include the assets in your js/css files (paths relative to the root 'bower' directory )
-
-  `#=require 'folder/file'` - *for js files*
-  
-  `@import 'folder/file'` - *for css files*
-
-## Deploying to GitHub Pages
-
-`$ rake publish`
-
-Thanks to [neo](https://github.com/neo/middleman-gh-pages) for the dpeloyment method. More information available there.
-
-## Launch middleman server
-
-  bundle exec middleman s

@@ -2,6 +2,6 @@
   "name": "gregoiredierendonck",
   "version": "1.0.0",
   "dependencies": {
-    "headroom.js":            "~0.7.0"
+    "headroom.js": "~0.7.0"
   }
 }
