@@ -26,7 +26,8 @@ body {
 	left: 50%;
 	transform: translateX(-50%);
 	float: left;
+	padding: 0 30px;
 }
 .container-small {width: 100%; max-width: 750px;}
 .container-medium {width: 100%; max-width: 1000px;}
-.container-full {width: 100%; max-width: 100%;}
+.container-full {width: 100%; max-width: 100%; padding: 0;}

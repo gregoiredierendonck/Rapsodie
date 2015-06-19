@@ -1,4 +1,4 @@
-$logo-width: 70px;
+$logo-height: 70px;
 
 .globalheader {
 	width: 100%;
@@ -10,6 +10,7 @@ $logo-width: 70px;
 	z-index: 2;
 	background-color: $white;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.2s ease-in-out;
 
 	// LOGO
 	h1 {
@@ -27,11 +28,11 @@ $logo-width: 70px;
 			color: $black;
 			font-size: 24px;
 			text-decoration: none;
-			padding-left: $logo-width + 15;
+			padding-left: $logo-height + 15;
 			padding-right: 30px;
 			&:before {
 				content: "";
-				width: $logo-width;
+				width: $logo-height;
 				height: 70px;
 				display: inline-block;
 				overflow: hidden;
@@ -39,32 +40,38 @@ $logo-width: 70px;
 				top: 0;
 				left: 0;
 				background-image: image-url("logo-sign.svg"), image-url("logo-home.svg");
-				background-position: center center, -$logo-width center;
+				background-position: center center, -$logo-height center;
 				background-repeat: no-repeat;
 			}
 		}
 	}
 
-	// LOGO
-	ul {
-		width: auto;
+	// NAVIGATION
+	nav {
+		position: relative;
+		z-index: 1;
 		display: inline-block;
+		width: auto;
 		float: right;
-		li {
+		ul {
 			width: auto;
-			display: table;
-			float: left;
-			a {
+			display: inline-block;
+			li {
 				width: auto;
-				height: $header-height;
-				display: table-cell;
-				vertical-align: middle;
-				padding: 10px 15px;
-				color: $black;
-				text-decoration: none;
-				font-size: 15px;
-				&:focus, &:hover {
-					color: $primary-color;
+				display: table;
+				float: left;
+				a {
+					width: auto;
+					height: $header-height;
+					display: table-cell;
+					vertical-align: middle;
+					padding: 10px 15px;
+					color: $black;
+					text-decoration: none;
+					font-size: 15px;
+					&:focus, &:hover {
+						color: $primary-color;
+					}
 				}
 			}
 		}
@@ -72,22 +79,64 @@ $logo-width: 70px;
 
 	//MENU BUTTON
 	button {
+		position: absolute;
+		z-index: 2;
 		display: none;
+		margin: 0 !important;
+  		top: 50%;
+  		right: 30px;
+  		transform: translateY(-50%);
+	}
+
+	// SMALL VERSION
+	&.small {
+		nav {
+			width: 100vw;
+			height: 100vh;
+			display: inline-block;
+			position: fixed;
+			top: -100vh;
+			left: 0;
+			background-color: rgba(255, 255, 255, 0.95);
+			opacity: 0;
+			transition: all 0.2s ease-in-out;
+			ul {
+				width: 100%;
+				height: auto;
+				display: block;
+				margin: 0 auto;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+			}
+			li {
+				width: 100%;
+				text-align: center;
+				a {
+					text-transform: uppercase;
+					font-size: $font-size-l;
+					font-weight: $font-weight-bold;
+					padding: 15px;
+					height: auto;
+				}
+			}
+		}
+		button {
+			display: inline-block;
+		}
 	}
 }
 
 .headroom {
 	transition: all 0.3s ease-in-out;
 }
-// .headroom--top {
-//   box-shadow: 0px 0px 0px rgba(0,0,0,.5);
-// }
-// .headroom--not-top {
-//   box-shadow: 1px 0px 3px rgba(0,0,0,.2);
-// }
+// .headroom--top
+// .headroom--not-top
 .headroom--pinned {
   transform: translateY(0%);
 }
 .headroom--unpinned {
   transform: translateY(-100%);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0);
 }

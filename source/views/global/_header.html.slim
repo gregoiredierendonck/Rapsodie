@@ -1,13 +1,13 @@
 header.globalheader.headroom#header
-	div.container-medium
-		h1 = link_to data.index.title, '/', :class => "changepage"
-		nav#firstnav
+	div.container-medium#header-contener
+		h1#header-logo = link_to data.index.title, '/', :class => "changepage"
+		nav#header-menu.open
 			h1.visuallyhidden First navigation
-			ul
+			ul#header-menu-list
 				li.history = link_to data.legroupe.title, '/legroupe', :class => "changepage"
-				li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
+				li.history = link_to data.concerts.title, '/concerts', :class => "changepage"
 				li.history = link_to data.albums.title, '/albums', :class => "changepage"
 				li.history = link_to data.ateliers.title, '/ateliers', :class => "changepage"
 				li.history = link_to data.presse.title, '/presse', :class => "changepage"
 				li.history = link_to data.contact.title, '/contact', :class => "changepage"
-			button.linear.secondarybutton#menubutton type="button" Menu
+		button.linear.button-black#header-menu-button type="button" Menu
