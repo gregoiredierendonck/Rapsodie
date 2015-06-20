@@ -17,4 +17,8 @@
 /bower
 /bower_components
 
+# Ignore Sublime preferences
+slimmer.sublime-project
+slimmer.sublime-workspace
+
 Gemfile.lock
