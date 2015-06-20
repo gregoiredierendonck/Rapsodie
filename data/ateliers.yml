@@ -1,2 +1,22 @@
 title: Ateliers
-introduction: description ateliers
+introduction: En complément de leurs activités créatives et musicales, les acteurs de Rapsodie sont attachés à partager et à transmettre leurs expériences en organisant régulièrement des ateliers pédagogiques auprès de publics diversifiés. Ils proposent une approche stimulante et dynamique de la pratique de la langue française en s’appuyant sur le rythme, les rimes, l’écriture créative, le jeu des sonorités et l’accompagnement musical.
+citation: Donec sit amet orci sodales, venenatis sem rhoncus, auctor sem. Sed diam justo, commodo non mollis venenatis, malesuada eu ex.
+citationsignature: Paranoyan, Loremipsum
+
+atelier1image: "http://placehold.it/900x700"
+atelier1titre: Van Der Meersch
+atelier1titre2: 14-17ans
+atelier1texte: Proin interdum ullamcorper dolor vel egestas. Vestibulum pulvinar pretium nulla, ut sodales lorem molestie eu. Curabitur nec lectus nisl. Donec luctus lectus non tempor condimentum. Etiam sagittis efficitur odio eu pharetra. Nunc non tortor enim. Curabitur dapibus, sem in blandit sagittis, felis est maximus augue, et pharetra leo enim tristique nulla. Curabitur augue enim, porttitor tincidunt tellus a, iaculis interdum sapien.
+
+atelier2image: "http://placehold.it/900x700"
+atelier2titre: Présentation des instruments
+atelier2titre2: 7-10ans
+atelier2texte: Proin interdum ullamcorper dolor vel egestas. Vestibulum pulvinar pretium nulla, ut sodales lorem molestie eu. Curabitur nec lectus nisl. Donec luctus lectus non tempor condimentum. Etiam sagittis efficitur odio eu pharetra. Nunc non tortor enim. Curabitur dapibus, sem in blandit sagittis, felis est maximus augue, et pharetra leo enim tristique nulla. Curabitur augue enim, porttitor tincidunt tellus a, iaculis interdum sapien.
+
+atelier3image: "http://placehold.it/900x700"
+atelier3titre: La musique comme support d’apprentissage de la langue française
+atelier3titre2: public étranger
+atelier3texte: Proin interdum ullamcorper dolor vel egestas. Vestibulum pulvinar pretium nulla, ut sodales lorem molestie eu. Curabitur nec lectus nisl. Donec luctus lectus non tempor condimentum. Etiam sagittis efficitur odio eu pharetra. Nunc non tortor enim. Curabitur dapibus, sem in blandit sagittis, felis est maximus augue, et pharetra leo enim tristique nulla. Curabitur augue enim, porttitor tincidunt tellus a, iaculis interdum sapien.
+
+
+end: Des idées d'ateliers avec Rapsodie ?

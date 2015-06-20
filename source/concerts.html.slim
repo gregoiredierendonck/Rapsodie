@@ -1,7 +1,28 @@
 ---
 title: Concerts
-description: 'Write less code, solve more problems'
+description: 'Les concerts Rapsodie'
 ---
 
-h1 = data.concerts.title
-p class="introduction-text" = data.concerts.introduction
+div.concerts
+
+	div.container-small
+		h1 = data.concerts.title
+
+	div.container-medium
+		= image_tag "#{data.concerts.firstimage}", alt: "Rapsodie - concerts", itemprop: 'image'
+
+	div.container-small
+		p class="introduction-text" = data.concerts.introduction
+
+	div.container-medium.citation
+		blockquote
+			p = data.concerts.citation
+			footer = data.concerts.citationsignature
+
+	div.container-full
+		ul
+			- data.concertslist.each_with_index do |concert|
+				li.grid.grid-five
+					h2 = concert.title
+					p.date = concert.date
+					= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'

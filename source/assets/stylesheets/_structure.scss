@@ -5,10 +5,9 @@ body {
 .globalcontainer {
 	width: 100%;
   	max-width: 1000px;
-  	display: inline-block;
+  	display: block;
   	position: relative;
-  	left: 50%;
-  	transform: translateX(-50%);
+  	margin: 0 auto;
 }
 
 .content {
@@ -21,11 +20,9 @@ body {
 
 // CONTAINERS
 .container-small, .container-medium, .container-full {
-	display: inline-block;
+	display: block;
 	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	float: left;
+	margin: 0 auto;
 	padding: 0 30px;
 }
 .container-small {width: 100%; max-width: 750px;}

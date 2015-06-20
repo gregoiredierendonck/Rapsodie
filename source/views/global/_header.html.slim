@@ -4,7 +4,7 @@ header.globalheader.headroom#header
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li.history = link_to data.index.title, '/index', :class => "changepage homelink"
+				li.history = link_to data.index.homelink, '/', :class => "changepage homelink"
 				li.history = link_to data.legroupe.title, '/legroupe', :class => "changepage"
 				li.history = link_to data.concerts.title, '/concerts', :class => "changepage"
 				li.history = link_to data.albums.title, '/albums', :class => "changepage"
@@ -13,4 +13,4 @@ header.globalheader.headroom#header
 				li.history = link_to data.contact.title, '/contact', :class => "changepage"
 		button.menu-button#header-menu-button type="button"
 			'Menu
-			<span class="lines"></span>
+			span.lines
