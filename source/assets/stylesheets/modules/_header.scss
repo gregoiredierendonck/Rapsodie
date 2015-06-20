@@ -1,4 +1,15 @@
-$logo-height: 70px;
+$header-height: 70px;
+$logo-width: 240px;
+
+$menu-button-size : 50px; 
+@mixin line {
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background: $black;
+  border-radius: $menu-button-size/14; 
+  transition: .2s;
+}
 
 .globalheader {
 	width: 100%;
@@ -12,15 +23,25 @@ $logo-height: 70px;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 	transition: box-shadow 0.2s ease-in-out;
 
+	// CONTENER
+	.container-medium {
+		height: $header-height;
+		position: relative;
+	}
+
 	// LOGO
 	h1 {
-		width: auto;
-		height: auto;
+		width: $logo-width;
+		height: $header-height;
 		display: table;
 		float: left;
 		margin: 0;
+		position: absolute;
+		top: 0;
+		left: 30px;
+		z-index: 2;
 		a {
-			width: auto;
+			width: $logo-width;
 			height: $header-height;
 			display: table-cell;
 			vertical-align: middle;
@@ -28,11 +49,11 @@ $logo-height: 70px;
 			color: $black;
 			font-size: 24px;
 			text-decoration: none;
-			padding-left: $logo-height + 15;
+			padding-left: $header-height + 15;
 			padding-right: 30px;
 			&:before {
 				content: "";
-				width: $logo-height;
+				width: $header-height;
 				height: 70px;
 				display: inline-block;
 				overflow: hidden;
@@ -40,7 +61,7 @@ $logo-height: 70px;
 				top: 0;
 				left: 0;
 				background-image: image-url("logo-sign.svg"), image-url("logo-home.svg");
-				background-position: center center, -$logo-height center;
+				background-position: center center, -$header-height center;
 				background-repeat: no-repeat;
 			}
 		}
@@ -48,14 +69,20 @@ $logo-height: 70px;
 
 	// NAVIGATION
 	nav {
-		position: relative;
-		z-index: 1;
-		display: inline-block;
-		width: auto;
-		float: right;
+		  width: calc(100% - 60px);
+		  height: $header-height;
+		  display: inline-block;
+		  overflow: hidden;
+		  position: absolute;
+		  top: 0;
+		  padding-left: $logo-width;
+		  z-index: 2;
 		ul {
 			width: auto;
 			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
 			li {
 				width: auto;
 				display: table;
@@ -72,6 +99,9 @@ $logo-height: 70px;
 					&:focus, &:hover {
 						color: $primary-color;
 					}
+					&.homelink {
+						display: none;
+					}
 				}
 			}
 		}
@@ -79,13 +109,66 @@ $logo-height: 70px;
 
 	//MENU BUTTON
 	button {
+  		display: none;
+  		width: $menu-button-size;
+  		height: $menu-button-size;
 		position: absolute;
-		z-index: 2;
-		display: none;
-		margin: 0 !important;
   		top: 50%;
   		right: 30px;
+  		z-index: 2;
+  		margin: 0 !important;
   		transform: translateY(-50%);
+  		outline: none;
+		cursor: pointer;
+		user-select: none;
+		text-indent: -99999px;
+  		background-color: $white;
+  		border: none;
+  		box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+		transition: all .2s ease-in-out;
+		.lines {
+			@include line;
+			position: absolute;
+			right: 9px;
+			top: 23px; 
+			&:before, &:after {
+				@include line;
+				content: '';
+				position: absolute;
+				left:0;
+				transform-origin: $menu-button-size/14 center;			}
+			&:before { top: $menu-button-size/6; }
+			&:after { top: -$menu-button-size/6; }
+		}
+		&:hover {
+			opacity: 1;
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+		}
+		&:active {
+			transition: 0;
+			background: rgba(0,0,0,.1);
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+		}
+		&.open {
+			display: inline-block;
+			.lines {
+				/*hide the middle line*/
+				background: transparent;
+				/*overlay the lines by setting both their top values to 0*/
+				&:before, &:after{
+					transform-origin: 50% 50%;
+					top:0;
+					width: 30px;
+				}
+				// rotate the lines to form the x shape
+				&:before{
+					transform: rotate3d(0,0,1,45deg); 
+				}
+				&:after{
+					transform: rotate3d(0,0,1,-45deg); 
+				}
+			}
+		}
 	}
 
 	// SMALL VERSION
@@ -119,6 +202,9 @@ $logo-height: 70px;
 					font-weight: $font-weight-bold;
 					padding: 15px;
 					height: auto;
+					&.homelink {
+						display: table-cell;
+					}
 				}
 			}
 		}

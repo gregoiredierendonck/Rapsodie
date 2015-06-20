@@ -11,10 +11,9 @@ launchHeadroom = ->
   headroom.init()
 
 DetectMenuVersion = ->
-  headerWidth = $('#header-contener').width()
-  logoWidth = $('#header-logo').width()
-  menuWidth = $('#header-menu').width() + 50
-  if logoWidth + menuWidth >= headerWidth
+  contenerWidth = $('#header-menu').width()
+  menuWidth = $('#header-menu-list').width() + 30
+  if menuWidth > contenerWidth
     $('#header').removeClass 'large'
     $('#header').addClass 'small'
   else
