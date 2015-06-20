@@ -3,25 +3,25 @@ title: Albums
 description: Retrouvez toute les albums de Rapsodie
 ---
 
-div.albums
+	div.albums
 
-	div.container-small
-		h1 = data.albums.title
+		div.container-small
+			h1 = data.albums.title
 
-	div.container-medium
-		= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
-		h2 = data.albums.album1title
-		p = data.albums.album1texte
-		ol.list
-			- data.playlistfugue.each_with_index do |song|
-				li = song.title
-		a = link_to data.albums.button1name, data.albums.seller1url, :class => "button-primary"
+		div.container-medium
+			= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
+			h2 = data.albums.album1title
+			p = data.albums.album1texte
+			ol.list
+				- data.playlistfugue.each_with_index do |song|
+					li = song.title
+			a = link_to data.albums.button1name, data.albums.seller1url, :class => "button-primary"
 
-	div.container-medium
-		= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
-		h2 = data.albums.album2title
-		p = data.albums.album2texte
-		ol.list
-			- data.playlistprelude.each_with_index do |song|
-				li = song.title
-		a = link_to data.albums.button2name, data.albums.seller2url, :class => "button-primary"
+		div.container-medium
+			= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
+			h2 = data.albums.album2title
+			p = data.albums.album2texte
+			ol.list
+				- data.playlistprelude.each_with_index do |song|
+					li = song.title
+			a = link_to data.albums.button2name, data.albums.seller2url, :class => "button-primary"

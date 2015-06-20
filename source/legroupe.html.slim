@@ -3,58 +3,58 @@ title: ABC
 description: 'Rapsodie - Présentation du groupe et de ses membres'
 ---
 
-div.legroupe
+	div.legroupe
 
-	div.container-small
-		h1 = data.legroupe.title
+		div.container-small
+			h1 = data.legroupe.title
 
-	div.container-medium
-		/ iframe width="1280" height="720" src="https://www.youtube.com/embed/Mo-975XajAQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
-		
-		a = link_to 'magnific-popup', 'http://www.youtube.com/watch?v=0O2aH4XLbto', :class => "popup-youtube magnific-video-link"
+		div.container-medium
+			/ iframe width="1280" height="720" src="https://www.youtube.com/embed/Mo-975XajAQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"
+			
+			= link_to 'magnific-popup', 'http://www.youtube.com/watch?v=0O2aH4XLbto', :class => "popup-youtube magnific-video-link"
 
-	div.container-small
-		p class="introduction-text" = data.legroupe.introduction
+		div.container-small
+			p class="introduction-text" = data.legroupe.introduction
 
-	div.container-medium
-		h2 = data.legroupe.membretitle
-		div.member.grid-table
-			div.grid.grid-three
-				= image_tag "#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
-			div.grid
-				h3 = data.legroupe.membre1title
-				h4 = data.legroupe.membre1subtitle
-				p class="birthdate" = data.legroupe.membre1birthdate
-				p = data.legroupe.membre1texte
-		div.member.grid-table
-			div.grid.grid-three
-				= image_tag "#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
-			div.grid
-				h3 = data.legroupe.membre2title
-				h4 = data.legroupe.membre2subtitle
-				p class="birthdate" = data.legroupe.membre2birthdate
-				p = data.legroupe.membre2texte
-		div.member.grid-table
-			div.grid.grid-three
-				= image_tag "#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
-			div.grid
-				h3 = data.legroupe.membre3title
-				h4 = data.legroupe.membre3subtitle
-				p class="birthdate" = data.legroupe.membre3birthdate
-				p = data.legroupe.membre3texte
-		div.member.grid-table
-			div.grid.grid-three
-				= image_tag "#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
-			div.grid
-				h3 = data.legroupe.membre4title
-				h4 = data.legroupe.membre4subtitle
-				p class="birthdate" = data.legroupe.membre4birthdate
-				p = data.legroupe.membre4texte
-		div.member.grid-table
-			div.grid.grid-three
-				= image_tag "#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
-			div.grid
-				h3 = data.legroupe.membre5title
-				h4 = data.legroupe.membre5subtitle
-				p class="birthdate" = data.legroupe.membre5birthdate
-				p = data.legroupe.membre5texte
+		div.container-medium
+			h2 = data.legroupe.membretitle
+			div.member.grid-table
+				div.grid.grid-three
+					= image_tag "#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
+				div.grid
+					h3 = data.legroupe.membre1title
+					p.h4 = data.legroupe.membre1subtitle
+					p class="birthdate" = data.legroupe.membre1birthdate
+					p = data.legroupe.membre1texte
+			div.member.grid-table
+				div.grid.grid-three
+					= image_tag "#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
+				div.grid
+					h3 = data.legroupe.membre2title
+					p.h4 = data.legroupe.membre2subtitle
+					p class="birthdate" = data.legroupe.membre2birthdate
+					p = data.legroupe.membre2texte
+			div.member.grid-table
+				div.grid.grid-three
+					= image_tag "#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
+				div.grid
+					h3 = data.legroupe.membre3title
+					p.h4 = data.legroupe.membre3subtitle
+					p class="birthdate" = data.legroupe.membre3birthdate
+					p = data.legroupe.membre3texte
+			div.member.grid-table
+				div.grid.grid-three
+					= image_tag "#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
+				div.grid
+					h3 = data.legroupe.membre4title
+					p.h4 = data.legroupe.membre4subtitle
+					p class="birthdate" = data.legroupe.membre4birthdate
+					p = data.legroupe.membre4texte
+			div.member.grid-table
+				div.grid.grid-three
+					= image_tag "#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
+				div.grid
+					h3 = data.legroupe.membre5title
+					p.h4 = data.legroupe.membre5subtitle
+					p class="birthdate" = data.legroupe.membre5birthdate
+					p = data.legroupe.membre5texte

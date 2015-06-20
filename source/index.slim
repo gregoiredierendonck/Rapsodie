@@ -3,10 +3,12 @@ title: Homepage
 description: 'Description'
 ---
 
-div.container-small
-	h1 = data.index.title
+	div.index
 
-div.container-medium.citation
-	blockquote
-		p = data.index.citation
-		footer = data.index.citationsignature
+		div.container-small
+			h1 = data.index.title
+
+		div.container-medium.citation
+			blockquote
+				p = data.index.citation
+				footer = data.index.citationsignature

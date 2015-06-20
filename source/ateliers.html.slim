@@ -3,53 +3,53 @@ title: Ateliers
 description: 'Les ateliers proposés par Rapsodie'
 ---
 
-div.ateliers
+	div.ateliers
 
-	div.container-small
-		h1 = data.ateliers.title
+		div.container-small
+			h1 = data.ateliers.title
 
-	div.container-medium
-		img src="http://placehold.it/1600x700" alt=""
-
-	div.container-small
-		p class="introduction-text" = data.ateliers.introduction
-
-	div.container-medium.citation
-		blockquote
-			p = data.ateliers.citation
-			footer = data.ateliers.citationsignature
-
-
-	div.container-full.dark-panel
 		div.container-medium
-			div.grid-table
-					div.grid.grid-two
-						= image_tag "#{data.ateliers.atelier1image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier1titre}", itemprop: 'image'
-					div.grid.grid-two
-						h2 = data.ateliers.atelier1titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier1titre2
-						p = data.ateliers.atelier1texte
+			img src="http://placehold.it/1600x700" alt=""
 
-	div.container-full.dark-panel
-		div.container-medium
-			div.grid-table
-					div.grid.grid-two
-						h2 = data.ateliers.atelier2titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier2titre2
-						p = data.ateliers.atelier2texte
-					div.grid.grid-two
-						= image_tag "#{data.ateliers.atelier2image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier2titre}", itemprop: 'image'
+		div.container-small
+			p class="introduction-text" = data.ateliers.introduction
 
-	div.container-full.dark-panel
-		div.container-medium
-			div.grid-table
-					div.grid.grid-two
-						= image_tag "#{data.ateliers.atelier3image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier3titre}", itemprop: 'image'
-					div.grid.grid-two
-						h2 = data.ateliers.atelier3titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier3titre2
-						p = data.ateliers.atelier3texte
+		div.container-medium.citation
+			blockquote
+				p = data.ateliers.citation
+				footer = data.ateliers.citationsignature
 
-	div.container-small.text-center
-		p = data.ateliers.end
-		a = link_to 'Contactez-nous', '/contact', :class => "changepage button-primary"
+
+		div.container-full.dark-panel
+			div.container-medium
+				div.grid-table
+						div.grid.grid-two
+							= image_tag "#{data.ateliers.atelier1image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier1titre}", itemprop: 'image'
+						div.grid.grid-two
+							h2 = data.ateliers.atelier1titre
+							h3.h4.text-colors.color-primary = data.ateliers.atelier1titre2
+							p = data.ateliers.atelier1texte
+
+		div.container-full.dark-panel
+			div.container-medium
+				div.grid-table
+						div.grid.grid-two
+							h2 = data.ateliers.atelier2titre
+							h3.h4.text-colors.color-primary = data.ateliers.atelier2titre2
+							p = data.ateliers.atelier2texte
+						div.grid.grid-two
+							= image_tag "#{data.ateliers.atelier2image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier2titre}", itemprop: 'image'
+
+		div.container-full.dark-panel
+			div.container-medium
+				div.grid-table
+						div.grid.grid-two
+							= image_tag "#{data.ateliers.atelier3image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier3titre}", itemprop: 'image'
+						div.grid.grid-two
+							h2 = data.ateliers.atelier3titre
+							h3.h4.text-colors.color-primary = data.ateliers.atelier3titre2
+							p = data.ateliers.atelier3texte
+
+		div.container-small.text-center
+			p = data.ateliers.end
+			a = link_to 'Contactez-nous', '/contact', :class => "changepage button-primary"
