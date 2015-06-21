@@ -8,8 +8,8 @@ div.ateliers
 	div.container-small
 		h1 = data.ateliers.title
 
-	div.container-medium
-		img src="http://placehold.it/1600x700" alt=""
+	div.container-medium.introductionimage
+		= image_tag "#{data.ateliers.image}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image'
 
 	div.container-small
 		p class="introduction-text" = data.ateliers.introduction
@@ -20,34 +20,34 @@ div.ateliers
 			footer = data.ateliers.citationsignature
 
 
-	div.container-full.dark-panel
+	div.container-full.dark-panel.ateliersdetails
 		div.container-medium
 			div.grid-table
 					div.grid.grid-two
 						= image_tag "#{data.ateliers.atelier1image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier1titre}", itemprop: 'image'
-					div.grid.grid-two
+					div.grid.grid-two.grid-padding
 						h2 = data.ateliers.atelier1titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier1titre2
+						p.subtitle = data.ateliers.atelier1titre2
 						p = data.ateliers.atelier1texte
 
-	div.container-full.dark-panel
+	div.container-full.dark-panel.ateliersdetails
 		div.container-medium
 			div.grid-table
 					div.grid.grid-two
 						h2 = data.ateliers.atelier2titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier2titre2
+						p.subtitle = data.ateliers.atelier2titre2
 						p = data.ateliers.atelier2texte
-					div.grid.grid-two
+					div.grid.grid-two.grid-padding
 						= image_tag "#{data.ateliers.atelier2image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier2titre}", itemprop: 'image'
 
-	div.container-full.dark-panel
+	div.container-full.dark-panel.ateliersdetails
 		div.container-medium
 			div.grid-table
 					div.grid.grid-two
 						= image_tag "#{data.ateliers.atelier3image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier3titre}", itemprop: 'image'
-					div.grid.grid-two
+					div.grid.grid-two.grid-padding
 						h2 = data.ateliers.atelier3titre
-						h3.h4.text-colors.color-primary = data.ateliers.atelier3titre2
+						p.subtitle = data.ateliers.atelier3titre2
 						p = data.ateliers.atelier3texte
 
 	footer.container-small.text-center

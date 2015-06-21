@@ -5,8 +5,8 @@
 @import 'magnific-popup';
 
 @import 'fonts';
-@import 'images';
 @import 'structure';
+@import 'images';
 
 @import 'modules/grid';
 @import 'modules/header';
@@ -17,5 +17,9 @@
 @import 'components/panels';
 @import 'components/colors-attribution';
 @import 'components/blockquote';
+
+@import 'custom/legroupe';
+@import 'custom/albums';
+@import 'custom/ateliers';
 
 @import 'guidelines';

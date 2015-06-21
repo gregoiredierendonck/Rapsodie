@@ -14,7 +14,6 @@ body {
 	width: 100%;
 	display: inline-block;
 	margin-top: $header-height;
-	padding-bottom: $player-height + 20;
 	background-image: image-url("shattered.jpg");
 }
 
@@ -28,3 +27,7 @@ body {
 .container-small {width: 100%; max-width: 750px;}
 .container-medium {width: 100%; max-width: 1000px;}
 .container-full {width: 100%; max-width: 100%; padding: 0;}
+
+footer {
+	margin: 30px auto 50px !important;
+}

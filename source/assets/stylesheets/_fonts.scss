@@ -19,6 +19,7 @@ img + p {
 a {
 	color: $primary-color;
 	text-decoration: underline;
+	outline: none;
 }
 
 h1, h2, h3, h4 {
@@ -53,7 +54,18 @@ h4, .h4 {
 	text-transform: none;
 }
 
-.intro-p {}
+.subtitle {
+	font-size: $font-size;
+	font-weight: $font-weight-xbold;
+	text-transform: uppercase;
+	color: $primary-color;
+}
+
+.text-small {
+	font-size: $font-size-s;
+	font-style: italic;
+	color: $grey-light;
+}
 
 .visuallyhidden {
   margin: -1px !important;

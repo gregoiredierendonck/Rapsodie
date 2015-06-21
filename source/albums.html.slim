@@ -8,20 +8,37 @@ div.albums
 	div.container-small
 		h1 = data.albums.title
 
-	div.container-medium
-		= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
-		h2 = data.albums.album1title
-		p = data.albums.album1texte
-		ol.list
-			- data.playlistfugue.each_with_index do |song|
-				li = song.title
-		a = link_to data.albums.button1name, data.albums.seller1url, :class => "button-primary"
+	div.container-small.introduction
+		p = data.albums.introduction
 
-	div.container-medium
-		= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
-		h2 = data.albums.album2title
-		p = data.albums.album2texte
-		ol.list
-			- data.playlistprelude.each_with_index do |song|
-				li = song.title
-		a = link_to data.albums.button2name, data.albums.seller2url, :class => "button-primary"
+	div.container-medium.introductionimage
+		= image_tag "#{data.albums.image}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image'
+
+	div.container-medium.grid-table.albums-contener
+		div.grid.grid-two
+			= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
+		div.grid.grid-two
+			h2 = data.albums.album1title
+			p = data.albums.album1texte
+			h3.h4 Playlist
+			ol.list
+				- data.playlistfugue.each_with_index do |song|
+					li = song.title
+			= link_to data.albums.button1name, data.albums.seller1url, :class => "button-primary"
+
+	div.container-medium.grid-table.albums-contener
+		div.grid.grid-two
+			= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
+		div.grid.grid-two
+			h2 = data.albums.album2title
+			p = data.albums.album2texte
+			h3.h4 Playlist
+			ol.list
+				- data.playlistprelude.each_with_index do |song|
+					li = song.title
+			= link_to data.albums.button2name, data.albums.seller2url, :class => "button-primary"
+
+	div.container-small.citation
+		blockquote
+			p = data.albums.citation
+			footer = data.albums.citationsignature
