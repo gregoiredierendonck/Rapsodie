@@ -1,0 +1,41 @@
+$quote-sign-width: 40px;
+$blockquote-margin: 20px;
+
+blockquote {
+	font-size: $font-size-l;
+	font-style: italic;
+	color: $grey-light;
+	font-weight: $font-weight-bold;
+	width: 100%;
+	height: auto;
+	padding: $blockquote-margin $quote-sign-width;
+	margin: $blockquote-margin 0;
+	text-align: center;
+	position: relative;
+	&:before, &:after {
+		content: "“";
+		font-size: 80px;
+		line-height: 80px;
+		color: $grey-lighter;
+		width: $quote-sign-width;
+		height: $quote-sign-width;
+		display: inline-block;
+		position: absolute;
+		top: 15px;
+		left: - $blockquote-margin / 2;
+		font-family: georgia, serif;
+	}
+	&:after {
+		content: "”";
+		left: auto;
+		right: - $blockquote-margin / 2;
+	}
+	footer {
+		width: 100%;
+		display: inline-block;
+		text-align: right;
+		font-size: $font-size-xs;
+		color: $primary-color;
+		font-weight: $font-weight-light;
+	}
+}

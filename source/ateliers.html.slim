@@ -50,6 +50,6 @@ div.ateliers
 						h3.h4.text-colors.color-primary = data.ateliers.atelier3titre2
 						p = data.ateliers.atelier3texte
 
-	div.container-small.text-center
-		p = data.ateliers.end
-		a = link_to 'Contactez-nous', '/contact', :class => "changepage button-primary"
+	footer.container-small.text-center
+		h1.h4 = data.ateliers.end
+		= link_to 'Contactez-nous', '/contact', :class => "changepage button-primary"

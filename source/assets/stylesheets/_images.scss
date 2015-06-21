@@ -6,3 +6,33 @@ img {
 iframe {
 	width: 100%;
 }
+
+.image-background {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	border: 1px solid $white;
+	img {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.texte {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		z-index: 2;
+		text-align: center;
+		padding: 20px 10px;
+		z-index: 3;
+		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
+			color: $white;
+			margin: 5px 0 0;
+		}
+	}
+}

@@ -22,7 +22,13 @@ div.concerts
 	div.container-full
 		ul
 			- data.concertslist.each_with_index do |concert|
-				li.grid.grid-five
-					h2 = concert.title
-					p.date = concert.date
-					= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+				li.grid.grid-five.image-background
+					div.texte
+						p.date = concert.date
+						h2 = concert.title
+					div.image.colored.colored-3
+						= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+
+	footer.container-small.text-center
+		h1.h4 = data.concerts.end
+		= link_to 'Contactez-nous', '/contact', :class => "changepage button-primary"
