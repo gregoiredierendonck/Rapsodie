@@ -4,11 +4,14 @@ end
 
 require 'slim'
 activate :livereload
-# activate :directory_indexes
+# Desactivate to deploy on github pages
+activate :directory_indexes
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
+set :layouts_dir, 'layouts'
+set :partials_dir, 'views/global'
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -22,6 +25,5 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
   activate :relative_assets
-  # activate :gzip
   set :relative_links, true
 end
