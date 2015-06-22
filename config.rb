@@ -5,7 +5,7 @@ end
 require 'slim'
 activate :livereload
 # Desactivate to deploy on github pages
-activate :directory_indexes
+# activate :directory_indexes
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
