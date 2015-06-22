@@ -1,5 +1,12 @@
 // GLOBAL
-body {
+
+section {
+	div {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		vertical-align: bottom;
+	}
 }
 
 .globalcontainer {
@@ -15,6 +22,7 @@ body {
 	display: inline-block;
 	margin-top: $header-height;
 	background-image: image-url("shattered.jpg");
+	padding: 5px;
 }
 
 // CONTAINERS
@@ -22,7 +30,7 @@ body {
 	display: block;
 	position: relative;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 $outside-padding;
 }
 .container-small {width: 100%; max-width: 750px;}
 .container-medium {width: 100%; max-width: 1000px;}

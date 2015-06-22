@@ -6,4 +6,9 @@
 	background-color: $grey-darker;
 	color: white;
 	border: none;
+	blockquote {
+		&:after, &:before {
+			color: $grey;
+		}
+	}
 }

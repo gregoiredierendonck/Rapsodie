@@ -16,4 +16,5 @@
 	&.colored-3:before {background-color: $color-3;}
 	&.colored-4:before {background-color: $color-4;}
 	&.colored-5:before {background-color: $color-5;}
+	&.colored-black:before {background-color: $black;opacity: 0.5;}
 }

@@ -1,0 +1,16 @@
+.index {
+	.grid {
+		border: 5px solid $white;
+	}
+	.image-background {
+		.texte {
+			h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+				text-transform: uppercase;
+			}
+		}
+	}
+	.button {
+		padding: 4px 14px;
+		font-size: $font-size-xs;
+	}
+}

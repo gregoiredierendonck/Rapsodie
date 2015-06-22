@@ -2,24 +2,23 @@
 
 @import 'reset';
 @import 'settings';
-@import 'magnific-popup';
 
-@import 'fonts';
-@import 'structure';
-@import 'images';
-
+@import 'modules/fonts';
+@import 'modules/structure';
 @import 'modules/grid';
-@import 'modules/header';
-@import 'modules/player';
 @import 'modules/color-filtered';
+@import 'modules/colors-attribution';
 
 @import 'components/buttons';
 @import 'components/panels';
-@import 'components/colors-attribution';
 @import 'components/blockquote';
+@import 'components/images';
+@import 'components/header';
+@import 'components/player';
+@import 'components/lightbox';
 
+@import 'custom/index';
 @import 'custom/legroupe';
 @import 'custom/albums';
 @import 'custom/ateliers';
-
-@import 'guidelines';
+@import 'custom/guidelines';

@@ -1,10 +1,10 @@
 header.globalheader.headroom#header
-	div.container-medium#header-contener
-		h1#header-logo = link_to data.index.title, 'index', :class => "changepage"
+	div.container-full#header-contener
+		h1#header-logo = link_to data.index.title, '/', :class => "changepage"
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li.history = link_to data.index.homelink, 'index', :class => "changepage homelink"
+				li.history = link_to data.index.homelink, '/', :class => "changepage homelink"
 				li.history = link_to data.legroupe.title, 'legroupe', :class => "changepage"
 				li.history = link_to data.concerts.title, 'concerts', :class => "changepage"
 				li.history = link_to data.albums.title, 'albums', :class => "changepage"

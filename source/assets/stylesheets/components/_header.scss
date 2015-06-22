@@ -38,7 +38,7 @@ $menu-button-size : 50px;
 		margin: 0;
 		position: absolute;
 		top: 0;
-		left: 30px;
+		left: $outside-padding;
 		z-index: 53;
 		a {
 			width: $logo-width;
@@ -50,7 +50,7 @@ $menu-button-size : 50px;
 			font-size: 24px;
 			text-decoration: none;
 			padding-left: $header-height + 15;
-			padding-right: 30px;
+			padding-right: $outside-padding;
 			&:before {
 				content: "";
 				width: $header-height;
@@ -75,6 +75,7 @@ $menu-button-size : 50px;
 		  overflow: hidden;
 		  position: absolute;
 		  top: 0;
+		  left: $outside-padding;
 		  padding-left: $logo-width;
 		  z-index: 51;
 		ul {
@@ -114,7 +115,7 @@ $menu-button-size : 50px;
   		height: $menu-button-size;
 		position: absolute;
   		top: 50%;
-  		right: 30px;
+  		right: $outside-padding;
   		z-index: 52;
   		margin: 0 !important;
   		transform: translateY(-50%);
