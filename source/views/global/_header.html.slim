@@ -1,16 +1,16 @@
 header.globalheader.headroom#header
 	div.container-full#header-contener
-		h1#header-logo = link_to data.index.title, 'index', :class => "changepage"
+		h1#header-logo = link_to data.index.title, '/', class: "changepage"
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li.history = link_to data.index.homelink, 'index', :class => "changepage homelink"
-				li.history = link_to data.legroupe.title, 'legroupe', :class => "changepage"
-				li.history = link_to data.concerts.title, 'concerts', :class => "changepage"
-				li.history = link_to data.albums.title, 'albums', :class => "changepage"
-				li.history = link_to data.ateliers.title, 'ateliers', :class => "changepage"
-				li.history = link_to data.presse.title, 'presse', :class => "changepage"
-				li.history = link_to data.contact.title, 'contact', :class => "changepage"
+				li.history = link_to data.index.homelink, '/', 							class: "changepage homelink"
+				li.history = link_to data.legroupe.title, 'legroupe.html', 	class: "changepage"
+				li.history = link_to data.concerts.title, 'concerts.html', 	class: "changepage"
+				li.history = link_to data.albums.title, 	'albums.html', 	 	class: "changepage"
+				li.history = link_to data.ateliers.title, 'ateliers.html', 	class: "changepage"
+				li.history = link_to data.presse.title, 	'presse.html', 		class: "changepage"
+				li.history = link_to data.contact.title, 	'contact.html', 	class: "changepage"
 		button.menu-button#header-menu-button type="button"
 			'Menu
 			span.lines

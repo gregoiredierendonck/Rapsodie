@@ -19,6 +19,10 @@ after_configuration do
 	sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+['legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
+	proxy "/pages/#{name}.html", "#{name}.html", layout: nil
+end
+
 # Build-specific configuration
 configure :build do
 	activate :favicon_maker do |f|
