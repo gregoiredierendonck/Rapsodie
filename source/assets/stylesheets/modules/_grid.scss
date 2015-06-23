@@ -37,3 +37,7 @@
 		vertical-align: top;
 	}
 }
+
+@media screen and (max-width: $media-m) {
+	.grid.grid-two {width: 100%;}
+}
