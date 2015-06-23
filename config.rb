@@ -4,7 +4,6 @@ end
 
 require 'slim'
 activate :livereload
-# Desactivate to deploy on github pages
 # activate :directory_indexes
 
 set :js_dir, 'assets/javascripts'
@@ -19,7 +18,7 @@ after_configuration do
 	sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
-['legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
+['index', 'legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
 	proxy "/pages/#{name}.html", "#{name}.html", layout: nil
 end
 
