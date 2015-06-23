@@ -5,11 +5,10 @@ description: 'Les ateliers proposés par Rapsodie'
 
 div.ateliers
 
-	div.container-small
-		h1 = data.ateliers.title
-
-	div.container-medium.introductionimage
-		= image_tag "#{data.ateliers.image}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image'
+	div.container-full.introductionimage.image-background
+		div.texte
+			h1 = data.ateliers.title
+		= image_tag "#{data.ateliers.image}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image'	
 
 	div.container-small
 		p class="introduction-text" = data.ateliers.introduction

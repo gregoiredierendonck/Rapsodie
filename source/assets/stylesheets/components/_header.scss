@@ -6,7 +6,7 @@ $menu-button-size : 50px;
   display: inline-block;
   width: 30px;
   height: 4px;
-  background: $black;
+  background: $white;
   border-radius: $menu-button-size/14; 
   transition: .2s;
 }
@@ -20,7 +20,8 @@ $menu-button-size : 50px;
 	left: 0;
 	z-index: 50;
 	background-color: $white;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+	color: $black;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 	transition: box-shadow 0.2s ease-in-out;
 
 	// CONTENER
@@ -38,7 +39,7 @@ $menu-button-size : 50px;
 		margin: 0;
 		position: absolute;
 		top: 0;
-		left: $outside-padding;
+		left: 20px;
 		z-index: 53;
 		a {
 			width: $logo-width;
@@ -69,7 +70,7 @@ $menu-button-size : 50px;
 
 	// NAVIGATION
 	nav {
-		  width: calc(100% - 60px);
+		  width: calc(100% - 40px);
 		  height: $header-height;
 		  display: inline-block;
 		  overflow: hidden;
@@ -96,6 +97,7 @@ $menu-button-size : 50px;
 					padding: 10px 15px;
 					color: $black;
 					text-decoration: none;
+					text-transform: uppercase;
 					font-size: 15px;
 					&:focus, &:hover {
 						color: $primary-color;
@@ -218,7 +220,11 @@ $menu-button-size : 50px;
 .headroom {
 	transition: all 0.3s ease-in-out;
 }
-// .headroom--top
+.headroom--top {
+	&.globalheader {
+		box-shadow: none !important;
+	}
+}
 // .headroom--not-top
 .headroom--pinned {
   transform: translateY(0%);

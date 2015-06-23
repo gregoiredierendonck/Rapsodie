@@ -1,6 +1,6 @@
 // COLORS
 $white: #FFFFFF;
-$black: #202020;
+$black: #0D0D0D;
 
 $grey-lighter: lighten($black, 80%);
 $grey-light: lighten($black, 65%);
@@ -9,10 +9,11 @@ $grey-dark: lighten($black, 35%);
 $grey-darker: lighten($black, 20%);
 
 $primary-color: #E53935;
-$color-2: #795548;
-$color-3: #607D8B;
-$color-4: #FF9800;
-$color-5: #FF5722;
+$color-2: darken(#C97D60, 30%);
+$color-3: #48392A;
+$color-4: darken(#878787, 30%);
+$color-5: darken(#D0D6B5, 30%);
+$color-6: darken(#95ADB6, 30%);
 
 // PADDINGS
 $outside-padding: 30px;

@@ -5,25 +5,25 @@ h1: Rapsodie, l’alliance entre rap et musique classique
 
 box1title: Fugue
 box1baseline: Découvrez le premier album de Rapsodie - tout frais dans les backs
-box1image: "http://placehold.it/640x645"
+box1image: "Album.jpg"
 box1link: Voir tous les albums
 box1linkpath: albums
 
 box2title: Concerts
 box2baseline: Quand les rats enflamme les salles
-box2image: "http://placehold.it/320x320"
+box2image: "Facebook.jpg"
 box2link: Rapsodie en live
 box2linkpath: concerts
 
 box3title: Le groupe
 box3baseline: Tout Rapsodie - le groupe, les membres
-box3image: "http://placehold.it/320x320"
+box3image: "Presse.jpg"
 box3link: En savoir plus
 box3linkpath: legroupe
 
 box4title: Ateliers
 box4baseline: Rapsodie éveille les sens et les sons
-box4image: "http://placehold.it/640x320"
+box4image: "Concert.jpg"
 box4link: Plus d'info
 box4linkpath: ateliers
 

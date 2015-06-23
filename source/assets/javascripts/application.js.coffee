@@ -4,3 +4,4 @@
 #= require "headroom.js/dist/headroom"
 #= require "magnific-popup/dist/jquery.magnific-popup"
 #= require "history-api"
+#= require "player"

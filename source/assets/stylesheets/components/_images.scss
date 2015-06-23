@@ -13,8 +13,7 @@ iframe {
 }
 
 .image-background {
-	display: table-cell;
-	vertical-align: middle;
+	display: inline-block;
 	position: relative;
 	border: 1px solid $white;
 	img {
@@ -26,24 +25,25 @@ iframe {
 		z-index: 1;
 	}
 	.texte {
-		width: 100%;
+		width: auto;
 		height: auto;
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		left: 0;
+		left: 50%;
 		transform: translateY(-50%);
-		z-index: 2;
+		z-index: 3;
 		text-align: center;
 		padding: 20px 10px;
-		z-index: 3;
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 10px 0;
 		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-			width: auto;
+			width: 100%;
 			display: inline-block;
-			margin: 5px 0 10px;
+			margin: 0;
+			padding: 10px 20px;
 			color: $white;
-			padding-bottom: 10px;
-			border-bottom: 1px solid $white;
+			text-transform: uppercase;
 		}
 		p {
 			width: 90%;

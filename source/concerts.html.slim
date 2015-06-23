@@ -24,8 +24,8 @@ div.concerts
 			- data.concertslist.each_with_index do |concert|
 				li.grid.grid-five.image-background
 					div.texte
-						p.date = concert.date
 						h2 = concert.title
+						p.date = concert.date
 					div.image.colored.colored-3
 						= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
 
