@@ -6,24 +6,18 @@
     left: 0;
     text-align: center;
     background: #494949;
-    background: linear-gradient(to bottom, #494949 0%, #040404 100%);
-    background: -webkit-linear-gradient(top, #494949 0%, #040404 100%);
-    background: -o-linear-gradient(top, #494949 0%, #040404 100%);
-    background: -ms-linear-gradient(top, #494949 0%, #040404 100%);
     box-shadow: 0 -1px 0 #000000;
     z-index: 1000;
-}
-
-.containerplayer .globalcontainer {
-    width: 100%;
-    max-width: 1280px;
-    vertical-align: bottom;
-}
-
-#wrapperaudiojs #playerlist {
-  font-family: 'special_eliteregular',monospace,sans-serif;
-  font-size: 18px;
-}
-#wrapperaudiojs #playerlist li:before {
-  font-size: 23px !important;
+    .globalcontainer {
+        width: 100%;
+        max-width: 1280px;
+        vertical-align: bottom;
+    }
+    #wrapperaudiojs #playerlist {
+      font-family: 'special_eliteregular',monospace,sans-serif;
+      font-size: 18px;
+      li:before {
+        font-size: 23px !important;
+      }
+    }
 }
