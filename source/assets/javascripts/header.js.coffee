@@ -24,7 +24,7 @@ DetectMenuVersion = ->
 
 # Show or hide nav on click on button
 ButtonClick = ->
-	$('#header-menu-button, #header-menu').click ->
+	$('#header-menu-button, .small #header-menu').click ->
 		body = $('html, body')
 		$(body).scrollTop 0
 		`var slideTo`
