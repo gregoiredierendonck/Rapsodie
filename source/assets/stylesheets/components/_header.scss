@@ -6,7 +6,7 @@ $menu-button-size : 50px;
   display: inline-block;
   width: 30px;
   height: 4px;
-  background: $white;
+  background: $black;
   border-radius: $menu-button-size/14; 
   transition: .2s;
 }
@@ -18,7 +18,7 @@ $menu-button-size : 50px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 3;
 	background-color: $white;
 	color: $black;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -40,7 +40,7 @@ $menu-button-size : 50px;
 		position: absolute;
 		top: 0;
 		left: 20px;
-		z-index: 53;
+		z-index: 2;
 		a {
 			width: $logo-width;
 			height: $header-height;
@@ -78,7 +78,7 @@ $menu-button-size : 50px;
 		  top: 0;
 		  left: $outside-padding;
 		  padding-left: $logo-width;
-		  z-index: 51;
+		  z-index: 1;
 		ul {
 			width: auto;
 			display: inline-block;
@@ -116,11 +116,10 @@ $menu-button-size : 50px;
   		width: $menu-button-size;
   		height: $menu-button-size;
 		position: absolute;
-  		top: 50%;
+  		top: 10px;
   		right: $outside-padding;
-  		z-index: 52;
+  		z-index: 3;
   		margin: 0 !important;
-  		transform: translateY(-50%);
   		outline: none;
 		cursor: pointer;
 		user-select: none;
@@ -176,6 +175,9 @@ $menu-button-size : 50px;
 
 	// SMALL VERSION
 	&.small {
+		h1 {
+			z-index: 1;
+		}
 		nav {
 			width: 100vw;
 			height: 100vh;
@@ -186,6 +188,7 @@ $menu-button-size : 50px;
 			background-color: rgba(255, 255, 255, 0.95);
 			opacity: 0;
 			transition: all 0.2s ease-in-out;
+			z-index: 2;
 			ul {
 				width: 100%;
 				height: auto;

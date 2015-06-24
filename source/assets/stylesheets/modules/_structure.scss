@@ -24,6 +24,8 @@ section {
 	background-image: image-url("shattered.jpg");
 	padding: 0 5px 5px 5px;
 	background-color: $white;
+	position: relative;
+	z-index: 1;
 }
 
 // CONTAINERS
