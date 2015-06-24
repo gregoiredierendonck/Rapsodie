@@ -9,7 +9,7 @@ $(document).ready ->
 		return
 
 	# Scroll on top when change page
-	$(body).scrollTop 0
+	# $(body).scrollTop 0
 	# Special function for lightbox
 	# $('.magnific-image-link').magnificPopup type: 'image'
  	# $('.magnific-video-link').magnificPopup type: 'iframe'
