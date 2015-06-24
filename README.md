@@ -1,6 +1,6 @@
 # Rapsodie
 
-### A fresh website for the band Rapsodie, made with [Middleman](http://middlemanapp.com) and [slimmer](https://github.com/polymatt/slimmer) template.
+### A fresh website for Rapsodie, made with [Middleman](http://middlemanapp.com) and [slimmer](https://github.com/polymatt/slimmer) template, including a throught navigation music player.
 
 ###### Preprocessing
 - [Slim](http://slim-lang.com) *[for html]*
@@ -12,5 +12,6 @@
 - [Compass](http://compass-style.org) *[sass helpers/mixins]*
 - [GitHub Pages](http://pages.github.com) *[deployment/hosting]*
 
-###### Other
-- [SublimeText](http://www.sublimetext.com) *[basic project file]*
+###### Throught navigation music player
+Made with the HTML5 History API an 'Selective' loading, based on the technique describe on this article :
+[http://www.inserthtml.com/2013/06/history-api/](http://www.inserthtml.com/2013/06/history-api/)
