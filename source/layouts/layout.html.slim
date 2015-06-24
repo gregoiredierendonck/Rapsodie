@@ -13,9 +13,10 @@ html lang="#{data.settings.site.i18n}"
         = stylesheet_link_tag 'application'
 
     body class='#{page_classes}'
-        = partial 'views/global/header'
-        section.content#content
-            == yield
-        = partial 'views/global/player'
+        div#container
+            = partial 'views/global/header'
+            section.content#content
+                == yield
+            = partial 'views/global/player'
         = javascript_include_tag 'application'
         = yield_content :javascripts
