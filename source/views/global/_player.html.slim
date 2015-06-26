@@ -1,17 +1,8 @@
-div class="containerplayer"
-	div class="globalcontainer"
-		div id="wrapperaudiojs"
-			audio preload
-			ol id="playerlist"
-				li 
-					a href="#" data-src="assets/mp3/01_Street_Rappeurs.mp3" Street Rappeur
+section class="containerplayer"
+	div id="wrapperaudiojs"
+		audio preload
+		ol id="playerlist"
+			- data.player.tracks.each do |track|
 				li
-					a href="#" data-src="assets/mp3/01_Street_Rappeurs.mp3" À la dérive
-				li
-					a href="#" data-src="assets/mp3/01_Street_Rappeurs.mp3" L&rsquo;enfant podige
-				li
-					a href="#" data-src="assets/mp3/01_Street_Rappeurs.mp3" Sale journée
-				li
-					a href="#" data-src="assets/mp3/01_Street_Rappeurs.mp3" Quand j&rsquo;y pense
-			ol
-				button id="buttonlistplayer" type="button" Playlist
+					= link_to track.title, '#', :'data-src' => track.url
+		button id="buttonlistplayer" type="button" Playlist

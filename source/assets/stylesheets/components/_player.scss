@@ -1,23 +1,278 @@
+// STRUCTURE
 .containerplayer {
-    width: 100%;
-    display: inline-block;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    background: #494949;
-    box-shadow: 0 -1px 0 #000000;
-    z-index: 2;
-    .globalcontainer {
-        width: 100%;
-        max-width: 1280px;
-        vertical-align: bottom;
-    }
-    #wrapperaudiojs #playerlist {
-      font-family: 'special_eliteregular',monospace,sans-serif;
-      font-size: 18px;
-      li:before {
-        font-size: 23px !important;
-      }
-    }
+	width: 100%;
+	height: $player-height;
+	display: inline-block;
+	text-align: center;
+	background: $black;
+	z-index: 2;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#wrapperaudiojs {
+	width: 100%;
+	height: $player-height;
+	position: relative;
+	text-align: center;
+	transition: height 0.2s ease-in-out 0s;
+}
+
+#playerlist {
+
+}
+
+// PLAYER
+.audiojs {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	overflow: hidden;
+	font-size: $font-size-xs;
+	position: relative;
+	z-index: 1;
+	audio {
+		position: absolute;
+		left: -1px; 
+	}
+	.play-pause {
+		width: $player-height;
+		height: $player-height;
+		display: inline-block;
+		float: left; 
+		margin: 0;
+		overflow: hidden;
+	}
+	p {
+		display: none;
+	}
+	.play {
+		display: block;
+		img {
+			width: $player-height;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	.scrubbercontener {
+		height: $player-height;
+		display: inline-block;
+		float: left;
+		position: relative;
+		width: calc(100% - 220px);
+		overflow: hidden;
+		.scrubber {
+			width: 100%;
+			height: $player-height;
+			display: inline-block;
+			position: relative;
+			overflow: hidden;
+			background-color: $black;
+			.progress {
+				width: 0;
+				height: $timer-height;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				z-index: 1;
+				margin-top: - $timer-height / 2;
+				background-color: $primary-color;
+				transition: all 0.2s ease-in-out;
+			}
+			.loaded {
+				width: 0;
+				height: $timer-height;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				background-color: $grey-darker;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+	}
+	&:hover, &:focus {
+		.scrubber {
+			background-color: $black;
+			.progress, .loaded {
+				height: $timer-height-big;
+				margin-top: - $timer-height-big / 2;
+			}
+		}
+	}
+	.loading {
+		img {
+			width: $player-height;
+			position: absolute;
+			left: 0;
+			top: - $player-height;
+		}
+	}
+	.time {
+		width: 100px;
+		height: $player-height;
+		display: inline-block;
+		float: left;
+		line-height: $player-height;
+		color: $grey-light;
+		text-align: center;
+		em {
+			padding: 0 2px 0 0;
+			font-style: normal;
+		}
+		strong {
+			padding: 0 0 0 2px; 
+			font-weight: $font-weight;
+		}
+	}
+	.pause {
+		img {
+			width: $player-height;
+			position: absolute;
+			left: 0;
+			//NEED
+			top: -150px;
+		}
+	}
+	.play, .loading, .error, .pause, #tracklist {
+		background: $black;
+	}
+	.playing .play, .playing .loading, .playing .error,
+	.loading .play, .loading .pause, .loading .error {
+		display: none;
+	}
+	.playing .pause, .loading .loading {
+		display: block;
+	}
+}
+
+// TRACK LIST
+#tracklist {
+	width: $player-height;
+	height: $player-height;
+	position: relative;
+	display: inline-block;
+	float: left; 
+	text-indent: -999999px;
+	cursor: pointer;
+	img {
+		width: $player-height;
+		position: absolute;
+		left: 0;
+		//NEED
+		top: -200px;
+	}
+	&.tracklist-opened img {
+		//NEED
+		top: -100px;
+	}
+	#wrapperaudiojs, .scrubbercontener, .time {
+		background: $grey-light;
+	}
+}
+#playerlist {
+		width: 100% !important;
+		display: inline-block;
+		overflow: visible;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin: 0 auto !important;
+		padding: 0 !important;
+		text-align: left;
+		counter-reset: mycontenercounter;
+		list-style: decimal inside none;
+		z-index: 0;
+		transition: top 0.2s ease-in-out; 
+		li {
+			//NEED
+			width: calc(100% - 40px);
+			display: inline-block;
+			margin: 0 20px !important;
+			position: relative;
+			z-index: 1;
+			&:before {
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				top: 50%;
+				left: 5px;
+				background-color: $primary-color;
+				border-radius: 100%;
+				font-size: $font-size-l;
+				color: $white;
+				line-height: 32px;
+				text-align: center;		
+				margin-top: -15px;
+				content: counter(mycontenercounter, decimal);
+				counter-increment: mycontenercounter;
+			} 
+			&:first-child {
+				margin-top: 10px !important;
+			}
+			&:last-child {
+				margin-bottom: 10px !important;
+				border: none;
+			}
+			a {
+				display: inline-block;
+				line-height: 100%;
+				padding: 11px 0 13px 50px;
+				text-decoration: none !important;
+				width: 100%;
+				color: $primary-color !important;
+			}
+			&.playing {
+				a {
+					color: $white !important;
+				} 
+				&:before {
+					color: $black !important;
+					background-color: $white !important;
+				}
+			}
+		}
+}
+
+// ERRORS
+.error-message {
+	//NEED
+	width: 400px;
+	height: 36px;
+	display: none;
+	float: left;
+	margin: 0px 10px;
+	overflow: hidden;
+	line-height: 36px;
+	white-space: nowrap;
+	color: $white;
+	text-overflow: ellipsis;
+	a {
+		color: $grey-light;
+		text-decoration: none;
+		padding-bottom: 1px;
+		border-bottom: 1px solid $grey-light;
+		white-space: wrap;
+	}
+} 
+.error {
+	img {
+		width: 50px;
+		position: absolute;
+		left: 0;
+		top: -100px;
+	}
+	.error {
+		display: block;
+	}
+	.play-pause p {
+		cursor: auto;
+	}
+	.error-message {
+		display: block;
+	}
+	.time, .play, .pause, .scrubber, .loading {
+		display: none;
+	} 
 }
