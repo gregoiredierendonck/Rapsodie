@@ -23,12 +23,10 @@ DetectMenuVersion = ->
 		$('#header').addClass 'large'
 
 # Show or hide nav on click on button
-ButtonClick = ->
-	$('#header-menu-button, .small #header-menu').click ->
-		body = $('html, body')
-		$(body).scrollTop 0
-		`var slideTo`
-		posi = parseInt($('#header-menu').css('top'))
+ToggleMenu = ->
+  if $('#header').hasClass 'small'
+    `var slideTo`
+    posi = parseInt($('#header-menu').css('top'))
 		if posi == 0
 			$('#header-menu').css 'top': '-100vh'
 			$('#header-menu').css 'opacity': '0'
@@ -39,6 +37,11 @@ ButtonClick = ->
 			$('#header-menu').css 'opacity': '1'
 			$('#header-menu-button').removeClass 'close'
 			$('#header-menu-button').addClass 'open'
+
+# Go to the top of the page on page change
+GotoTop = ->
+  body = $('html, body')
+  $(body).scrollTop 0
 
 
 # Replace (window).resize() for something better on Chrome
@@ -68,8 +71,13 @@ ButtonClick = ->
 $(document).ready ->
 	launchHeadroom()
 	DetectMenuVersion()
-	ButtonClick()
 
 $(window).smartresize ->
   DetectMenuVersion()
-	
+
+$('#header-menu-button').click ->
+  ToggleMenu()
+
+$('.changepage').click ->
+  GotoTop()
+  ToggleMenu()

@@ -4,13 +4,11 @@ end
 
 require 'slim'
 activate :livereload
-# activate :directory_indexes
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :layouts_dir, 'layouts'
-# set :partials_dir, 'views/global'
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -18,8 +16,17 @@ after_configuration do
 	sprockets.append_path File.join "#{root}", @bower_config["directory"]
 end
 
+# Redirections on "pages" folder
 ['index', 'legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
 	proxy "/pages/#{name}.html", "#{name}.html", layout: nil
+end
+
+# Add "is-active" class to nav li of current page
+helpers do
+  def active_page_class(page)
+  	puts current_page.url
+    current_page.url == page ? 'is-active' : ''
+  end
 end
 
 # Build-specific configuration
@@ -43,6 +50,7 @@ configure :build do
 	end
 	activate :minify_css
 	activate :minify_javascript
+	activate :imageoptim
 	activate :asset_hash
 	activate :relative_assets
 	set :relative_links, true
