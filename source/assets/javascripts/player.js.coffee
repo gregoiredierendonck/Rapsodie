@@ -28,7 +28,7 @@
 			autoplay: false
 			loop: false
 			preload: true
-			imageLocation: path + 'img/interface/sprite-player.svg'
+			imageLocation: path + 'assets/images/icon-sprite.svg'
 			swfLocation: path + 'audiojs.swf'
 			useFlash: do ->
 				a = document.createElement('audio')
@@ -46,7 +46,7 @@
 					catch e
 				false
 			createPlayer:
-				markup: '<div class="play-pause"> <p class="play"><img src="img/interface/sprite-player.svg" alt="Play icon"/></p> <p class="pause"><img src="img/interface/sprite-player.svg" alt="Pause icon"/></p> <p class="loading"><img src="img/interface/sprite-player.svg" alt="Loading icon"/></p> <p class="error"><img src="img/interface/sprite-player.svg" alt="Error icon"/></p> </div> <div class="scrubbercontener"> <div class="scrubber"> <div class="progress"></div> <div class="loaded"></div> </div> </div> <div class="time"> <em class="played">00:00</em>/<strong class="duration">00:00</strong> </div> <div id="tracklist"><img src="img/interface/sprite-player.svg" alt="Open and close icon"/></div> <div class="error-message"></div>'
+				markup: '<div class="play-pause"><p class="play"><img src="assets/images/icon-sprite.svg" alt="Play icon"/></p><p class="pause"><img src="assets/images/icon-sprite.svg" alt="Pause icon"/></p><p class="loading"><img src="assets/images/icon-sprite.svg" alt="Loading icon"/></p><p class="error"><img src="assets/images/icon-sprite.svg" alt="Error icon"/></p></div><div class="scrubbercontener"><div class="scrubber"><div class="progress"></div><div class="loaded"></div></div></div><div class="time"><em class="played">00:00</em>/<strong class="duration">00:00</strong></div><div id="tracklist"><img src="assets/images/icon-sprite.svg" alt="Open and close icon"/></div><div class="error-message"></div>'
 				playPauseClass: 'play-pause'
 				scrubberClass: 'scrubber'
 				progressClass: 'progress'
@@ -665,9 +665,9 @@ $ ->
 	windowHeight = $(window).height()
 	heightplayerlist = $('#playerlist').height()
 	# Change variable if playlist is langer at the window height
-	if heightplayerlist + 120 >= windowHeight
-		heightplayerlist = windowHeight - 140
-		$('#wrapperaudiojs #playerlist').css 'height': windowHeight - 140
+	if heightplayerlist + 80 >= windowHeight
+		heightplayerlist = windowHeight - 100
+		$('#wrapperaudiojs #playerlist').css 'height': windowHeight - 100
 		$('#wrapperaudiojs #playerlist').css 'overflow': 'scroll'
 	# Mask Time if contener is less as 450px width
 	if $('#wrapperaudiojs').width() <= 500
