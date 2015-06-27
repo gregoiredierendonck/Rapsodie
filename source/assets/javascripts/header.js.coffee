@@ -88,3 +88,16 @@ $(document).ready ->
 
 $(window).smartresize ->
 	DetectMenuVersion()
+
+	$('#header-menu-button').click ->
+		ToggleMenu()
+
+	$('.changepage').click ->
+		GotoTop()
+
+	$('.small .changepage').click ->
+		ToggleMenu()
+
+	$('#header-menu .changepage').click ->
+		ActiveMenu()
+		$(this).addClass('is-active')

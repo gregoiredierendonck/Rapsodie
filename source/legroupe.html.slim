@@ -8,14 +8,14 @@ div.legroupe-content
 	div.container-full.introductionimage.image-background
 		div.texte
 			h1 = data.legroupe.title
-		/ = link_to 'Rapsodie - Cocotte minute', 'http://www.youtube.com/watch?v=Mo-975XajAQ', :class => "lightbox popup-youtube magnific-video-link"
 		= image_tag "#{data.legroupe.image}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image'
-
-	/ div.container-small
-	/ 	h1 = data.legroupe.title
 
 	div.container-small
 		p class="introduction-text" = data.legroupe.introduction1
+
+	div.container-medium
+		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
+			= image_tag "#{data.legroupe.image}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image'
 
 	div.container-small
 		p class="introduction-text" = data.legroupe.introduction2

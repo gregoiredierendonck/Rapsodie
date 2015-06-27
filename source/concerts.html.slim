@@ -5,10 +5,9 @@ description: 'Les concerts Rapsodie'
 
 div.concerts-content
 
-	div.container-small
-		h1 = data.concerts.title
-
-	div.container-medium.introductionimage
+	div.container-full.introductionimage.image-background
+		div.texte
+			h1 = data.concerts.title
 		= image_tag "#{data.concerts.firstimage}", alt: "Rapsodie - concerts", itemprop: 'image'
 
 	div.container-small
@@ -26,7 +25,7 @@ div.concerts-content
 					div.texte
 						h2 = concert.title
 						p.date = concert.date
-					div.image.colored.colored-3
+					div.image
 						= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
 
 	footer.container-small.text-center

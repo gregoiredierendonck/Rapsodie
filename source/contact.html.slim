@@ -5,5 +5,7 @@ description: 'Write less code, solve more problems'
 
 div.contact-content
 
-	h1 = data.contact.title
-	p class="introduction-text" = data.contact.introduction
+	div.container-full.introductionimage.image-background
+		div.texte
+			h1 = data.contact.title
+		= image_tag "#{data.contact.image}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
