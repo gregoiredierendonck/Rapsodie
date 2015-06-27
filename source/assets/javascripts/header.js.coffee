@@ -24,25 +24,26 @@ DetectMenuVersion = ->
 
 # Show or hide nav on click on button
 ToggleMenu = ->
-  if $('#header').hasClass 'small'
-    `var slideTo`
-    posi = parseInt($('#header-menu').css('top'))
-		if posi == 0
-			$('#header-menu').css 'top': '-100vh'
-			$('#header-menu').css 'opacity': '0'
-			$('#header-menu-button').removeClass 'open'
-			$('#header-menu-button').addClass 'close'
-		else
-			$('#header-menu').css 'top': '0'
-			$('#header-menu').css 'opacity': '1'
-			$('#header-menu-button').removeClass 'close'
-			$('#header-menu-button').addClass 'open'
+	`var slideTo`
+	posi = parseInt($('#header-menu').css('top'))
+	if posi == 0
+		$('#header-menu').css 'top': '-100vh'
+		$('#header-menu').css 'opacity': '0'
+		$('#header-menu-button').removeClass 'open'
+		$('#header-menu-button').addClass 'close'
+	else
+		$('#header-menu').css 'top': '0'
+		$('#header-menu').css 'opacity': '1'
+		$('#header-menu-button').removeClass 'close'
+		$('#header-menu-button').addClass 'open'
 
 # Go to the top of the page on page change
 GotoTop = ->
-  body = $('html, body')
-  $(body).scrollTop 0
+	$('html, body').scrollTop(0);
 
+# Go to the top of the page on page change
+ActiveMenu = ->
+	$('#header-menu a').removeClass('is-active')
 
 # Replace (window).resize() for something better on Chrome
 # Debounce and SmartResize from John Hann (in jQuery) ported to CoffeeScript
@@ -72,12 +73,18 @@ $(document).ready ->
 	launchHeadroom()
 	DetectMenuVersion()
 
+	$('#header-menu-button').click ->
+		ToggleMenu()
+
+	$('.changepage').click ->
+		GotoTop()
+
+	$('.small .changepage').click ->
+		ToggleMenu()
+
+	$('#header-menu .changepage').click ->
+		ActiveMenu()
+		$(this).addClass('is-active')
+
 $(window).smartresize ->
-  DetectMenuVersion()
-
-$('#header-menu-button').click ->
-  ToggleMenu()
-
-$('.changepage').click ->
-  GotoTop()
-  ToggleMenu()
+	DetectMenuVersion()

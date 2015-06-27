@@ -105,6 +105,9 @@ $menu-button-size : 50px;
 					&.homelink {
 						display: none;
 					}
+					&.is-active {
+						color: $primary-color;
+					}
 				}
 			}
 		}

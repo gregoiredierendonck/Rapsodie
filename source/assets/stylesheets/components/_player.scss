@@ -1,10 +1,15 @@
+@keyframes loaderrotation {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+
 // STRUCTURE
 .containerplayer {
 	width: 100%;
 	height: $player-height;
 	display: inline-block;
 	text-align: center;
-	background: $black;
+	background: $player-background-color;
 	z-index: 2;
 	position: fixed;
 	bottom: 0;
@@ -32,10 +37,6 @@
 		position: absolute;
 		left: -1px; 
 	}
-	img {
-		max-width: none !important;
-		transition: all 0.2s ease-in-out;
-	}
 	.play-pause {
 		width: $player-height;
 		height: $player-height;
@@ -43,52 +44,34 @@
 		margin: 0;
 		overflow: hidden;
 		cursor: pointer;
-		background-color: $black;
+		background-color: $player-background-color;
+		.play, .loading, .pause, .error {
+			width: $player-height;
+			height: $player-height;
+			background: image-url("assets/images/icon-sprite.svg");
+			margin: 0 !important;
+			position: relative;
+			top: -2px;
+		}
 		.play {
-
 			display: block;
-			img {
-				margin-top: -2px;
-				width: $sprite-e-size * 2;
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
 		}
 		.loading {
-
-			img {
-				width: $sprite-e-size * 2;
-				margin-top: -2px;
-				position: absolute;
-				top: - $sprite-e-size * 3;
-				left: $sprite-e-size;
-			}
+			transform-origin: ($sprite-e-size / 2 - 2) ($sprite-e-size / 2);
+			background-position: ($sprite-e-size - 2) (- $sprite-e-size * 2);
+			animation-name: loaderrotation;
+    		animation-duration: 0.5s;
+    		animation-iteration-count: infinite;
+    		animation-timing-function: linear;
 		}
 		.pause {
-
-			img {
-				width: $sprite-e-size * 2;
-				margin-top: -2px;
-				position: absolute;
-				top: - $sprite-e-size;
-				left: 0;
-			}
+			background-position: 0 (- $sprite-e-size);
 		}
 		.error {
-
-			img {
-				width: $sprite-e-size * 2;
-				margin-top: -2px;
-				position: absolute;
-				left: 0;
-				top: - $sprite-e-size * 3;
-			}
+			background-position: 0 (- $sprite-e-size * 3);
+			cursor: auto;
 			.error {
 				display: block;
-			}
-			.play-pause p {
-				cursor: auto;
 			}
 			.error-message {
 				display: block;
@@ -114,7 +97,7 @@
 			display: inline-block;
 			position: relative;
 			overflow: hidden;
-			background-color: $black;
+			background-color: $player-background-color;
 			.progress {
 				width: 0;
 				height: $timer-height;
@@ -123,7 +106,7 @@
 				left: 0;
 				z-index: 1;
 				margin-top: - $timer-height / 2;
-				background-color: $primary-color;
+				background-color: $player-primary-color;
 				transition: all 0.2s ease-in-out;
 			}
 			.loaded {
@@ -140,7 +123,7 @@
 	}
 	&:hover, &:focus {
 		.scrubber {
-			background-color: $black;
+			background-color: $player-background-color;
 			.progress, .loaded {
 				height: $timer-height-big;
 				margin-top: - $timer-height-big / 2;
@@ -155,7 +138,7 @@
 		color: $grey-light;
 		text-align: center;
 		font-size: $font-size-xxs;
-		background-color: $black;
+		background-color: $player-background-color;
 		em {
 			padding: 0 2px 0 0;
 			font-style: normal;
@@ -166,7 +149,7 @@
 		}
 	}
 	.play, .loading, .error, .pause, #tracklist {
-		background: $black;
+		background: $player-background-color;
 	}
 	&.playing .play, &.playing .loading, &.playing .error,
 	&.loading .play, &.loading .pause, &.loading .error {
@@ -182,23 +165,16 @@
 	width: $player-height;
 	height: $player-height;
 	position: relative;
+	top: -2px;
 	display: table-cell;
 	text-indent: -999999px;
 	cursor: pointer;
 	overflow: hidden;
-	img {
-		margin: -2px 0 0 -2px;
-		width: $sprite-e-size * 2;
-		position: absolute;
-		top: - $sprite-e-size * 2;
-		left: 0;
-	}
-	&.tracklist-opened img {
-		top: - $sprite-e-size * 3;
-		left: 0;
-	}
-	#wrapperaudiojs, .scrubbercontener, .time {
-		background: $grey-light;
+	background: image-url("assets/images/icon-sprite.svg") $player-background-color !important;
+	background-position: 0 (- $sprite-e-size * 2) !important;
+	transition: all 0.2s ease-in-out;
+	&.tracklist-opened {
+		background-position: 0 (- $sprite-e-size * 3) !important;
 	}
 }
 #playerlist {
@@ -212,7 +188,7 @@
 		margin: 0 auto !important;
 		padding: 0 !important;
 		text-align: left;
-		background-color: $black;
+		background-color: $player-background-color;
 		counter-reset: mycontenercounter;
 		list-style: decimal inside none;
 		z-index: 0;
@@ -225,7 +201,7 @@
 			z-index: 1;
 			font-size: $font-size-s;
 			&:hover, &:focus {
-				background-color: lighten($black, 8%);
+				background-color: lighten($player-background-color, 8%);
 			}
 			&:before {
 				width: 20px;
@@ -235,7 +211,7 @@
 				position: absolute;
 				top: 7px;
 				left: 20px;
-				background-color: $primary-color;
+				background-color: $player-primary-color;
 				border-radius: 100%;
 				color: $white;
 				text-align: center;		
@@ -255,14 +231,14 @@
 				padding: 10px 0 0 25px;
 				text-decoration: none !important;
 				width: 100%;
-				color: $primary-color !important;
+				color: $player-primary-color !important;
 			}
 			&.playing {
 				a {
 					color: $white !important;
 				} 
 				&:before {
-					color: $black !important;
+					color: $player-background-color !important;
 					background-color: $white !important;
 				}
 			}
@@ -271,9 +247,8 @@
 
 // ERRORS
 .error-message {
-	//NEED
-	width: 400px;
-	height: 36px;
+	width: 100%;
+	height: $player-height;
 	display: none;
 	float: left;
 	margin: 0px 10px;

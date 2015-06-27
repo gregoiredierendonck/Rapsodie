@@ -22,7 +22,7 @@ section {
 	display: inline-block;
 	margin-top: $header-height;
 	background-image: image-url("shattered.jpg");
-	padding: 0 5px 5px 5px;
+	padding: 0 5px ($player-height + 5px) 5px;
 	background-color: $white;
 	position: relative;
 	z-index: 1;

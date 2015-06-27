@@ -46,7 +46,7 @@
 					catch e
 				false
 			createPlayer:
-				markup: '<div class="play-pause"><p class="play"><img src="assets/images/icon-sprite.svg" alt="Play icon"/></p><p class="pause"><img src="assets/images/icon-sprite.svg" alt="Pause icon"/></p><p class="loading"><img src="assets/images/icon-sprite.svg" alt="Loading icon"/></p><p class="error"><img src="assets/images/icon-sprite.svg" alt="Error icon"/></p></div><div class="scrubbercontener"><div class="scrubber"><div class="progress"></div><div class="loaded"></div></div></div><div class="time"><em class="played">00:00</em>/<strong class="duration">00:00</strong></div><div id="tracklist"><img src="assets/images/icon-sprite.svg" alt="Open and close icon"/></div><div class="error-message"></div>'
+				markup: '<div class="play-pause"><p class="play"></p><p class="pause"></p><p class="loading"></p><p class="error"></p></div><div class="scrubbercontener"><div class="scrubber"><div class="progress"></div><div class="loaded"></div></div></div><div class="time"><em class="played">00:00</em>/<strong class="duration">00:00</strong></div><div id="tracklist"></div><div class="error-message"></div>'
 				playPauseClass: 'play-pause'
 				scrubberClass: 'scrubber'
 				progressClass: 'progress'

@@ -4,7 +4,6 @@ $(document).ready ->
 		linkSplit = link.split('/').pop()
 		$.get 'pages/' + linkSplit, (data) ->
 			$('#content').html data
-		$(body).scrollTop(0);
 
 	$('#container').on 'click', '.changepage', (e) ->
 		e.preventDefault()

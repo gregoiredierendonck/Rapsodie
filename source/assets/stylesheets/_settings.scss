@@ -63,10 +63,14 @@ $button-box-shadow-big: 0 0 4px rgba(0, 0, 0, 0.5);
 
 //SIZES
 $header-height: 70px;
-$player-height: 35px;
 $sprite-e-size: 40px;
+
+// PLAYER
+$player-height: 35px;
 $timer-height: 1px;
 $timer-height-big: 2px;
+$player-background-color: $black;
+$player-primary-color: $primary-color;
 
 // MEDIA QUERIES
 // $media-xs:
