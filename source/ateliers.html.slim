@@ -5,10 +5,16 @@ description: 'Les ateliers proposés par Rapsodie'
 
 div.ateliers-content
 
-	div.container-full.introductionimage.image-background
+	div.container-full.grid-table.image-background
 		div.texte
 			h1 = data.ateliers.title
-		= image_tag "#{data.ateliers.image}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image'
+		div.grid.grid-three-two.grid-cell.grid-border
+			= image_tag "#{data.ateliers.imagecomposition1}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image', class: 'columns-1'
+		div.grid.grid-three.grid-cell.grid-border
+			div.grid.grid-one.grid-vertical
+				= image_tag "#{data.ateliers.imagecomposition2}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image', class: 'columns-1'
+			div.grid.grid-one
+				= image_tag "#{data.ateliers.imagecomposition3}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image', class: 'columns-1'
 
 	div.container-small
 		p class="introduction-text" = data.ateliers.introduction

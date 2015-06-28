@@ -5,10 +5,13 @@ description: Retrouvez toute les albums de Rapsodie
 
 div.albums-content
 
-	div.container-full.introductionimage.image-background
+	div.container-full.grid-table.image-background
 		div.texte
 			h1 = data.albums.title
-		= image_tag "#{data.albums.image}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image'
+		div.grid.grid-three-two.grid-cell.grid-border
+			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+		div.grid.grid-three.grid-cell.grid-border
+			= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
 
 	div.container-small.introduction
 		p = data.albums.introduction

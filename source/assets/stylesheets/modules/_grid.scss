@@ -6,8 +6,10 @@
 	vertical-align: top;
 	position: relative;
 
+	&.grid-one {width: 100%;}
 	&.grid-two {width: 50%;}
 	&.grid-three {width: 33.33%;}
+	&.grid-three-two {width: 66.66%;}
 	&.grid-four {width: 25%;}
 	&.grid-five {width: 20%;}
 	&.grid-six {width: 16.66%;}
@@ -26,18 +28,38 @@
 			margin-top: 0;
 		}
 	}
+
+	&.grid-border {
+		background-color: $black;
+		border: $block-borders;
+	}
+
+	&.grid-vertical {
+		border-bottom: $block-borders;
+		& + .grid {
+			border-top: $block-borders;
+		}
+	}
 }
 
 .grid-table {
 	width: 100%;
 	display: table;
-	.grid {
+	.grid-cell {
 		display: table-cell;
 		float: none;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 }
 
 @media screen and (max-width: $media-m) {
+	.grid.grid-cell {display: inline-block;}
 	.grid.grid-two {width: 100%;}
+}
+
+
+@media screen and (max-width: $media-m) {
+	.grid.grid-three {
+		width: 50%;
+	}
 }

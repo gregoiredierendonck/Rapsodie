@@ -7,58 +7,59 @@ div.index-content
 
 	h1.visuallyhidden = data.index.title
 
-	div.container-full
-		div.grid.grid-two.image-background
+	div.container-full.grid-table
+		div.grid.grid-two.image-background.grid-cell.grid-border
 			= link_to '/albums.html', class: 'changepage' do
 				div.texte
 					h2 = data.index.box1title
 					p.date = data.index.box1baseline
 				= image_tag "#{data.index.box1image}", alt: "Rapsodie #{data.index.box1title}", itemprop: 'image'
-		div.grid.grid-four.image-background
-			= link_to '/concerts.html', class: 'changepage' do
-				div.texte
-					h2 = data.index.box2title
-					p.date = data.index.box2baseline
-				= image_tag "#{data.index.box2image}", alt: "Rapsodie #{data.index.box2title}", itemprop: 'image'
+		div.grid.grid-two.grid-cell
+			div.grid.grid-two.image-background.grid-border
+				= link_to '/concerts.html', class: 'changepage' do
+					div.texte
+						h2 = data.index.box2title
+						p.date = data.index.box2baseline
+					= image_tag "#{data.index.box2image}", alt: "Rapsodie #{data.index.box2title}", itemprop: 'image'
 
-		div.grid.grid-four.image-background
-			= link_to '/legroupe.html', class: 'changepage' do
-				div.texte
-					h2 = data.index.box3title
-					p.date = data.index.box3baseline
-				= image_tag "#{data.index.box3image}", alt: "Rapsodie #{data.index.box3title}", itemprop: 'image'
+			div.grid.grid-two.image-background.grid-border
+				= link_to '/legroupe.html', class: 'changepage' do
+					div.texte
+						h2 = data.index.box3title
+						p.date = data.index.box3baseline
+					= image_tag "#{data.index.box3image}", alt: "Rapsodie #{data.index.box3title}", itemprop: 'image'
 
-		div.grid.grid-two.image-background
-			= link_to '/ateliers.html', class: 'changepage' do
-				div.texte
-					h2 = data.index.box4title
-					p.date = data.index.box4baseline
-				= image_tag "#{data.index.box4image}", alt: "Rapsodie #{data.index.box4title}", itemprop: 'image'
+			div.grid.grid-one.image-background.grid-border
+				= link_to '/ateliers.html', class: 'changepage' do
+					div.texte
+						h2 = data.index.box4title
+						p.date = data.index.box4baseline
+					= image_tag "#{data.index.box4image}", alt: "Rapsodie #{data.index.box4title}", itemprop: 'image'
 
-		div.grid.grid-one.dark-panel.citation
-			div.container-medium
-				blockquote
-					p = data.index.citation
+	div.grid.grid-one.dark-panel.citation.grid-border
+		div.container-medium
+			blockquote
+				p = data.index.citation
 
-		/ div.grid.grid-three.image-background
-		/ 	= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
-		/ 		div.texte
-		/ 			h2 = data.index.box5title
-		/ 			p.date = data.index.box5baseline
-		/ 		= image_tag "#{data.index.box5image}", alt: "Rapsodie #{data.index.box5title}", itemprop: 'image'
+	div.grid.grid-three.image-background.grid-border
+		= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
+			div.texte
+				h2 = data.index.box5title
+				p.date = data.index.box5baseline
+			= image_tag "#{data.index.box5image}", alt: "Rapsodie #{data.index.box5title}", itemprop: 'image'
 
-		/ div.grid.grid-three.image-background
-		/ 	= link_to 'http://www.youtube.com/user/RapsodiePro', target: '_blank' do
-		/ 		div.texte
-		/ 			h2 = data.index.box6title
-		/ 			p.date = data.index.box6baseline
-		/ 		= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
+	div.grid.grid-three.image-background.grid-border
+		= link_to 'http://www.youtube.com/user/RapsodiePro', target: '_blank' do
+			div.texte
+				h2 = data.index.box6title
+				p.date = data.index.box6baseline
+			= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
 
-		/ div.grid.grid-three.image-background
-		/ 	= link_to 'contact.html' target: '_blank', class: 'changepage' do
-		/ 		div.texte
-		/ 			h2 = data.index.box7title
-		/ 			p.date = data.index.box7baseline
-		/ 		= image_tag "#{data.index.box7image}", alt: "Rapsodie #{data.index.box7title}", itemprop: 'image'
+	div.grid.grid-three.image-background.grid-border
+		= link_to 'contact.html', class: 'changepage' do
+			div.texte
+				h2 = data.index.box7title
+				p.date = data.index.box7baseline
+			= image_tag "#{data.index.box7image}", alt: "Rapsodie #{data.index.box7title}", itemprop: 'image'
 
 

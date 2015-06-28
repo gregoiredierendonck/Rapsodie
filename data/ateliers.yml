@@ -4,6 +4,10 @@ image: "http://projets.gregoiredierendonck.fr/rapsodie-images/Groupe.jpg"
 citation: Donec sit amet orci sodales, venenatis sem rhoncus, auctor sem. Sed diam justo, commodo non mollis venenatis, malesuada eu ex.
 citationsignature: Paranoyan, Loremipsum
 
+imagecomposition1: "http://placehold.it/840x700"
+imagecomposition2: "http://placehold.it/420x350"
+imagecomposition3: "http://placehold.it/420x350"
+
 atelier1image: "http://placehold.it/900x700"
 atelier1titre: Van Der Meersch
 atelier1titre2: 14-17ans

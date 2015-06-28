@@ -5,10 +5,16 @@ description: 'Les concerts Rapsodie'
 
 div.concerts-content
 
-	div.container-full.introductionimage.image-background
+	div.container-full.grid-table.image-background
 		div.texte
 			h1 = data.concerts.title
-		= image_tag "#{data.concerts.firstimage}", alt: "Rapsodie - concerts", itemprop: 'image'
+		div.grid.grid-three.grid-cell.grid-border
+			div.grid.grid-one.grid-vertical
+				= image_tag "#{data.concerts.imagecomposition1}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
+			div.grid.grid-one
+				= image_tag "#{data.concerts.imagecomposition2}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
+		div.grid.grid.grid-cell.grid-border
+			= image_tag "#{data.concerts.imagecomposition3}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
 
 	div.container-small
 		p class="introduction-text" = data.concerts.introduction
