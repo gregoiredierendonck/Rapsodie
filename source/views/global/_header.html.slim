@@ -1,17 +1,17 @@
 header.globalheader.headroom#header
 
 	div.container-full#header-contener
-		h1#header-logo = link_to data.index.title, 'index.html', class: "changepage"
+		h1#header-logo = link_to data.index.title, '/index.html', class: "changepage"
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li = link_to data.index.homelink, 'index.html', class: "changepage homelink #{active_page_class('/index.html')}"
-				li = link_to data.legroupe.title, 'legroupe.html', class: "changepage #{active_page_class('/legroupe.html')}"
+				li = link_to data.index.homelink, '/index.html', class: "changepage homelink #{active_page_class('/index.html')}"
+				li = link_to data.legroupe.title, '/legroupe.html', class: "changepage #{active_page_class('/legroupe.html')}"
 				li = link_to data.concerts.title, 'concerts.html', class: "changepage #{active_page_class('/concerts.html')}"
-				li = link_to data.albums.title, 'albums.html', class: "changepage #{active_page_class('/albums.html')}"
-				li = link_to data.ateliers.title, 'ateliers.html', class: "changepage #{active_page_class('/ateliers.html')}"
-				li = link_to data.presse.title, 'presse.html', class: "changepage #{active_page_class('/presse.html')}"
-				li = link_to data.contact.title, 'contact.html', class: "changepage #{active_page_class('/contact.html')}"
+				li = link_to data.albums.title, '/albums.html', class: "changepage #{active_page_class('/albums.html')}"
+				li = link_to data.ateliers.title, '/ateliers.html', class: "changepage #{active_page_class('/ateliers.html')}"
+				li = link_to data.presse.title, '/presse.html', class: "changepage #{active_page_class('/presse.html')}"
+				li = link_to data.contact.title, '/contact.html', class: "changepage #{active_page_class('/contact.html')}"
 		button.menu-button#header-menu-button type="button"
 			'Menu
 			span.lines

@@ -10,10 +10,9 @@
 	}
 	.image-background {
 		.texte {
-			padding: 0;
 			h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-				margin: 5px 0 10px;
-				padding-bottom: 10px;
+				margin: 0 0 5px;
+				padding-bottom: 5px;
 				border-bottom: 1px solid $white;
 			}
 			p {

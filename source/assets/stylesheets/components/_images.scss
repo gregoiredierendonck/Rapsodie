@@ -34,7 +34,6 @@ iframe {
 		transform: translate(-50%, -50%);
 		z-index: 3;
 		text-align: center;
-		padding: 20px 10px;
 		background-color: rgba(0, 0, 0, 0.7);
 		padding: 0 10px;
 		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
@@ -48,9 +47,19 @@ iframe {
 		p {
 			width: 90%;
 			display: inline-block;
+			font-size: $font-size-xs;
 			line-height: 120%;
 			color: $white;
 		}
+		h2 {
+			font-size: $font-size-l + 1;
+		}
+	}
+	a {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		vertical-align: bottom;
 	}
 	.button {
 		margin-top: 10px;
