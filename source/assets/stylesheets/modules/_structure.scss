@@ -29,7 +29,7 @@ section {
 }
 
 // CONTAINERS
-.container-small, .container-medium, .container-full {
+.container-small, .container-medium, .container-xl, .container-full {
 	display: block;
 	position: relative;
 	margin: 0 auto;
@@ -37,6 +37,7 @@ section {
 }
 .container-small {width: 100%; max-width: 750px;}
 .container-medium {width: 100%; max-width: 1000px;}
+.container-xl {width: 100%; max-width: 1600px; padding: 0;}
 .container-full {width: 100%; max-width: 100%; padding: 0;}
 
 footer {

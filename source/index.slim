@@ -41,25 +41,26 @@ div.index-content
 			blockquote
 				p = data.index.citation
 
-	div.grid.grid-three.image-background.grid-border
-		= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
-			div.texte
-				h2 = data.index.box5title
-				p.date = data.index.box5baseline
-			= image_tag "#{data.index.box5image}", alt: "Rapsodie #{data.index.box5title}", itemprop: 'image'
+	div.container-full.grid-table
+		div.grid.grid-three.image-background.grid-border
+			= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
+				div.texte
+					h2 = data.index.box5title
+					p.date = data.index.box5baseline
+				= image_tag "#{data.index.box5image}", alt: "Rapsodie #{data.index.box5title}", itemprop: 'image'
 
-	div.grid.grid-three.image-background.grid-border
-		= link_to 'http://www.youtube.com/user/RapsodiePro', target: '_blank' do
-			div.texte
-				h2 = data.index.box6title
-				p.date = data.index.box6baseline
-			= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
+		div.grid.grid-three.image-background.grid-border
+			= link_to 'http://www.youtube.com/user/RapsodiePro', target: '_blank' do
+				div.texte
+					h2 = data.index.box6title
+					p.date = data.index.box6baseline
+				= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
 
-	div.grid.grid-three.image-background.grid-border
-		= link_to 'contact.html', class: 'changepage' do
-			div.texte
-				h2 = data.index.box7title
-				p.date = data.index.box7baseline
-			= image_tag "#{data.index.box7image}", alt: "Rapsodie #{data.index.box7title}", itemprop: 'image'
+		div.grid.grid-three.image-background.grid-border
+			= link_to 'contact.html', class: 'changepage' do
+				div.texte
+					h2 = data.index.box7title
+					p.date = data.index.box7baseline
+				= image_tag "#{data.index.box7image}", alt: "Rapsodie #{data.index.box7title}", itemprop: 'image'
 
 

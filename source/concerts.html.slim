@@ -5,7 +5,7 @@ description: 'Les concerts Rapsodie'
 
 div.concerts-content
 
-	div.container-full.grid-table.image-background
+	div.container-xl.grid-table.image-background
 		div.texte
 			h1 = data.concerts.title
 		div.grid.grid-three.grid-cell.grid-border
@@ -24,7 +24,7 @@ div.concerts-content
 			p = data.concerts.citation
 			footer = data.concerts.citationsignature
 
-	div.container-full
+	div.container-xl
 		ul
 			- data.concertslist.each_with_index do |concert|
 				li.grid.grid-five.image-background

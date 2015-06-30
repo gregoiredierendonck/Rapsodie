@@ -5,7 +5,15 @@ description: 'Write less code, solve more problems'
 
 div.contact-content
 
-	div.container-full.introductionimage.image-background
+	div.container-xl.grid-table.image-background
 		div.texte
 			h1 = data.contact.title
-		= image_tag "#{data.contact.image}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
+		div.grid.grid-two.grid-cell.grid-border
+			= image_tag "#{data.contact.imagecomposition1}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
+		div.grid.grid-four.grid-cell.grid-border
+			div.grid.grid-one.grid-vertical
+				= image_tag "#{data.contact.imagecomposition2}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
+			div.grid.grid-one
+				= image_tag "#{data.contact.imagecomposition3}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
+		div.grid.grid-four.grid-cell.grid-border
+			= image_tag "#{data.contact.imagecomposition4}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
