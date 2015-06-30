@@ -1,6 +1,8 @@
 # Rapsodie
 
 ### A fresh website for Rapsodie, made with [Middleman](http://middlemanapp.com) and [slimmer](https://github.com/polymatt/slimmer) template, including a throught navigation music player.
+
+###### Overview
 http://gregoiredierendonck.github.io/Rapsodie/
 
 ###### Preprocessing
