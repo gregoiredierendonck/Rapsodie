@@ -6,7 +6,7 @@ description: Retrouvez toute les albums de Rapsodie
 div.albums-content
 
 	div.container-xl.grid-table.image-background
-		div.texte
+		div.texte.h1-title
 			h1 = data.albums.title
 		div.grid.grid-three-two.grid-cell.grid-border
 			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'

@@ -7,7 +7,7 @@ div.index-content
 
 	h1.visuallyhidden = data.index.title
 
-	div.container-full.grid-table
+	div.container-xl.grid-table
 		div.grid.grid-two.image-background.grid-cell.grid-border
 			= link_to '/albums.html', class: 'changepage' do
 				div.texte
@@ -36,12 +36,12 @@ div.index-content
 						p.date = data.index.box4baseline
 					= image_tag "#{data.index.box4image}", alt: "Rapsodie #{data.index.box4title}", itemprop: 'image'
 
-	div.grid.grid-one.dark-panel.citation.grid-border
+	div.container-xl.dark-panel.citation.grid-border
 		div.container-medium
 			blockquote
 				p = data.index.citation
 
-	div.container-full.grid-table
+	div.container-xl.grid-table
 		div.grid.grid-three.image-background.grid-border
 			= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
 				div.texte

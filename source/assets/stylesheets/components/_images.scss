@@ -26,7 +26,7 @@ iframe {
 	.texte {
 		width: auto;
 		height: auto;
-		display: none;
+		display: inline-block;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -52,6 +52,18 @@ iframe {
 		}
 		h2 {
 			font-size: $font-size-l + 1;
+		}
+		&.h1-title {
+			width: 240px;
+			height: 240px;
+			max-width: 80%;
+			display: inline-block;
+			background-color: $black;
+			h1 {
+				color: $white;
+				font-weight: $font-weight;
+				padding-top: 100px;
+			}
 		}
 	}
 	a {

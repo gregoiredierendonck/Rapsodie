@@ -6,11 +6,11 @@ description: 'Les ateliers proposés par Rapsodie'
 div.ateliers-content
 
 	div.container-xl.grid-table.image-background
-		div.texte
+		div.texte.h1-title
 			h1 = data.ateliers.title
-		div.grid.grid-three-two.grid-cell.grid-border
+		div.grid.grid-two.grid-cell.grid-border
 			= image_tag "#{data.ateliers.imagecomposition1}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image', class: 'columns-1'
-		div.grid.grid-three.grid-cell.grid-border
+		div.grid.grid-two.grid-cell.grid-border
 			div.grid.grid-one.grid-vertical
 				= image_tag "#{data.ateliers.imagecomposition2}", alt: "Rapsodie #{data.ateliers.title}", itemprop: 'image', class: 'columns-1'
 			div.grid.grid-one
