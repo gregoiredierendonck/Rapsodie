@@ -8,13 +8,16 @@ div.albums-content
 	div.container-xl.grid-table.image-background
 		div.texte.h1-title
 			h1 = data.albums.title
-		div.grid.grid-three-two.grid-cell.grid-border
+		div.grid.grid-two.grid-cell.grid-border
 			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
-		div.grid.grid-three.grid-cell.grid-border
-			= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+		div.grid.grid-two.grid-cell
+			div.grid.grid-two.grid-cell.grid-border
+				= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+			div.grid.grid-two.grid-cell.grid-border
+				= image_tag "#{data.albums.imagecomposition3}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
 
-	div.container-small.introduction
-		p = data.albums.introduction
+	div.container-small
+		p.introduction-text = data.albums.introduction
 
 	div.container-medium.grid-table.albums-contener
 		div.grid.grid-two
