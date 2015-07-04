@@ -10,10 +10,6 @@ set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :layouts_dir, 'layouts'
 
-#sitemap : https://github.com/Aupajo/middleman-search_engine_sitemap
-set :url_root, 'http://gregoiredierendonck.github.io/Rapsodie/'
-activate :search_engine_sitemap
-
 # Add bower's directory to sprockets asset path
 after_configuration do
 	@bower_config = JSON.parse(IO.read("#{root}/.bowerrc"))
@@ -58,4 +54,7 @@ configure :build do
 	activate :asset_hash
 	activate :relative_assets
 	set :relative_links, true
+	#sitemap : https://github.com/Aupajo/middleman-search_engine_sitemap
+	set :url_root, 'http://example.com'
+	activate :search_engine_sitemap
 end
