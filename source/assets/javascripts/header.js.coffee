@@ -79,7 +79,7 @@ $(document).ready ->
 	$('.changepage').click ->
 		GotoTop()
 
-	$('.small .changepage').click ->
+	$('.small .menu-link.changepage').click ->
 		ToggleMenu()
 
 	$('#header-menu .changepage').click ->
@@ -95,7 +95,7 @@ $(window).smartresize ->
 	$('.changepage').click ->
 		GotoTop()
 
-	$('.small .changepage').click ->
+	$('.small .menu-link.changepage').click ->
 		ToggleMenu()
 
 	$('#header-menu .changepage').click ->

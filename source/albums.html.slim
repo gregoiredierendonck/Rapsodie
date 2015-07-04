@@ -10,7 +10,7 @@ div.albums-content
 			h1 = data.albums.title
 		div.grid.grid-two.grid-cell.grid-border
 			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
-		div.grid.grid-two.grid-cell
+		div.grid.grid-two.grid-cell.element-remove
 			div.grid.grid-two.grid-cell.grid-border
 				= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
 			div.grid.grid-two.grid-cell.grid-border
@@ -22,7 +22,7 @@ div.albums-content
 	div.container-medium.grid-table.albums-contener
 		div.grid.grid-two
 			= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
-		div.grid.grid-two
+		div.grid.grid-two.grid-padding
 			h2 = data.albums.album1title
 			p = data.albums.album1texte
 			h3.h4 Playlist
@@ -34,7 +34,7 @@ div.albums-content
 	div.container-medium.grid-table.albums-contener
 		div.grid.grid-two
 			= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
-		div.grid.grid-two
+		div.grid.grid-two.grid-padding
 			h2 = data.albums.album2title
 			p = data.albums.album2texte
 			h3.h4 Playlist

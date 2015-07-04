@@ -4,12 +4,12 @@ description: 'Write less code, solve more problems'
 ---
 div.presse-content
 
-	div.container-xl.introductionimage.image-background
+	div.container-xl.grid-table.image-background
 		div.texte.h1-title
 			h1 = data.presse.title
 		div.grid.grid-two.grid-cell.grid-border
 			= image_tag "#{data.presse.imagecomposition1}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
-		div.grid.grid-two.grid-cell
+		div.grid.grid-two.grid-cell.element-remove
 			div.grid.grid-one.grid-vertical.grid-border
 				= image_tag "#{data.presse.imagecomposition2}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
 			div.grid.grid-one.grid-border

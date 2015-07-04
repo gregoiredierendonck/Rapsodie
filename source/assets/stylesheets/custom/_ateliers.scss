@@ -6,3 +6,16 @@
 		padding: 50px 0;
 	}
 }
+
+@media screen and (max-width: $media-m) {
+	.ateliers-content {
+		.grid {
+			&.grid-padding {padding: 0;}
+			&.ateliers-image {
+				display: table-caption;
+				float: none;
+				margin-bottom: $outside-padding;
+			}
+		}
+	}
+}

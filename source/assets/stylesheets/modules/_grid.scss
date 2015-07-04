@@ -52,14 +52,25 @@
 	}
 }
 
-@media screen and (max-width: $media-m) {
-	.grid.grid-cell {display: inline-block;}
-	.grid.grid-two {width: 100%;}
+
+@media screen and (max-width: $media-l) {
+	.grid {
+		&.grid-five {width: 33.33%;}
+	}
 }
 
-
 @media screen and (max-width: $media-m) {
-	.grid.grid-three {
-		width: 50%;
+	.grid {
+		&.grid-cell {display: inline-block}
+		&.grid-two {width: 100%;}
+		&.grid-three {width: 50%;}
+		&.grid-padding {padding: $outside-padding 0 0 0;}
+	}
+}
+
+@media screen and (max-width: $media-s) {
+	.grid {
+		&.grid-three {width: 100%;}
+		&.grid-five {width: 50%;}
 	}
 }

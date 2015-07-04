@@ -8,7 +8,7 @@ div.concerts-content
 	div.container-xl.grid-table.image-background
 		div.texte.h1-title
 			h1 = data.concerts.title
-		div.grid.grid-two.grid-cell.grid-border
+		div.grid.grid-two.grid-cell.grid-border.element-remove
 			div.grid.grid-one.grid-vertical
 				= image_tag "#{data.concerts.imagecomposition1}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
 			div.grid.grid-one
@@ -19,7 +19,11 @@ div.concerts-content
 	div.container-small
 		p class="introduction-text" = data.concerts.introduction
 
-	div.container-medium.citation
+	div.container-medium
+		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
+			= image_tag "#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
+
+	div.container-small.citation
 		blockquote
 			p = data.concerts.citation
 			footer = data.concerts.citationsignature

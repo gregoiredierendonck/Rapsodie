@@ -16,7 +16,6 @@
 # Ignore Bower Folder
 
 # Ignore Sublime preferences
-slimmer.sublime-project
-slimmer.sublime-workspace
+/slimmer.sublime-project
 
 Gemfile.lock

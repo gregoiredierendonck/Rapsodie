@@ -116,3 +116,7 @@ iframe {
 		}
 	}
 }
+
+@media screen and (max-width: $media-xs) {
+	.image-background .texte.h1-title {height: auto;}
+}

@@ -50,7 +50,7 @@ $menu-button-size : 50px;
 			color: $black;
 			font-size: 24px;
 			text-decoration: none;
-			padding-left: $header-height + 15;
+			padding-left: $header-height;
 			padding-right: $outside-padding;
 			&:before {
 				content: "";

@@ -51,7 +51,6 @@
 			background: image-url("assets/images/icon-sprite.svg");
 			margin: 0 !important;
 			position: relative;
-			top: -2px;
 		}
 		.play {
 			display: block;
@@ -165,7 +164,6 @@
 	width: $player-height;
 	height: $player-height;
 	position: relative;
-	top: -2px;
 	display: table-cell;
 	text-indent: -999999px;
 	cursor: pointer;
