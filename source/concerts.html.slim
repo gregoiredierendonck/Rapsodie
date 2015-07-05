@@ -29,16 +29,45 @@ div.concerts-content
 			p = data.concerts.citation
 			footer = data.concerts.citationsignature
 
-	div.container-xl
-		ul
-			- data.concertslist.each_with_index do |concert|
-				li.grid.grid-five.image-background
-					div.texte
-						h2 = concert.title
-						p.date = concert.date
-					div.image
-						= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
 
-	footer.container-small.text-center
-		h1.h4 = data.concerts.end
-		= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
+	div.container-full
+		h2.visuallyhidden Liste des concerts
+		div.container-small.text-center
+			h3 International
+		div.container-xl
+			ul
+				- data.concertslistinternational.each_with_index do |concert|
+					li.grid.grid-five.image-background
+						div.texte
+							h4 = concert.lieu
+							p.lieu = concert.title
+							p.subline = concert.date
+						div.image
+							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+
+	div.container-full
+		div.container-small.text-center
+			h3 France
+		div.container-xl
+			ul
+				- data.concertslistfrance.each_with_index do |concert|
+					li.grid.grid-five.image-background
+						div.texte
+							h4 = concert.lieu
+							p.lieu = concert.title
+							p.subline = concert.date
+						div.image
+							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"

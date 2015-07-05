@@ -15,3 +15,38 @@ div.presse-content
 				= image_tag "#{data.presse.imagecomposition2}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
 			div.grid.grid-one.grid-border
 				= image_tag "#{data.presse.imagecomposition3}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
+
+	div.container-full
+		div.container-small.text-center
+			h3 Documents techniques
+		div.container-xl
+			ul
+				- data.pressetechnique.each_with_index do |pressetechnique|
+					li.grid.grid-five.image-background
+						= link_to pressetechnique.link, target: '_blank' do
+							div.image
+								= image_tag "#{pressetechnique.image}", alt: "Rapsodie - #{pressetechnique.title}", itemprop: 'image'
+							div.texte
+								h4 = pressetechnique.title
+								p.type = pressetechnique.type
+	
+	div.container-full
+		div.container-small.text-center
+			h3 Sélection de photos
+		div.container-xl
+			ul
+				- data.pressephotos.each_with_index do |pressephotos|
+					li.grid.grid-five.image-background
+						= link_to pressephotos.link, target: '_blank' do
+							div.image
+								= image_tag "#{pressephotos.image}", alt: "Rapsodie - #{pressephotos.title}", itemprop: 'image'
+							div.texte
+								h4 = pressephotos.title
+								p.type = pressephotos.type
+
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"

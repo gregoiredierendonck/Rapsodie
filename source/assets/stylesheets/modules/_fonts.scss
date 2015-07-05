@@ -91,9 +91,8 @@ ul.list{li{list-style: disc;}}
 ol.list{li{list-style: decimal;}}
 ul.list + ul.list, ul.list + ol.list, ol.list + ol.list, ol.list + ul.list {margin-top: 0;}
 
-.text-center {
-	text-align: center;
-}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
 
 .introduction-text {
 	margin-top: 50px;

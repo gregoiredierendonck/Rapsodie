@@ -25,6 +25,13 @@ div.ateliers-content
 			p = data.ateliers.citation
 			footer = data.ateliers.citationsignature
 
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
+
 
 	div.container-full.dark-panel.ateliersdetails
 		div.container-medium
@@ -56,6 +63,9 @@ div.ateliers-content
 						p.subtitle = data.ateliers.atelier3titre2
 						p = data.ateliers.atelier3texte
 
-	footer.container-small.text-center
-		h1.h4 = data.ateliers.end
-		= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"

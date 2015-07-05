@@ -1,0 +1,29 @@
+.calltoaction {
+	margin: 50px auto;
+	.calltoaction-contenter {
+		width: 100%;
+		display: table;
+		background-color: $grey-dark;
+		text-align: center;
+		padding: 20px 0;
+		.calltoaction-content {
+			width: auto;
+			display: table-cell;
+			vertical-align: middle;
+			p, a {
+				width: auto;
+				display: inline-block;
+			}
+			p {
+				font-size: $font-size;
+				font-weight: $font-weight;
+				color: $white;
+				margin-right: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $media-s) {
+	p {width: 100% !important; text-align: center; margin: 0 0 10px !important;}
+}

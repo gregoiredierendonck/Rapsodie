@@ -72,6 +72,9 @@ div.legroupe-content
 				p.text-small = data.legroupe.membre5birthdate
 				p = data.legroupe.membre5texte
 
-	footer.container-small.text-center
-		h1.h4 = data.legroupe.end
-		= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
+	.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				h2.visuallyhidden Contact
+				p = data.settings.calltoaction
+				= link_to 'Contactez-nous', '/contact', :class => "changepage button button-primary"
