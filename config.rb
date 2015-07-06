@@ -57,5 +57,6 @@ configure :build do
 	activate :imageoptim
 	activate :asset_hash
 	activate :relative_assets
+	activate :cache_buster
 	set :relative_links, true
 end
