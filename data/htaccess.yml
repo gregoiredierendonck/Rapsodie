@@ -4,24 +4,11 @@ web:
 
 redirect:
     http://www.rapsodie.pro/index.html: http://www.rapsodie.pro/index.html
-    http://www.rapsodiepro.com/membres.html: http://www.rapsodiepro.com/legroupe.html
-    http://www.rapsodiepro.com/presse.html: http://www.rapsodiepro.com/presse.html
-
-cache:
-    deflate: \\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$
-    expire:
-        image/png: access plus 1 month
-        image/jpg: access plus 1 month
-        image/jpeg: access plus 1 month
-        image/gif: access plus 1 month
-        image/ico: access plus 1 month
-        image/svg: access plus 1 month
-        image/pdf: access plus 1 month
-        image/x-icon: access plus 1 month
-        text/html: access plus 1 minute
-        text/css: access plus 7 days
-        application/javascript: access plus 7 days
-        text/javascript: access plus 7 days
+    http://www.rapsodie.pro/videos.html: http://www.rapsodie.pro/concerts.html
+    http://www.rapsodie.pro/galerie.html: http://www.rapsodie.pro/legroupe.html
+    http://www.rapsodie.pro/membres.html: http://www.rapsodiepro.com/legroupe.html
+    http://www.rapsodie.pro/actus.html: http://www.rapsodie.pro/concerts.html
+    http://www.rapsodie.pro/presse.html: http://www.rapsodiepro.com/presse.html
 
 errors:
     401: "Unauthorized access"
