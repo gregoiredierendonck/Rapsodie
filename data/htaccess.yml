@@ -1,16 +1,22 @@
 web:
-    domain: gregoiredierendonck.github.io/
-    url: http://gregoiredierendonck.github.io/Rapsodie/
+    domain: gregoiredierendonck.github.io
+    url: http://gregoiredierendonck.github.io/Rapsodie
 
 redirect:
-    /old-url.html: /new-url.html
-    /another/url.html: /new/
+    http://www.rapsodie.pro/index.html: http://www.rapsodie.pro/index.html
+    http://www.rapsodiepro.com/membres.html: http://www.rapsodiepro.com/legroupe.html
+    http://www.rapsodiepro.com/presse.html: http://www.rapsodiepro.com/presse.html
 
 cache:
-    deflate: \\.(js|css|html|ico|png)$
+    deflate: \\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$
     expire:
         image/png: access plus 1 month
+        image/jpg: access plus 1 month
+        image/jpeg: access plus 1 month
+        image/gif: access plus 1 month
         image/ico: access plus 1 month
+        image/svg: access plus 1 month
+        image/pdf: access plus 1 month
         image/x-icon: access plus 1 month
         text/html: access plus 1 minute
         text/css: access plus 7 days

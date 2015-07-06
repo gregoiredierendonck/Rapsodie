@@ -5,7 +5,8 @@ Redirect 301 <%= old %> <%= data.htaccess.web.url %><%= new %>
 
 # REWRITE - redirect to www. page
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^<%= data.htaccess.web.domain %>$
+RewriteCond %{HTTP_HOST} ^<%= data.htaccess.web.domain %>$ [OR]
+RewriteCond %{HTTP_HOST} ^www.<%= data.htaccess.web.domain %>$
 RewriteRule (.*) <%= data.htaccess.web.url %>/$1 [R=301,L]
 
 # ERROR DOCUMENTS
@@ -22,5 +23,10 @@ ExpiresByType <%= type %> "<%= expire %>"
 <% end %>
 
 <FilesMatch "<%= data.htaccess.cache.deflate %>">
-    SetOutputFilter DEFLATE
+	SetOutputFilter DEFLATE
 </FilesMatch>
+
+# Gzip compression
+<ifmodule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+</ifmodule>
