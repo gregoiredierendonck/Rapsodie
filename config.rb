@@ -3,12 +3,16 @@ compass_config do |config|
 end
 
 require 'slim'
+require 'builder'
 activate :livereload
 
 set :js_dir, 'assets/javascripts'
 set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :layouts_dir, 'layouts'
+
+# Remove the layout on specific pages
+page "/sitemap.xml", :layout => false
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -54,7 +58,4 @@ configure :build do
 	activate :asset_hash
 	activate :relative_assets
 	set :relative_links, true
-	#sitemap : https://github.com/Aupajo/middleman-search_engine_sitemap
-	set :url_root, 'http://example.com'
-	activate :search_engine_sitemap
 end
