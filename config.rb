@@ -13,6 +13,7 @@ set :layouts_dir, 'layouts'
 
 # Remove the layout on specific pages
 page "/sitemap.xml", :layout => false
+page ".htaccess.apache", :layout => false
 
 # Add bower's directory to sprockets asset path
 after_configuration do
@@ -59,4 +60,10 @@ configure :build do
 	activate :relative_assets
 	activate :cache_buster
 	set :relative_links, true
+end
+
+# rename file after build
+# View : http://coderwall.com/p/daflfq/generate-htaccess-in-middleman
+after_build do
+  File.rename 'build/.htaccess.apache', 'build/.htaccess'
 end
