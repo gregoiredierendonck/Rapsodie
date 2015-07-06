@@ -1,32 +1,32 @@
-# MOVE PERMANENTLY
-<% data.htaccess.redirect.each do |old, new| %>
-Redirect 301 <%= old %> <%= data.htaccess.web.url %><%= new %>
-<% end %>
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^rapsodiepro.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.rapsodiepro.com$
+  RewriteRule (.*)$ http://www.rapsodie.pro/$1 [R=301,L]
+</IfModule>
 
-# REWRITE - redirect to www. page
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^<%= data.htaccess.web.domain %>$ [OR]
-RewriteCond %{HTTP_HOST} ^www.<%= data.htaccess.web.domain %>$
-RewriteRule (.*) <%= data.htaccess.web.url %>/$1 [R=301,L]
+Redirect 301 http://www.rapsodie.pro/index.html: http://www.rapsodie.pro/index.html
+Redirect 301 http://www.rapsodiepro.com/membres.html: http://www.rapsodiepro.com/legroupe.html
+Redirect 301 http://www.rapsodiepro.com/presse.html: http://www.rapsodiepro.com/presse.html
 
-# ERROR DOCUMENTS
-<% data.htaccess.errors.each do |code, document| %>
-ErrorDocument <%= code %> <%= document %>
-<% end %>
-
-# GZIP, CACHE
-AddType image/x-icon .ico
-
-ExpiresActive on
-<% data.htaccess.cache.expire.each do |type, expire| %>
-ExpiresByType <%= type %> "<%= expire %>"
-<% end %>
-
-<FilesMatch "<%= data.htaccess.cache.deflate %>">
-	SetOutputFilter DEFLATE
-</FilesMatch>
+# Redirection to 404
+   ErrorDocument 404 http://www.rapsodie.pro/404.html
 
 # Gzip compression
-<ifmodule mod_deflate.c>
-	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
-</ifmodule>
+   <ifmodule mod_deflate.c>
+   AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+   </ifmodule>
+
+   # Cache control
+   # 480 weeks
+   <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$">
+   Header set Cache-Control "max-age=290304000, public"
+   </FilesMatch>
+   # 2 DAYS
+   <FilesMatch "\.(xml|txt)$">
+   Header set Cache-Control "max-age=172800, public, must-revalidate"
+   </FilesMatch>
+   # 2 HOURS
+   <FilesMatch "\.(html|htm)$">
+   Header set Cache-Control "max-age=7200, must-revalidate"
+   </FilesMatch>
