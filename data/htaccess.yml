@@ -1,10 +1,10 @@
 web:
-    domain: gregoiredierendonck.github.io
+    domain: gregoiredierendonck.github.io/
     url: http://gregoiredierendonck.github.io/Rapsodie/
 
-# redirect:
-#     /old-url.html: /new-url.html
-#     /another/url.html: /new/
+redirect:
+    /old-url.html: /new-url.html
+    /another/url.html: /new/
 
 cache:
     deflate: \\.(js|css|html|ico|png)$
