@@ -35,10 +35,10 @@
 	z-index: 1;
 	audio {
 		position: absolute;
-		left: -1px; 
+		left: -1px;
 	}
 	.play-pause {
-		width: $player-height;
+		width: $player-height + 10;
 		height: $player-height;
 		display: table-cell;
 		margin: 0;
@@ -54,6 +54,7 @@
 		}
 		.play {
 			display: block;
+			background-position: 7px 0;
 		}
 		.loading {
 			transform-origin: ($sprite-e-size / 2 - 2) ($sprite-e-size / 2);
@@ -64,10 +65,10 @@
     		animation-timing-function: linear;
 		}
 		.pause {
-			background-position: 0 (- $sprite-e-size);
+			background-position: 7px (- $sprite-e-size);
 		}
 		.error {
-			background-position: 0 (- $sprite-e-size * 3);
+			background-position: 7px (- $sprite-e-size * 3);
 			cursor: auto;
 			.error {
 				display: block;
@@ -77,7 +78,7 @@
 			}
 			.time, .play, .pause, .scrubber, .loading {
 				display: none;
-			} 
+			}
 		}
 	}
 	p {
@@ -90,6 +91,8 @@
 		position: relative;
 		overflow: hidden;
 		cursor: pointer;
+		padding: 0 30px;
+		background-color: $player-background-color;
 		.scrubber {
 			width: 100%;
 			height: $player-height;
@@ -143,7 +146,7 @@
 			font-style: normal;
 		}
 		strong {
-			padding: 0 0 0 2px; 
+			padding: 0 0 0 2px;
 			font-weight: $font-weight;
 		}
 	}
@@ -161,7 +164,7 @@
 
 // TRACK LIST
 #tracklist {
-	width: $player-height;
+	width: $player-height + 10;
 	height: $player-height;
 	position: relative;
 	display: table-cell;
@@ -169,10 +172,10 @@
 	cursor: pointer;
 	overflow: hidden;
 	background: image-url("assets/images/icon-sprite.svg") $player-background-color !important;
-	background-position: 0 (- $sprite-e-size * 2) !important;
+	background-position: 5px (- $sprite-e-size * 2) !important;
 	transition: all 0.2s ease-in-out;
 	&.tracklist-opened {
-		background-position: 0 (- $sprite-e-size * 3) !important;
+		background-position: 5px (- $sprite-e-size * 3) !important;
 	}
 }
 #playerlist {
@@ -190,7 +193,7 @@
 		counter-reset: mycontenercounter;
 		list-style: decimal inside none;
 		z-index: 0;
-		transition: top 0.2s ease-in-out; 
+		transition: top 0.2s ease-in-out;
 		li {
 			width: 100%;
 			display: inline-block;
@@ -207,15 +210,15 @@
 				display: inline-block;
 				line-height: 20px;
 				position: absolute;
-				top: 7px;
+				top: 13px;
 				left: 20px;
 				background-color: $player-primary-color;
 				border-radius: 100%;
 				color: $white;
-				text-align: center;		
+				text-align: center;
 				content: counter(mycontenercounter, decimal);
 				counter-increment: mycontenercounter;
-			} 
+			}
 			&:first-child {
 				margin-top: 10px !important;
 			}
@@ -226,7 +229,7 @@
 			a {
 				display: inline-block;
 				line-height: 100%;
-				padding: 10px 0 0 25px;
+				padding: 15px 0 15px 25px;
 				text-decoration: none !important;
 				width: 100%;
 				color: $player-primary-color !important;
@@ -234,7 +237,7 @@
 			&.playing {
 				a {
 					color: $white !important;
-				} 
+				}
 				&:before {
 					color: $player-background-color !important;
 					background-color: $white !important;
@@ -262,4 +265,4 @@
 		border-bottom: 1px solid $grey-light;
 		white-space: wrap;
 	}
-} 
+}

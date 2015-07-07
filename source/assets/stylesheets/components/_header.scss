@@ -1,13 +1,14 @@
 $header-height: 70px;
 $logo-width: 240px;
-
-$menu-button-size : 50px; 
+$menu-button-size : 70px;
+$lines-width: 26px;
+$lines-height: 3px;
 @mixin line {
   display: inline-block;
-  width: 30px;
-  height: 4px;
+  width: $lines-width;
+  height: $lines-height;
   background: $black;
-  border-radius: $menu-button-size/14; 
+  border-radius: $menu-button-size/14;
   transition: .2s;
 }
 
@@ -102,9 +103,6 @@ $menu-button-size : 50px;
 					&:focus, &:hover {
 						color: $primary-color;
 					}
-					&.homelink {
-						display: none;
-					}
 					&.is-active {
 						color: $primary-color;
 					}
@@ -119,7 +117,7 @@ $menu-button-size : 50px;
   		width: $menu-button-size;
   		height: $menu-button-size;
 		position: absolute;
-  		top: 10px;
+  		top: 0;
   		right: $outside-padding;
   		z-index: 3;
   		margin: 0 !important;
@@ -134,16 +132,17 @@ $menu-button-size : 50px;
 		.lines {
 			@include line;
 			position: absolute;
-			right: 9px;
-			top: 23px; 
+			left: 50%;
+			top: 50%;
+			margin: (- $lines-height / 2) (- $lines-width / 2) ;
 			&:before, &:after {
 				@include line;
 				content: '';
 				position: absolute;
 				left:0;
 				transform-origin: $menu-button-size/14 center;			}
-			&:before { top: $menu-button-size/6; }
-			&:after { top: -$menu-button-size/6; }
+			&:before { top: 7px; }
+			&:after { top: -7px; }
 		}
 		&:hover {
 			opacity: 1;
@@ -167,10 +166,10 @@ $menu-button-size : 50px;
 				}
 				// rotate the lines to form the x shape
 				&:before{
-					transform: rotate3d(0,0,1,45deg); 
+					transform: rotate3d(0,0,1,45deg);
 				}
 				&:after{
-					transform: rotate3d(0,0,1,-45deg); 
+					transform: rotate3d(0,0,1,-45deg);
 				}
 			}
 		}

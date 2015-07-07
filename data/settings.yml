@@ -2,6 +2,7 @@ site:
   title: Rapsodie
   introduction: description
   i18n: en
-  # url: 'https://github.com/flexbox/codeless'
+  url: http://localhost:4567
+  domain: localhost:4567
   # author: David Leuliette
 calltoaction: Projets, concerts, ateliers, interviews...

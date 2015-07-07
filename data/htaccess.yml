@@ -1,14 +1,25 @@
-web:
-    domain: gregoiredierendonck.github.io
-    url: http://gregoiredierendonck.github.io/Rapsodie
-
 redirect:
-    http://www.rapsodie.pro/index.html: http://www.rapsodie.pro/index.html
-    http://www.rapsodie.pro/videos.html: http://www.rapsodie.pro/concerts.html
-    http://www.rapsodie.pro/galerie.html: http://www.rapsodie.pro/legroupe.html
-    http://www.rapsodie.pro/membres.html: http://www.rapsodiepro.com/legroupe.html
-    http://www.rapsodie.pro/actus.html: http://www.rapsodie.pro/concerts.html
-    http://www.rapsodie.pro/presse.html: http://www.rapsodiepro.com/presse.html
+    /videos.html: /concerts.html
+    /galerie.html: /legroupe.html
+    /membres.html: /legroupe.html
+    /actus.html: /concerts.html
+
+cache:
+    deflate: \\.(ico|pdf|jpg|jpeg|png|gif|js|css|html|svg|xml)$
+    expire:
+        image/ico: access plus 1 month
+        image/pdf: access plus 1 month
+        image/png: access plus 1 month
+        image/jpg: access plus 1 month
+        image/jpeg: access plus 1 month
+        image/gif: access plus 1 month
+        image/x-icon: access plus 1 month
+        text/html: access plus 1 minute
+        text/css: access plus 7 days
+        text/js: access plus 7 days
+        application/javascript: access plus 7 days
+        text/javascript: access plus 7 days
+        text/svg: access plus 7 days
 
 errors:
     401: "Unauthorized access"
