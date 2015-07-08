@@ -60,6 +60,9 @@ configure :build do
 	activate :relative_assets
 	activate :cache_buster
 	set :relative_links, true
+	ignore '.gitignore'
+	ignore '.git'
+	ignore 'imageoptim.manifest.yml'
 end
 
 # rename file after build

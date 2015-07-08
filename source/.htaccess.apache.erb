@@ -1,51 +1,40 @@
-# MOVE PERMANENTLY
-<% data.htaccess.redirect.each do |old, new| %>
-Redirect 301 <%= old %> <%= data.settings.site.url %><%= new %>
-<% end %>
-
 # REWRITE - redirect to www. page
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^<%= data.settings.site.domain %>$
-RewriteRule (.*) <%= data.settings.site.url %>/$1 [R=301,L]
+	<IfModule mod_rewrite.c>
+		RewriteEngine on
+		RewriteCond %{HTTP_HOST} ^rapsodiepro.com$ [OR]
+		RewriteCond %{HTTP_HOST} ^www.<%= data.settings.site.domain %>$
+		RewriteRule (.*) <%= data.settings.site.url %>/$1 [R=301,L]
+	</IfModule>
 
-# ERROR DOCUMENTS
-<% data.htaccess.errors.each do |code, document| %>
-ErrorDocument <%= code %> <%= document %>
-<% end %>
+# MOVE PERMANENTLY
+	Redirect 301 http://www.rapsodiepro.com/index.html http://www.rapsodie.pro/index.html
+	Redirect 301 http://www.rapsodiepro.com/videos.html http://www.rapsodie.pro/videos.html
+	Redirect 301 http://www.rapsodiepro.com/galerie.html http://www.rapsodie.pro/galerie.html
+	Redirect 301 http://www.rapsodiepro.com/membres.html http://www.rapsodie.pro/membres.html
+	Redirect 301 http://www.rapsodiepro.com/concerts.html http://www.rapsodie.pro/actus.html
+	Redirect 301 http://www.rapsodie.pro/videos.html http://www.rapsodie.pro/concerts.html
+	Redirect 301 http://www.rapsodie.pro/galerie.html http://www.rapsodie.pro/legroupe.html
+	Redirect 301 http://www.rapsodie.pro/membres.html http://www.rapsodie.pro/legroupe.html
+	Redirect 301 http://www.rapsodie.pro/actus.html http://www.rapsodie.pro/concerts.html
 
-# GZIP, CACHE
-AddType image/x-icon .ico
+# Redirection to 404
+	ErrorDocument 404 <%= data.settings.site.url %>/404.html
 
-ExpiresActive on
-<% data.htaccess.cache.expire.each do |type, expire| %>
-ExpiresByType <%= type %> "<%= expire %>"
-<% end %>
+# Gzip compression
+	<ifmodule mod_deflate.c>
+		AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+	</ifmodule>
 
-<IfModule mod_deflate.c>
- SetOutputFilter DEFLATE
- DeflateCompressionLevel 9
-</IfModule>
-
-<Location />
- AddOutputFilterByType DEFLATE text/plain
- AddOutputFilterByType DEFLATE text/xml
- AddOutputFilterByType DEFLATE text/html
- AddOutputFilterByType DEFLATE text/css
- AddOutputFilterByType DEFLATE image/svg+xml
- AddOutputFilterByType DEFLATE application/xhtml+xml
- AddOutputFilterByType DEFLATE application/xml
- AddOutputFilterByType DEFLATE application/rss+xml
- AddOutputFilterByType DEFLATE application/atom_xml
- AddOutputFilterByType DEFLATE application/x-javascript
-
- Header append Vary User-Agent env=!dont-vary
-</Location>
-
-ExpiresActive on
-<% data.htaccess.cache.expire.each do |type, expire| %>
-ExpiresByType <%= type %> "<%= expire %>"
-<% end %>
-
-<FilesMatch "<%= data.htaccess.cache.deflate %>">
-    SetOutputFilter DEFLATE
-</FilesMatch>
+# Cache control
+	# 480 weeks
+	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$">
+	Header set Cache-Control "max-age=290304000, public"
+	</FilesMatch>
+	# 2 DAYS
+	<FilesMatch "\.(xml|txt)$">
+	Header set Cache-Control "max-age=172800, public, must-revalidate"
+	</FilesMatch>
+	# 2 HOURS
+	<FilesMatch "\.(html|htm)$">
+	Header set Cache-Control "max-age=7200, must-revalidate"
+	</FilesMatch>

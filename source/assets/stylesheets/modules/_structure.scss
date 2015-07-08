@@ -1,5 +1,11 @@
 // GLOBAL
 
+body {
+	width: 100%;
+	height: calc(100vh - 40px);
+	overflow: scroll;
+}
+
 section {
 	div {
 		width: 100%;
