@@ -625,7 +625,7 @@ $ ->
 		if $('#tracklist').hasClass('tracklist-opened')
 			$('#tracklist').removeClass 'tracklist-opened'
 			$('#tracklist').addClass 'tracklist-closed'
-			$('#playerlist').css 'top': '0'
+			$('#playerlist').css 'top': '40px'
 		else
 			$('#tracklist').removeClass 'tracklist-closed'
 			$('#tracklist').addClass 'tracklist-opened'
@@ -674,7 +674,7 @@ $ ->
 		$('.audiojs .time').css 'display': 'none'
 		$('.audiojs .scrubbercontener').css 'width': 'calc(100% - 100px)'
 	# Playlist animation
-	$('#playerlist').css 'top': '0'
+	$('#playerlist').css 'top': '40px'
 	$('#tracklist').addClass 'tracklist-closed'
 	$('#tracklist').click playerlaunchanim
 	$('#playerlist li a').click playerlaunchanim

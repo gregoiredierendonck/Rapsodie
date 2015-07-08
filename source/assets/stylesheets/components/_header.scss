@@ -34,16 +34,19 @@ $lines-height: 3px;
 	// LOGO
 	h1 {
 		width: $logo-width;
+		max-width: calc(100% - $menu-button-size);
 		height: $header-height;
 		display: table;
 		float: left;
 		margin: 0;
 		position: absolute;
 		top: 0;
-		left: 20px;
+		left: 10px;
 		z-index: 2;
+		overflow: hidden;
 		a {
 			width: $logo-width;
+			max-width: calc(100% - $menu-button-size);
 			height: $header-height;
 			display: table-cell;
 			vertical-align: middle;
@@ -53,6 +56,7 @@ $lines-height: 3px;
 			text-decoration: none;
 			padding-left: $header-height;
 			padding-right: $outside-padding;
+			overflow: hidden;
 			&:before {
 				content: "";
 				width: $header-height;
@@ -118,7 +122,7 @@ $lines-height: 3px;
   		height: $menu-button-size;
 		position: absolute;
   		top: 0;
-  		right: $outside-padding;
+  		right: 10px;;
   		z-index: 3;
   		margin: 0 !important;
   		outline: none;
