@@ -39,6 +39,12 @@
 		left: 10px;
 		z-index: 2;
 		overflow: hidden;
+		small {
+			text-indent: -999999px;
+			height: 0;
+			line-height: 0;
+			position: absolute;
+		}
 		a {
 			width: $logo-width;
 			max-width: calc(100% - $menu-button-size);
