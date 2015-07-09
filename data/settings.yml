@@ -1,7 +1,7 @@
 site:
   title: Rapsodie
-  introduction: description
-  i18n: en
+  introduction: Rapsodie est un groupe de musique de Lille alliant rap et musique classique.
+  i18n: fr
   url: http://www.rapsodie.pro
   domain: rapsodie.pro
   author: Grégoire Dierendonck

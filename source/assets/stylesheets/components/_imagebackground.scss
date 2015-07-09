@@ -1,0 +1,85 @@
+.image-background {
+  position: relative;
+  border: 1px solid $white;
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .texte {
+    width: $imagebackgroundtextwidth;
+    height: auto;
+    min-height: $imagebackgroundtextheight;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: (- $imagebackgroundtextheight / 2) 0 0 (- $imagebackgroundtextwidth / 2);
+    z-index: 3;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+      width: 100%;
+      display: inline-block;
+      margin: 0 0 5px 0;
+      padding: 5px 20px;
+      color: $white;
+      text-transform: uppercase;
+      border-bottom: 1px solid $white;
+    }
+    p {
+      width: 100%;
+      padding: 0 10%;
+      display: inline-block;
+      font-size: $font-size-xs;
+      line-height: 120%;
+      color: $white;
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+    p + p {
+      margin: 0;
+      float: left;
+    }
+    h2 {font-size: $font-size-l + 1;}
+    h4 {font-size: $font-size; line-height: 100%;}
+    .subline {color: $grey-light;}
+    &.h1-title {
+      width: $h1titlesize;
+      height: $h1titlesize;
+      max-width: 80%;
+      display: table;
+      background-color: $black;
+      transform: none;
+      margin: (- $h1titlesize / 2) 0 0 (- $h1titlesize / 2);
+      h1 {
+        display: table-cell;
+        vertical-align: middle;
+        color: $white;
+        font-weight: $font-weight;
+        border: none;
+      }
+    }
+  }
+  a {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: $media-xs) {
+  .image-background .texte.h1-title {
+    height: auto;
+    min-height: 60px;
+    margin-top: -30px;
+  }
+}
