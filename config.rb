@@ -57,9 +57,9 @@ configure :build do
 	activate :minify_javascript
 	activate :imageoptim
 	activate :asset_hash
-	# activate :relative_assets
+	activate :relative_assets
 	activate :cache_buster
-	# set :relative_links, true
+	set :relative_links, true
 	ignore 'imageoptim.manifest.yml'
 end
 
