@@ -86,25 +86,6 @@ $(document).ready ->
 		ActiveMenu()
 		$(this).addClass('is-active')
 
-	$('.legroupe-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.legroupe-link').addClass('is-active')
-	$('.concerts-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.concerts-link').addClass('is-active')
-	$('.albums-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.albums-link').addClass('is-active')
-	$('.ateliers-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.ateliers-link').addClass('is-active')
-	$('.presse-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.presse-link').addClass('is-active')
-	$('.contact-link').click ->
-		$('.globalheader nav ul li a').removeClass('is-active')
-		$('.globalheader nav ul li a.contact-link').addClass('is-active')
-
 $(window).smartresize ->
 	DetectMenuVersion()
 

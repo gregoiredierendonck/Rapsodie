@@ -5,12 +5,12 @@ header.globalheader.headroom#header
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li = link_to data.legroupe.title, "#{data.settings.site.url}/legroupe.html", class: "changepage legroupe-link menu-link #{active_page_class('/legroupe.html')}"
-				li = link_to data.concerts.title, "#{data.settings.site.url}/concerts.html", class: "changepage concerts-link menu-link #{active_page_class('/concerts.html')}"
-				li = link_to data.albums.title, "#{data.settings.site.url}/albums.html", class: "changepage menu-link albums-link #{active_page_class('/albums.html')}"
-				li = link_to data.ateliers.title, "#{data.settings.site.url}/ateliers.html", class: "changepage ateliers-link menu-link #{active_page_class('/ateliers.html')}"
-				li = link_to data.presse.title, "#{data.settings.site.url}/presse.html", class: "changepage menu-link presse-link #{active_page_class('/presse.html')}"
-				li = link_to data.contact.title, "#{data.settings.site.url}/contact.html", class: "changepage menu-link contact-link #{active_page_class('/contact.html')}"
+				li = link_to data.legroupe.title, '/legroupe.html', class: "changepage menu-link #{active_page_class('/legroupe.html')}"
+				li = link_to data.concerts.title, 'concerts.html', class: "changepage menu-link #{active_page_class('/concerts.html')}"
+				li = link_to data.albums.title, '/albums.html', class: "changepage menu-link #{active_page_class('/albums.html')}"
+				li = link_to data.ateliers.title, '/ateliers.html', class: "changepage menu-link #{active_page_class('/ateliers.html')}"
+				li = link_to data.presse.title, '/presse.html', class: "changepage menu-link #{active_page_class('/presse.html')}"
+				li = link_to data.contact.title, '/contact.html', class: "changepage menu-link #{active_page_class('/contact.html')}"
 		button.menu-button#header-menu-button type="button"
 			'Menu
 			span.lines

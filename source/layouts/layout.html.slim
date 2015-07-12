@@ -11,7 +11,7 @@ html lang="#{data.settings.site.i18n}"
 
         = partial 'views/global/favicon'
         link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,100,400' rel='stylesheet' type='text/css'
-        = stylesheet_link_tag "#{data.settings.site.url}/assets/stylesheets/application.css"
+        = stylesheet_link_tag 'application'
 
     body class='#{page_classes}'
         div#container
