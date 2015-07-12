@@ -12,21 +12,21 @@ div.legroupe-content
 		div.texte.h1-title
 			h1 = data.legroupe.title
 		div.grid.grid-two.grid-cell.grid-border
-			= image_tag "#{data.settings.url}#{data.legroupe.imagecomposition1}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-1'
+			= image_tag "#{data.settings.site.url}#{data.legroupe.imagecomposition1}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-1'
 		div.grid.grid-four.grid-cell.grid-border.element-remove
 			div.grid.grid-one.grid-vertical
-				= image_tag "#{data.settings.url}#{data.legroupe.imagecomposition2}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-2'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.imagecomposition2}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-2'
 			div.grid.grid-one
-				= image_tag "#{data.settings.url}#{data.legroupe.imagecomposition3}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-2'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.imagecomposition3}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-2'
 		div.grid.grid-four.grid-cell.grid-border.element-remove
-			= image_tag "#{data.settings.url}#{data.legroupe.imagecomposition4}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-1'
+			= image_tag "#{data.settings.site.url}#{data.legroupe.imagecomposition4}", alt: "Rapsodie #{data.legroupe.title}", itemprop: 'image', class: 'columns-1'
 
 	div.container-small
 		p class="introduction-text" = data.legroupe.introduction1
 
 	div.container-medium
 		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
-			= image_tag "#{data.settings.url}#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
+			= image_tag "#{data.settings.site.url}#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
 
 	div.container-small
 		p class="introduction-text" = data.legroupe.introduction2
@@ -35,7 +35,7 @@ div.legroupe-content
 		h2 = data.legroupe.membretitle
 		div.member.grid-table
 			div.grid.grid-two
-				= image_tag "#{data.settings.url}#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
 			div.grid.grid-two.grid-padding
 				h3 = data.legroupe.membre1title
 				p.subtitle = data.legroupe.membre1subtitle
@@ -43,7 +43,7 @@ div.legroupe-content
 				p = data.legroupe.membre1texte
 		div.member.grid-table
 			div.grid.grid-two
-				= image_tag "#{data.settings.url}#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
 			div.grid.grid-two.grid-padding
 				h3 = data.legroupe.membre2title
 				p.subtitle = data.legroupe.membre2subtitle
@@ -51,7 +51,7 @@ div.legroupe-content
 				p = data.legroupe.membre2texte
 		div.member.grid-table
 			div.grid.grid-two
-				= image_tag "#{data.settings.url}#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
 			div.grid.grid-two.grid-padding
 				h3 = data.legroupe.membre3title
 				p.subtitle = data.legroupe.membre3subtitle
@@ -59,7 +59,7 @@ div.legroupe-content
 				p = data.legroupe.membre3texte
 		div.member.grid-table
 			div.grid.grid-two
-				= image_tag "#{data.settings.url}#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
 			div.grid.grid-two.grid-padding
 				h3 = data.legroupe.membre4title
 				p.subtitle = data.legroupe.membre4subtitle
@@ -67,7 +67,7 @@ div.legroupe-content
 				p = data.legroupe.membre4texte
 		div.member.grid-table
 			div.grid.grid-two
-				= image_tag "#{data.settings.url}#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
+				= image_tag "#{data.settings.site.url}#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
 			div.grid.grid-two.grid-padding
 				h3 = data.legroupe.membre5title
 				p.subtitle = data.legroupe.membre5subtitle
