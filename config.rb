@@ -23,7 +23,7 @@ end
 
 # Redirections on "pages" folder
 ['index', 'legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
-	proxy "/pages/#{name}.html", "#{name}.html", layout: nil
+	proxy "#{data.settings.site.url}/pages/#{name}.html", "#{data.settings.site.url}/pages/#{name}.html", layout: nil
 end
 
 # Add "is-active" class to nav li of current page
