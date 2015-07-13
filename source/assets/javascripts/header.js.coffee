@@ -82,9 +82,26 @@ $(document).ready ->
 	$('.small .menu-link.changepage').click ->
 		ToggleMenu()
 
-	$('#header-menu .changepage').click ->
+	$('.link-index').click ->
 		ActiveMenu()
-		$(this).addClass('is-active')
+	$('.link-legroupe').click ->
+		ActiveMenu()
+		$('#header-menu a.link-legroupe').addClass('is-active')
+	$('.link-concerts').click ->
+		ActiveMenu()
+		$('#header-menu a.link-concerts').addClass('is-active')
+	$('.link-albums').click ->
+		ActiveMenu()
+		$('#header-menu a.link-albums').addClass('is-active')
+	$('.link-ateliers').click ->
+		ActiveMenu()
+		$('#header-menu a.link-ateliers').addClass('is-active')
+	$('.link-presse').click ->
+		ActiveMenu()
+		$('#header-menu a.link-presse').addClass('is-active')
+	$('.link-contact').click ->
+		ActiveMenu()
+		$('#header-menu a.link-contact').addClass('is-active')
 
 $(window).smartresize ->
 	DetectMenuVersion()
@@ -97,7 +114,3 @@ $(window).smartresize ->
 
 	$('.small .menu-link.changepage').click ->
 		ToggleMenu()
-
-	$('#header-menu .changepage').click ->
-		ActiveMenu()
-		$(this).addClass('is-active')

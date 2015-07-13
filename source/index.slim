@@ -12,28 +12,28 @@ div.index-content
 
 	div.container-xl.grid-table
 		div.grid.grid-two.image-background.grid-cell.grid-border
-			= link_to "#{data.settings.site.url}/albums.html", class: 'changepage' do
+			= link_to "#{data.settings.site.url}/albums.html", class: 'changepage link-albums' do
 				div.texte
 					h2 = data.index.box1title
 					p.date = data.index.box1baseline
 				= image_tag "#{data.index.box1image}", alt: "Rapsodie #{data.index.box1title}", itemprop: 'image'
 		div.grid.grid-two.grid-cell
 			div.grid.grid-two.image-background.grid-border
-				= link_to "#{data.settings.site.url}/concerts.html", class: 'changepage' do
+				= link_to "#{data.settings.site.url}/concerts.html", class: 'changepage link-concerts' do
 					div.texte
 						h2 = data.index.box2title
 						p.date = data.index.box2baseline
 					= image_tag "#{data.index.box2image}", alt: "Rapsodie #{data.index.box2title}", itemprop: 'image'
 
 			div.grid.grid-two.image-background.grid-border
-				= link_to "#{data.settings.site.url}/legroupe.html", class: 'changepage' do
+				= link_to "#{data.settings.site.url}/legroupe.html", class: 'changepage link-legroupe' do
 					div.texte
 						h2 = data.index.box3title
 						p.date = data.index.box3baseline
 					= image_tag "#{data.index.box3image}", alt: "Rapsodie #{data.index.box3title}", itemprop: 'image'
 
 			div.grid.grid-one.image-background.grid-border
-				= link_to "#{data.settings.site.url}/ateliers.html", class: 'changepage' do
+				= link_to "#{data.settings.site.url}/ateliers.html", class: 'changepage link-ateliers' do
 					div.texte
 						h2 = data.index.box4title
 						p.date = data.index.box4baseline
@@ -60,7 +60,7 @@ div.index-content
 				= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
 
 		div.grid.grid-three.image-background.grid-border
-			= link_to "#{data.settings.site.url}/contact.html", class: 'changepage' do
+			= link_to "#{data.settings.site.url}/contact.html", class: 'changepage link-contact' do
 				div.texte
 					h2 = data.index.box7title
 					p.date = data.index.box7baseline

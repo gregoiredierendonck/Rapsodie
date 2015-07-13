@@ -1,16 +1,16 @@
 header.globalheader.headroom#header
 
 	div.container-xl#header-contener
-		h1#header-logo = link_to "#{data.settings.site.title} <small>- #{current_page.data.title}</small>", '/index.html', class: "changepage"
+		h1#header-logo = link_to "#{data.settings.site.title} <small>- #{current_page.data.title}</small>", '/index.html', class: "changepage link-index"
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list
-				li = link_to data.legroupe.title, '/legroupe.html', class: "changepage menu-link #{active_page_class('/legroupe.html')}"
-				li = link_to data.concerts.title, 'concerts.html', class: "changepage menu-link #{active_page_class('/concerts.html')}"
-				li = link_to data.albums.title, '/albums.html', class: "changepage menu-link #{active_page_class('/albums.html')}"
-				li = link_to data.ateliers.title, '/ateliers.html', class: "changepage menu-link #{active_page_class('/ateliers.html')}"
-				li = link_to data.presse.title, '/presse.html', class: "changepage menu-link #{active_page_class('/presse.html')}"
-				li = link_to data.contact.title, '/contact.html', class: "changepage menu-link #{active_page_class('/contact.html')}"
+				li = link_to data.legroupe.title, '/legroupe.html', class: "changepage link-legroupe menu-link #{active_page_class('/legroupe.html')}"
+				li = link_to data.concerts.title, 'concerts.html', class: "changepage link-concerts menu-link #{active_page_class('/concerts.html')}"
+				li = link_to data.albums.title, '/albums.html', class: "changepage link-albums menu-link #{active_page_class('/albums.html')}"
+				li = link_to data.ateliers.title, '/ateliers.html', class: "changepage link-ateliers menu-link #{active_page_class('/ateliers.html')}"
+				li = link_to data.presse.title, '/presse.html', class: "changepage link-presse menu-link #{active_page_class('/presse.html')}"
+				li = link_to data.contact.title, '/contact.html', class: "changepage link-contact menu-link #{active_page_class('/contact.html')}"
 		button.menu-button#header-menu-button type="button"
 			'Menu
 			span.lines
