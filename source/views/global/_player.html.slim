@@ -1,9 +1,10 @@
 section class="containerplayer"
-	h1.visuallyhidden Music Player
-	div id="wrapperaudiojs"
-		audio preload
-		ol id="playerlist"
-			- data.player.tracks.each do |track|
-				li
-					= link_to track.title, '#', :'data-src' => track.url
-		button id="buttonlistplayer" type="button" Playlist
+	div class="container-xl"
+		h1.visuallyhidden Music Player
+		div id="wrapperaudiojs"
+			audio preload
+			ol id="playerlist"
+				- data.player.tracks.each do |track|
+					li
+						= link_to track.title, '#', :'data-src' => track.url
+			button id="buttonlistplayer" type="button" Playlist
