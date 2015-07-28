@@ -13,7 +13,7 @@ div.index-content
 	div.container-xl.grid-table
 		div.grid.grid-two.image-background.grid-cell.grid-border
 			= link_to "#{data.settings.site.url}/albums.html", class: 'changepage link-albums' do
-				div.texte
+				div.texte.texte-big
 					h2 = data.index.box1title
 					p.date = data.index.box1baseline
 				= image_tag "#{data.index.box1image}", alt: "Rapsodie #{data.index.box1title}", itemprop: 'image'
