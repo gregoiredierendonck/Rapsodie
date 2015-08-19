@@ -23,15 +23,21 @@ div.contact-content
 
 
 	div.container-small
-		div.grid.grid-three
-			p
-				'Nous sommes à votre écoute au
-				b 06 11 45 85 64
-		div.grid.grid-three-two
-			p
-				'Ecrivez-nous à l'adresse
-				b contact@rapsodie.pro
-				'ou via notre formulaire&nbsp;!
-			form action="//formspree.io/bonjour@gregoiredierendonck.fr" method="POST"
-				input type="text" name="name" placeholder="wtf?"
-				input type="submit" value="Send"
+		form
+			div class="form-group"
+				label for="contact-name" Votre nom
+				input type="text" class="form-control" id="contact-name" name="name" placeholder="Qui êtes-vous ?"
+				span class='error-message' id='name-error'
+
+			div class="form-group"
+				label for="contact-email" Votre adresse email
+				input type="email" class="form-control" id="contact-email" name="email" placeholder="A quelle adresse pouvons-nous vous répondre ?"
+				span class='error-message' id='email-error'
+
+			div class="form-group"
+				label for='contactMessage' Votre message
+				textarea class="form-control" id='contact-message' name='message' placeholder="Une question ? Envie de partager un projet avec nous ?"
+				span class='error-message' id='message-error'
+
+			button onclick='return validateForm()' class="button button-primary form-button" Envoyer
+			span class='error-message' id='submit-error'

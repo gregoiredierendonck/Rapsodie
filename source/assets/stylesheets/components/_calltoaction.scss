@@ -5,7 +5,9 @@
 		display: table;
 		background-color: $grey-dark;
 		text-align: center;
-		padding: 20px 0;
+		padding: 30px 0;
+		background-image: image-url("http://www.rapsodie.pro/a/i/RAPSODIE-contact.jpg");
+		background-size: cover;
 		.calltoaction-content {
 			width: auto;
 			display: table-cell;
@@ -15,10 +17,12 @@
 				display: inline-block;
 			}
 			p {
+				width: 100%;
 				font-size: $font-size;
 				font-weight: $font-weight;
 				color: $white;
 				margin-right: 30px;
+				margin-bottom: 15px;
 			}
 		}
 	}
