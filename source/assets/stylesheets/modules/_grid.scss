@@ -52,10 +52,16 @@
 	}
 }
 
+@media screen and (max-width: $media-xl) {
+	.grid {
+		&.grid-six {width: 25%;}
+	}
+}
 
 @media screen and (max-width: $media-l) {
 	.grid {
 		&.grid-five {width: 33.33%;}
+		&.grid-six {width: 33.33%;}
 	}
 }
 
@@ -64,6 +70,7 @@
 		&.grid-cell {display: inline-block}
 		&.grid-two {width: 100%;}
 		&.grid-three {width: 50%;}
+		&.grid-six {width: 50%;}
 		&.grid-padding {padding: $outside-padding 0 0 0;}
 	}
 }

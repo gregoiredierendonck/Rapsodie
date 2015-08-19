@@ -1,6 +1,6 @@
 .image-background {
   position: relative;
-  border: 1px solid $white;
+  border: 5px solid $white;
   img {
     width: 100%;
     height: auto;
@@ -20,7 +20,7 @@
     margin: (- $imagebackgroundtextheight / 2) 0 0 (- $imagebackgroundtextwidth / 2);
     z-index: 3;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: $black;
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
       width: 100%;
       display: inline-block;

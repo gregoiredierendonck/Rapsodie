@@ -20,3 +20,18 @@ div.contact-content
 				= image_tag "#{data.contact.imagecomposition3}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
 		div.grid.grid-four.grid-cell.grid-border.element-remove
 			= image_tag "#{data.contact.imagecomposition4}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
+
+
+	div.container-small
+		div.grid.grid-three
+			p
+				'Nous sommes à votre écoute au
+				b 06 11 45 85 64
+		div.grid.grid-three-two
+			p
+				'Ecrivez-nous à l'adresse
+				b contact@rapsodie.pro
+				'ou via notre formulaire&nbsp;!
+			form action="//formspree.io/bonjour@gregoiredierendonck.fr" method="POST"
+				input type="text" name="name" placeholder="wtf?"
+				input type="submit" value="Send"
