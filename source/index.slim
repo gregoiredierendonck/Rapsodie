@@ -6,64 +6,45 @@ changefreq: "monthly"
 priority: "1"
 ---
 
-div.index-content
+h1.visuallyhidden = data.index.title
 
-	h1.visuallyhidden = data.index.title
-
-	div.container-xl.grid-table
-		div.grid.grid-two.image-background.grid-cell.grid-border
-			= link_to "#{data.settings.site.url}/albums.html", class: 'changepage link-albums' do
-				div.texte.texte-big
-					h2 = data.index.box1title
-					p.date = data.index.box1baseline
-				= image_tag "#{data.index.box1image}", alt: "Rapsodie #{data.index.box1title}", itemprop: 'image'
-		div.grid.grid-two.grid-cell
-			div.grid.grid-two.image-background.grid-border
-				= link_to "#{data.settings.site.url}/concerts.html", class: 'changepage link-concerts' do
+div class="row row-1 row-2-0"
+	div class="row row-2-1"
+		= link_to "#{data.settings.site.url}/albums.html", class: 'changepage link-albums box box-1' do
+			div.texte.texte-big
+				h2 = data.index.box1title
+				p.date = data.index.box1baseline
+	div class="row row-2-2"
+		div class="row row-3"
+			= link_to "#{data.settings.site.url}/concerts.html", class: 'changepage link-concerts box box-2' do
 					div.texte
 						h2 = data.index.box2title
 						p.date = data.index.box2baseline
-					= image_tag "#{data.index.box2image}", alt: "Rapsodie #{data.index.box2title}", itemprop: 'image'
+			= link_to "#{data.settings.site.url}/legroupe.html", class: 'changepage link-legroupe box box-3' do
+				div.texte
+					h2 = data.index.box3title
+					p.date = data.index.box3baseline
+		= link_to "#{data.settings.site.url}/ateliers.html", class: 'changepage link-ateliers box box-4' do
+			div.texte
+				h2 = data.index.box4title
+				p.date = data.index.box4baseline
 
-			div.grid.grid-two.image-background.grid-border
-				= link_to "#{data.settings.site.url}/legroupe.html", class: 'changepage link-legroupe' do
-					div.texte
-						h2 = data.index.box3title
-						p.date = data.index.box3baseline
-					= image_tag "#{data.index.box3image}", alt: "Rapsodie #{data.index.box3title}", itemprop: 'image'
-
-			div.grid.grid-one.image-background.grid-border
-				= link_to "#{data.settings.site.url}/ateliers.html", class: 'changepage link-ateliers' do
-					div.texte
-						h2 = data.index.box4title
-						p.date = data.index.box4baseline
-					= image_tag "#{data.index.box4image}", alt: "Rapsodie #{data.index.box4title}", itemprop: 'image'
-
-	div.container-xl.dark-panel.citation.grid-border
+div class="row row-2"
+	div class="box box-5"
 		div.container-medium
 			blockquote
 				p = data.index.citation
 
-	div.container-xl.grid-table
-		div.grid.grid-three.image-background.grid-border
-			= link_to 'http://www.facebook.com/RapsodiePro', target: '_blank' do
-				div.texte
-					h2 = data.index.box5title
-					p.date = data.index.box5baseline
-				= image_tag "#{data.index.box5image}", alt: "Rapsodie #{data.index.box5title}", itemprop: 'image'
-
-		div.grid.grid-three.image-background.grid-border
-			= link_to 'http://www.youtube.com/user/RapsodiePro', target: '_blank' do
-				div.texte
-					h2 = data.index.box6title
-					p.date = data.index.box6baseline
-				= image_tag "#{data.index.box6image}", alt: "Rapsodie #{data.index.box6title}", itemprop: 'image'
-
-		div.grid.grid-three.image-background.grid-border
-			= link_to "#{data.settings.site.url}/contact.html", class: 'changepage link-contact' do
-				div.texte
-					h2 = data.index.box7title
-					p.date = data.index.box7baseline
-				= image_tag "#{data.index.box7image}", alt: "Rapsodie #{data.index.box7title}", itemprop: 'image'
-
-
+div class="row row-3"
+	= link_to "http://www.facebook.com/RapsodiePro", class: 'box box-6', target: '_blank' do
+		div.texte
+			h2 = data.index.box5title
+			p.date = data.index.box5baseline
+	= link_to "http://www.youtube.com/user/RapsodiePro", class: 'box box-7', target: '_blank' do
+		div.texte
+			h2 = data.index.box6title
+			p.date = data.index.box6baseline
+	= link_to "#{data.settings.site.url}/contact.html", class: 'changepage link-contact box box-8' do
+		div.texte
+			h2 = data.index.box7title
+			p.date = data.index.box7baseline
