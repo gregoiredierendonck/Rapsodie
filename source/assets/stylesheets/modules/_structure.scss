@@ -48,7 +48,7 @@ section {
 }
 .container-small {width: 100%; max-width: 750px;}
 .container-medium {width: 100%; max-width: 1000px;}
-.container-xl {width: 100%; max-width: 1600px; padding: 0;}
+.container-xl {width: 100%; max-width: $max-width; padding: 0;}
 .container-full {width: 100%; max-width: 100%; padding: 0; display:inline-block;}
 
 footer {
