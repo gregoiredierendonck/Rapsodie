@@ -30,7 +30,7 @@ input, textarea {
 	color: $black;
 	transition: all 0.2s ease-in-out;
 	&:focus {
-		box-shadow: 0 0 0 1px $black inset, 0 2px 4px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px $black;
 	}
 }
 
@@ -40,6 +40,7 @@ textarea {
 }
 
 .form-button {
+	width: auto;
 	margin-top: 20px;
 }
 

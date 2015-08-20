@@ -23,21 +23,20 @@ div.contact-content
 
 
 	div.container-small
-		form
+		form action="https://getsimpleform.com/messages?form_api_token=96ca7176000953949d6f85f5800bb2c4" method="post"
+
+			input type='hidden' name='redirect_to' value='#{data.settings.site.url}/merci.html'
+
 			div class="form-group"
 				label for="contact-name" Votre nom
-				input type="text" class="form-control" id="contact-name" name="name" placeholder="Qui êtes-vous ?"
-				span class='error-message' id='name-error'
+				input type="text" class="form-control" id="contact-name" name="name" placeholder="Qui êtes-vous ?" required=""
 
 			div class="form-group"
 				label for="contact-email" Votre adresse email
-				input type="email" class="form-control" id="contact-email" name="email" placeholder="A quelle adresse pouvons-nous vous répondre ?"
-				span class='error-message' id='email-error'
+				input type="email" class="form-control" id="contact-email" name="email" placeholder="A quelle adresse pouvons-nous vous répondre ?" required=""
 
 			div class="form-group"
 				label for='contactMessage' Votre message
-				textarea class="form-control" id='contact-message' name='message' placeholder="Une question ? Envie de partager un projet avec nous ?"
-				span class='error-message' id='message-error'
+				textarea class="form-control" id='contact-message' name='message' placeholder="Une question ? Envie de partager un projet avec nous ?" required=""
 
-			button onclick='return validateForm()' class="button button-primary form-button" Envoyer
-			span class='error-message' id='submit-error'
+			input type='submit' value='Envoyer' class="button button-primary form-button"
