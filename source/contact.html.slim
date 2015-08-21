@@ -21,22 +21,17 @@ div.contact-content
 		div.grid.grid-four.grid-cell.grid-border.element-remove
 			= image_tag "#{data.contact.imagecomposition4}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
 
-
-	div.container-small
-		form action="https://getsimpleform.com/messages?form_api_token=96ca7176000953949d6f85f5800bb2c4" method="post"
-
-			input type='hidden' name='redirect_to' value='#{data.settings.site.url}/merci.html'
-
-			div class="form-group"
-				label for="contact-name" Votre nom
-				input type="text" class="form-control" id="contact-name" name="name" placeholder="Qui êtes-vous ?" required=""
-
-			div class="form-group"
-				label for="contact-email" Votre adresse email
-				input type="email" class="form-control" id="contact-email" name="email" placeholder="A quelle adresse pouvons-nous vous répondre ?" required=""
-
-			div class="form-group"
-				label for='contactMessage' Votre message
-				textarea class="form-control" id='contact-message' name='message' placeholder="Une question ? Envie de partager un projet avec nous ?" required=""
-
-			input type='submit' value='Envoyer' class="button button-primary form-button"
+	div.container-medium.text-center.contact-contener
+		p.h2 = data.contact.textone
+		p.h2 = data.contact.texttwo
+		div.contact-bloc
+			p.h2
+				= data.contact.tellabel
+				'&nbsp;:&nbsp;
+				b = data.contact.tel
+			p.h2
+				= data.contact.emaillabel
+				'&nbsp;:&nbsp;
+				b
+					a href="mailto:#{data.contact.email}" = data.contact.email
+		p.h2 = data.contact.textthree
