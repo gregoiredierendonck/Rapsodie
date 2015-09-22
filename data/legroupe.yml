@@ -1,7 +1,9 @@
 title: Le groupe
 description: Découvrez ou redécouvrez Rapsodie - le groupe Lillois entre rap et musique classique
-introduction1: Le groupe Rapsodie propose un métissage inédit entre le rap et la musique classique.<br/><br/>Au commencement, c’est l’histoire d’une rencontre entre Sofiane PAMART et Samy alias Tikaby. L’un est pianiste, l’autre MC de la métropole lilloise. Rejoints par deux musiciens, Emmanuel AUDU (bassiste) et Théotime DIERENDONCK (batteur), puis par le rappeur Paranoyan, le mouvement Rapsodie prend de l’ampleur, leur musique de l’amplitude.<br/><br/>En trois ans, Rapsodie a cumulé une belle expérience scénique en se produisant régulièrement dans des salles à jauges moyennes mais aussi en première partie dans des lieux de renom tels que l'Aéronef à Lille ou encore l'Olympia à Paris. En plus de ses répétitions régulières, le groupe qui se veut d’abord performant en live, effectue des résidences fréquentes au Métaphone à Oignies et au Kursaal à Hellemmes.
-introduction2: Élu “Talents acoustiques” par TV5 Monde, Rapsodie s’est développé à l’international en réalisant des tournées en Europe de l’est (Roumanie, Ukraine, Pologne), en Palestine (Naplouse, Ramallah, Jérusalem) et en Suisse, promouvant ainsi la francophonie par le biais d’un rap instrumental.<br/><br/>Après « Prélude », EP 5 titres sorti en juin 2013, le groupe défend aujourd’hui son album intitulé «Fugue », distribué dans les commerces de disques depuis le 22 juin 2015.<br/><br/>Tel le rat au noeud papillon, symbole d’un animal persévérant, parcourant inlassablement les égouts de la ville mais prêt aussi à s’infiltrer dans les salles d’Opéra, les 5 musiciens poursuivent leur chemin avec passion et détermination.
+introduction1:  |
+  Le groupe Rapsodie propose un métissage inédit entre le rap et la musique classique.<br/><br/>Au commencement, c’est l’histoire d’une rencontre entre Sofiane PAMART et Samy alias Tikaby. L’un est pianiste, l’autre MC de la métropole lilloise. Rejoints par deux musiciens, Emmanuel AUDU (bassiste) et Théotime DIERENDONCK (batteur), puis par le rappeur Paranoyan, le mouvement Rapsodie prend de l’ampleur, leur musique de l’amplitude.<br/><br/>En trois ans, Rapsodie a cumulé une belle expérience scénique en se produisant régulièrement dans des salles à jauges moyennes mais aussi en première partie dans des lieux de renom tels que l'Aéronef à Lille ou encore l'Olympia à Paris. En plus de ses répétitions régulières, le groupe qui se veut d’abord performant en live, effectue des résidences fréquentes au Métaphone à Oignies et au Kursaal à Hellemmes.
+introduction2:  |
+  Élu “Talents acoustiques” par TV5 Monde, Rapsodie s’est développé à l’international en réalisant des tournées en Europe de l’est (Roumanie, Ukraine, Pologne), en Palestine (Naplouse, Ramallah, Jérusalem) et en Suisse, promouvant ainsi la francophonie par le biais d’un rap instrumental.<br/><br/>Après « Prélude », EP 5 titres sorti en juin 2013, le groupe défend aujourd’hui son album intitulé «Fugue », distribué dans les commerces de disques depuis le 22 juin 2015.<br/><br/>Tel le rat au noeud papillon, symbole d’un animal persévérant, parcourant inlassablement les égouts de la ville mais prêt aussi à s’infiltrer dans les salles d’Opéra, les 5 musiciens poursuivent leur chemin avec passion et détermination.
 
 imagevideo: "RAPSODIE-legroupe-video.jpg"
 titlevideo: Cocotte minute
@@ -17,28 +19,33 @@ membre1image: "RAPSODIE-legroupe-membres-tikaby.jpg"
 membre1title: Samy aka Tikaby
 membre1subtitle: Rappeur
 membre1birthdate: Né à Lille le 21/02/1992
-membre1texte: Lorem
+membre1texte:  |
+  Samy se servait de l'écriture comme d’un exutoire, par simple intérêt pour les mots avant de se décider à les mettre en musique. Il se fait identifier en publiant sur internet une série de « freestyles », où le rappeur se filme spontanément et sans artifices, dans différents coins de Lille pour faire connaître ses premiers morceaux. Suite à cette première démarche solitaire, Samy rencontre Sofiane, et Rapsodie prend forme.
 
 membre2image: "RAPSODIE-legroupe-membres-yann.jpg"
 membre2title: Yann aka Paranoyan
 membre2subtitle: Rappeur
 membre2birthdate: A fournir
-membre2texte: Lorem
+membre2texte:  |
+  Yann est un auteur à la plume acerbe, et rappeur au débit électrique. Il agit en toute indépendance depuis plus de 10 ans, défenseur d’un rap engagé et indépendant. Après une cinquantaine de morceaux diffusés sur la toile ou transmis de main à main sous la forme d’une clef usb (les « 4G de Paranoyan », regroupant clips, textes et albums de l'artiste), il sort en décembre 2013 son premier album « L’école du micro sans argent ». Il rejoint le navire Rapsodie en 2012 formant avec Samy un tandem de MCs (Maîtres de cérémonies).
 
 membre3image: "RAPSODIE-legroupe-membres-sofiane.jpg"
 membre3title: Sofiane Pamart
 membre3subtitle: Pianiste
 membre3birthdate: Né à Villeneuve d'ascq le 25/04/1990
-membre3texte: Lorem
+membre3texte:  |
+  Sofiane s’est formé au conservatoire de Lille dès l’âge de 7 ans. Il y obtient une médaille d’or de piano puis un diplôme d’interprète. A l’université de Lille 3 il étudie en licence de musicologie. Plus tard il rejoint l’université Lyon 2 pour y obtenir un master de management porté par l’envie de mieux comprendre le monde professionnel de la musique qui l’entoure. Il mène le projet Rapsodie. En parallèle, il enseigne le piano et compose pour l’artiste belge Scylla.
 
 membre4image: "RAPSODIE-legroupe-membres-theo.jpg"
 membre4title: Théotime Dierendonck
 membre4subtitle: Batteur
 membre4birthdate: Né à Marcq en Baroeul le 10/05/1989
-membre4texte: Lorem
+membre4texte:  |
+  Théotime est élève depuis plus de 10 ans à l’école régionale de Batterie à Lille. Il a aussi suivi des études de médecine et exerce depuis 2 ans le métier de kinésithérapeute à la prison de Sequedin. Adepte de la culture hip hop, il fait également partie, en plus du groupe Rapsodie, d’un collectif de graffeurs / plasticiens.
 
 membre5image: "RAPSODIE-legroupe-membres-manu.jpg"
 membre5title: Emmanuel Audu
 membre5subtitle: Bassiste
 membre5birthdate: Né à Cergy Pontoise le 07/09/1992
-membre5texte: Lorem
+membre5texte:  |
+  Manu a appris la basse seul dès l’âge de 14 ans. Après l’obtention de son Bac, l’autodidacte intègre pour un an l’EF2M, l’école de formation de musique actuelle à Tourcoing. Aujourd’hui il est élève au conservatoire de Lille en classe de jazz, et travaille en parallèle seul son propre univers artistique. Il faisait partie avec Théotime d’un groupe de Blues avant de rejoindre l’aventure Rapsodie.

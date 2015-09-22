@@ -1,33 +1,40 @@
 title: Rapsodie
 description: Rapsodie - l'alliance rap et musique classique
 homelink: Accueil
-h1: Rapsodie, l’alliance entre rap et musique classique
+h1:  |
+  Rapsodie, l’alliance entre rap et musique classique
 
 box1title: Fugue
-box1baseline: Le nouvel album de Rapsodie
+box1baseline:  |
+  Le nouvel album de Rapsodie
 box1image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-1"
-box1link: Voir tous les albums
+box1link:  |
+  Voir tous les albums
 box1linkpath: albums
 
 box2title: Concerts
-box2baseline: Les rats enflamment les salles
+box2baseline:  |
+  Les rats enflamment les salles
 box2image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-2"
 box2link: Rapsodie en live
 box2linkpath: concerts
 
 box3title: Le groupe
-box3baseline: Les membres - histoire
+box3baseline:  |
+  Les membres, l'histoire
 box3image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-3"
 box3link: En savoir plus
 box3linkpath: legroupe
 
 box4title: Ateliers
-box4baseline: Rapsodie éveille les sens et les sons
+box4baseline:  |
+  Rapsodie éveille les sens et les sons
 box4image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-4"
 box4link: Plus d'info
 box4linkpath: ateliers
 
-citation: Nous n’avons qu’une seule bonne qualité, c’est la persistante énergie des rats, qui rongeraient l’acier s’ils vivaient autant que les corbeaux.
+citation:  |
+  Nous n’avons qu’une seule bonne qualité, c’est la persistante énergie des rats, qui rongeraient l’acier s’ils vivaient autant que les corbeaux.
 
 box5title: Facebook
 box5baseline: L’actualité Rapsodie

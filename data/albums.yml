@@ -1,6 +1,7 @@
 title: Albums
 description: Tous les albums du groupe Lillois Rapsodie. L'alliance rap et musique classique qui vous plaira !
-introduction: De la conception au mastering, le groupe mène à ce jour ses projets en entière indépendance. Les textes sont écris par les deux Mcs Tikaby et Paranoyan, les musiques composées par le pianiste Sofiane Pamart et arrangées par Théotime Dierendonck le batteur et Emmanuel Audu le bassiste.
+introduction:  |
+  De la conception au mastering, le groupe mène à ce jour ses projets en entière indépendance. Les textes sont écris par les deux Mcs Tikaby et Paranoyan, les musiques composées par le pianiste Sofiane Pamart et arrangées par Théotime Dierendonck le batteur et Emmanuel Audu le bassiste.
 
 imagecomposition1: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-1"
 imagecomposition2: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-2"
@@ -8,12 +9,14 @@ imagecomposition3: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-3"
 
 album1image: "http://placehold.it/400x400"
 album1title: Fugue
-album1texte: lorem
+album1texte:  |
+  Après leur EP Prélude en 2013, "Fugue" est le premier album du collectif lillois Rapsodie. Mélange détonnant qui puise sa force dans l’originalité de ses compositions, ce disque est un voyage métissé entre rap et musique classique. Rapsodie y propose un rap orchestral porteur d'un regard authentique et lucide sur ce qui fait son environnement - les parcours de vie de ses créateurs de pur rappeur à élève du conservatoire. De deux styles situés aux antipodes, Rapsodie fait naitre "Fugue," un album de rap tout simplement inédit.
 button1name: Acheter l'album sur lafnac.fr
 seller1url: http://www.google.com/
 
 album2image: "http://placehold.it/400x400"
 album2title: Prélude
-album2texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
+album2texte:  |
+  Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
 button2name: Télécharger sur itunes
 seller2url: http://www.google.com/

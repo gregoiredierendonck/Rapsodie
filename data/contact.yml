@@ -1,8 +1,10 @@
 title: Contact
 description: Concerts - ateliers - partenariats... Contactez Rapsodie !
 
-textone: Lorem
-texttwo: N‘hésitez pas à nous contacter !
+textone:  |
+  Une question, besoin de précision sur notre activité ?
+texttwo:  |
+  N‘hésitez pas à nous contacter !
 email: contact@rapsodie.pro
 
 imagecomposition1: "http://www.rapsodie.pro/a/i/RAPSODIE-contact-1"
