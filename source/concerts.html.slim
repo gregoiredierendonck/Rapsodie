@@ -26,11 +26,6 @@ div.concerts-content
 		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
 			= image_tag "#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
 
-	div.container-small.citation
-		blockquote
-			p = data.concerts.citation
-			footer = data.concerts.citationsignature
-
 	.container-small.calltoaction
 		div.calltoaction-contenter
 			div.calltoaction-content

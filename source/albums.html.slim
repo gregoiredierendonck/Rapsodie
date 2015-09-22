@@ -45,8 +45,3 @@ div.albums-content
 				- data.playlistprelude.each_with_index do |song|
 					li = song.title
 			= link_to data.albums.button2name, data.albums.seller2url, target: '_blank', :class => "button button-primary"
-
-	div.container-small.citation
-		blockquote
-			p = data.albums.citation
-			footer = data.albums.citationsignature
