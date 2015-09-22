@@ -22,29 +22,18 @@ div.albums-content
 	div.container-small
 		p.introduction-text = data.albums.introduction
 
-	div.container-medium.grid-table.albums-contener
-		div.grid.grid-two
-			= image_tag "#{data.albums.album1image}", alt: "Rapsodie #{data.albums.album1title}", itemprop: 'image'
-		div.grid.grid-two.grid-padding
-			h2 = data.albums.album1title
-			p = data.albums.album1texte
-			h3.h4 Playlist
-			ol.list
-				- data.playlistfugue.each_with_index do |song|
-					li = song.title
-			= link_to data.albums.button1name, data.albums.seller1url, target: '_blank', :class => "button button-primary"
-
-	div.container-medium.grid-table.albums-contener
-		div.grid.grid-two
-			= image_tag "#{data.albums.album2image}", alt: "Rapsodie #{data.albums.album2title}", itemprop: 'image'
-		div.grid.grid-two.grid-padding
-			h2 = data.albums.album2title
-			p = data.albums.album2texte
-			h3.h4 Playlist
-			ol.list
-				- data.playlistprelude.each_with_index do |song|
-					li = song.title
-			= link_to data.albums.button2name, data.albums.seller2url, target: '_blank', :class => "button button-primary"
+	- data.albums.album.each_with_index do |album|
+		div.container-medium.grid-table.albums-contener
+			div.grid.grid-two
+				= image_tag "#{album.image}", alt: "Rapsodie #{album.title}", itemprop: 'image'
+			div.grid.grid-two.grid-padding
+				h2 = album.title
+				p = album.texte
+				h3.h4 Playlist
+				ol.list
+					- album.playlist.each_with_index do |song|
+						li = song.title
+				= link_to album.buttontext, data.albums.buttonurl, target: '_blank', :class => "button button-primary"
 
 	div.container-small.calltoaction
 		div.calltoaction-contenter

@@ -6,14 +6,70 @@ imagecomposition1: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-1"
 imagecomposition2: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-2"
 imagecomposition3: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-3"
 
-album1image: "http://placehold.it/400x400"
-album1title: Fugue
-album1texte: Après leur EP Prélude en 2013, "Fugue" est le premier album du collectif lillois Rapsodie. Mélange détonnant qui puise sa force dans l’originalité de ses compositions, ce disque est un voyage métissé entre rap et musique classique. Rapsodie y propose un rap orchestral porteur d'un regard authentique et lucide sur ce qui fait son environnement - les parcours de vie de ses créateurs de pur rappeur à élève du conservatoire. De deux styles situés aux antipodes, Rapsodie fait naitre "Fugue," un album de rap tout simplement inédit.
-button1name: Acheter l'album sur lafnac.fr
-seller1url: http://www.google.com/
-
-album2image: "http://placehold.it/400x400"
-album2title: Prélude
-album2texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
-button2name: Télécharger sur itunes
-seller2url: http://www.google.com/
+album:
+  -
+    image: "http://placehold.it/400x400"
+    title: Fugue
+    texte: Après leur EP Prélude en 2013, "Fugue" est le premier album du collectif lillois Rapsodie. Mélange détonnant qui puise sa force dans l’originalité de ses compositions, ce disque est un voyage métissé entre rap et musique classique. Rapsodie y propose un rap orchestral porteur d'un regard authentique et lucide sur ce qui fait son environnement - les parcours de vie de ses créateurs de pur rappeur à élève du conservatoire. De deux styles situés aux antipodes, Rapsodie fait naitre "Fugue," un album de rap tout simplement inédit.
+    buttontext: Acheter l'album sur lafnac.fr
+    buttonurl: http://www.google.com/
+    playlist:
+      -
+        title: Prélude
+      -
+        title: On court où
+      -
+        title: Évasion
+      -
+        title: Le vent se lève
+      -
+        title: Cocotte minute
+      -
+        title: Interlude
+      -
+        title: Rose noir
+      -
+        title: Tableau
+      -
+        title: Ziri
+      -
+        title: Et encore
+      -
+        title: Fantaisie
+      -
+        title: Jour et nuit
+      -
+        title: Prendre le large
+  -
+    image: "http://placehold.it/400x400"
+    title: Prélude
+    texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
+    buttontext: Télécharger sur itunes
+    buttonurl: http://www.google.com/
+    playlist:
+      -
+        title: Prélude
+      -
+        title: On court où
+      -
+        title: Évasion
+      -
+        title: Le vent se lève
+      -
+        title: Cocotte minute
+      -
+        title: Interlude
+      -
+        title: Rose noir
+      -
+        title: Tableau
+      -
+        title: Ziri
+      -
+        title: Et encore
+      -
+        title: Fantaisie
+      -
+        title: Jour et nuit
+      -
+        title: Prendre le large
