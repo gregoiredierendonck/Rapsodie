@@ -4,7 +4,7 @@ section class="containerplayer"
 		div id="wrapperaudiojs"
 			audio preload
 			ol id="playerlist"
-				- data.player.tracks.each_with_index do |track|
+				- data.player.tracks.each do |track|
 					li
 						= link_to track.title, '#', :'data-src' => track.url
 			button id="buttonlistplayer" type="button" Playlist
