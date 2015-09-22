@@ -26,13 +26,6 @@ div.concerts-content
 		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
 			= image_tag "#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
 
-	.container-small.calltoaction
-		div.calltoaction-contenter
-			div.calltoaction-content
-				h2.visuallyhidden Contact
-				p = data.settings.calltoaction
-				= link_to 'Contactez-nous', "#{data.settings.site.url}/contact.html", :class => "changepage button button-primary"
-
 	div.container-full
 		h2.visuallyhidden Liste des concerts
 		div.container-small.text-center
