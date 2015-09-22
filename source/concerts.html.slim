@@ -23,20 +23,8 @@ div.concerts-content
 		p class="introduction-text" = data.concerts.introduction
 
 	div.container-medium
-		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
-			= image_tag "#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
-
-	div.container-small.citation
-		blockquote
-			p = data.concerts.citation
-			footer = data.concerts.citationsignature
-
-	.container-small.calltoaction
-		div.calltoaction-contenter
-			div.calltoaction-content
-				h2.visuallyhidden Contact
-				p = data.settings.calltoaction
-				= link_to 'Contactez-nous', "#{data.settings.site.url}/contact.html", :class => "changepage button button-primary"
+		= link_to "https://youtu.be/ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
+			= image_tag "#{data.concerts.imagevideo}", alt: "Rapsodie #{data.concerts.titlevideo}", itemprop: 'image'
 
 	div.container-full
 		h2.visuallyhidden Liste des concerts
