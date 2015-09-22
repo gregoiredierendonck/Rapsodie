@@ -26,43 +26,18 @@ div.ateliers-content
 		blockquote
 			p = data.ateliers.citation
 
-	.container-small.calltoaction
-		div.calltoaction-contenter
-			div.calltoaction-content
-				h2.visuallyhidden Contact
-				p = data.settings.calltoaction
-				= link_to 'Contactez-nous', "#{data.settings.site.url}/contact.html", :class => "changepage button button-primary"
-
-
-	div.container-full.dark-panel.ateliersdetails
-		div.container-medium
-			div.grid-table
-					div.grid.grid-two.ateliers-image
-						= image_tag "#{data.ateliers.atelier1image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier1titre}", itemprop: 'image'
-					div.grid.grid-two.grid-padding
-						h2 = data.ateliers.atelier1titre
-						p.subtitle = data.ateliers.atelier1titre2
-						p = data.ateliers.atelier1texte
-
-	div.container-full.dark-panel.ateliersdetails
-		div.container-medium
-			div.grid-table
-					div.grid.grid-two
-						h2 = data.ateliers.atelier2titre
-						p.subtitle = data.ateliers.atelier2titre2
-						p = data.ateliers.atelier2texte
-					div.grid.grid-two.grid-padding.ateliers-image
-						= image_tag "#{data.ateliers.atelier2image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier2titre}", itemprop: 'image'
-
-	div.container-full.dark-panel.ateliersdetails
-		div.container-medium
-			div.grid-table
-					div.grid.grid-two.ateliers-image
-						= image_tag "#{data.ateliers.atelier3image}", alt: "Les ateliers Rapsodie : #{data.ateliers.atelier3titre}", itemprop: 'image'
-					div.grid.grid-two.grid-padding
-						h2 = data.ateliers.atelier3titre
-						p.subtitle = data.ateliers.atelier3titre2
-						p = data.ateliers.atelier3texte
+	- data.ateliers.atelier.each_with_index do |atelier|
+		article.container-full.dark-panel.ateliersdetails
+			div.container-medium
+				div.grid-table
+						div.grid.grid-two.ateliers-image
+							= image_tag "#{atelier.image}", alt: "Les ateliers Rapsodie : #{atelier.title}", itemprop: 'image'
+						div.grid.grid-two.grid-padding
+							h1 class="h2" = atelier.title
+							span = atelier.age
+							span = atelier.group
+							span = atelier.time
+							p = atelier.text
 
 	.container-small.calltoaction
 		div.calltoaction-contenter
