@@ -22,15 +22,16 @@ div.contact-content
 			= image_tag "#{data.contact.imagecomposition4}", alt: "Rapsodie #{data.contact.title}", itemprop: 'image'
 
 	div.container-medium.text-center.contact-contener
-		p.h4 = data.contact.textone
-		p.h4 = data.contact.texttwo
-		div.contact-bloc.container-medium
-			/ p.h4
-			/ 	= data.contact.tellabel
-			/ 	'&nbsp;:&nbsp;
-			/ 	b = data.contact.tel
-			p.h4
-				/ = data.contact.emaillabel
-				/ '&nbsp;:&nbsp;
+		p.h2 = data.contact.textone
+		p.h2 = data.contact.texttwo
+		div.contact-bloc
+			p.h2
+				= data.contact.tellabel
+				'&nbsp;:&nbsp;
+				b = data.contact.tel
+			p.h2
+				= data.contact.emaillabel
+				'&nbsp;:&nbsp;
 				b
 					a href="mailto:#{data.contact.email}" = data.contact.email
+		p.h2 = data.contact.textthree

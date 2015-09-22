@@ -3,20 +3,21 @@ description: Rapsodie - l'alliance rap et musique classique
 homelink: Accueil
 h1: Rapsodie, l’alliance entre rap et musique classique
 
-box1title: Fugue
-box1baseline: Le nouvel album de Rapsodie
+
+box1title: Fugue2
+box1baseline: Découvrez le premier album de Rapsodie - tout frais dans les backs
 box1image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-1"
 box1link: Voir tous les albums
 box1linkpath: albums
 
 box2title: Concerts
-box2baseline: Les rats enflamment les salles
+box2baseline: Quand les rats enflamme les salles
 box2image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-2"
 box2link: Rapsodie en live
 box2linkpath: concerts
 
 box3title: Le groupe
-box3baseline: Les membres, l'histoire
+box3baseline: Tout Rapsodie - le groupe, les membres
 box3image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-3"
 box3link: En savoir plus
 box3linkpath: legroupe
@@ -28,13 +29,14 @@ box4link: Plus d'info
 box4linkpath: ateliers
 
 citation: Nous n’avons qu’une seule bonne qualité, c’est la persistante énergie des rats, qui rongeraient l’acier s’ils vivaient autant que les corbeaux.
+citationsignature: loremipsum, loremipsum
 
 box5title: Facebook
-box5baseline: L’actualité Rapsodie
+box5baseline: L’actualité Rapsodie est sur Facebook
 box5image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-5"
 
 box6title: YouTube
-box6baseline: Rapsodie en vidéo
+box6baseline: Rapsodie en vidéo, c’est sur YouTube
 box6image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-6"
 
 box7title: Contact

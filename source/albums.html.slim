@@ -46,9 +46,7 @@ div.albums-content
 					li = song.title
 			= link_to data.albums.button2name, data.albums.seller2url, target: '_blank', :class => "button button-primary"
 
-	.container-small.calltoaction
-		div.calltoaction-contenter
-			div.calltoaction-content
-				h2.visuallyhidden Contact
-				p = data.settings.calltoaction
-				= link_to 'Contactez-nous', "#{data.settings.site.url}/contact.html", :class => "changepage button button-primary"
+	div.container-small.citation
+		blockquote
+			p = data.albums.citation
+			footer = data.albums.citationsignature
