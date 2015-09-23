@@ -33,46 +33,57 @@ div.legroupe-content
 
 	div.container-medium
 		h2 = data.legroupe.membretitle
-		div.member.grid-table
-			div.grid.grid-two
-				= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
-			div.grid.grid-two.grid-padding
-				h3 = data.legroupe.membre1title
-				p.subtitle = data.legroupe.membre1subtitle
-				p.text-small = data.legroupe.membre1birthdate
-				p = data.legroupe.membre1texte
-		div.member.grid-table
-			div.grid.grid-two
-				= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
-			div.grid.grid-two.grid-padding
-				h3 = data.legroupe.membre2title
-				p.subtitle = data.legroupe.membre2subtitle
-				p.text-small = data.legroupe.membre2birthdate
-				p = data.legroupe.membre2texte
-		div.member.grid-table
-			div.grid.grid-two
-				= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
-			div.grid.grid-two.grid-padding
-				h3 = data.legroupe.membre3title
-				p.subtitle = data.legroupe.membre3subtitle
-				p.text-small = data.legroupe.membre3birthdate
-				p = data.legroupe.membre3texte
-		div.member.grid-table
-			div.grid.grid-two
-				= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
-			div.grid.grid-two.grid-padding
-				h3 = data.legroupe.membre4title
-				p.subtitle = data.legroupe.membre4subtitle
-				p.text-small = data.legroupe.membre4birthdate
-				p = data.legroupe.membre4texte
-		div.member.grid-table
-			div.grid.grid-two
-				= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
-			div.grid.grid-two.grid-padding
-				h3 = data.legroupe.membre5title
-				p.subtitle = data.legroupe.membre5subtitle
-				p.text-small = data.legroupe.membre5birthdate
-				p = data.legroupe.membre5texte
+
+		- data.legroupe.membres.each_with_index do |membre|
+			div.member.grid-table
+				div.grid.grid-two
+					= image_tag "#{data.settings.site.imagesurl}#{membre.image}", alt: "Les membres Rapsodie : #{membre.title}", itemprop: 'image'
+				div.grid.grid-two.grid-padding
+					h3 = membre.title
+					p.subtitle = membre.fonction
+					p.text-small = membre.birthday
+					p = membre.texte
+
+		/ div.member.grid-table
+		/ 	div.grid.grid-two
+		/ 		= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre1image}", alt: "Les membres Rapsodie : #{data.legroupe.membre1title}", itemprop: 'image'
+		/ 	div.grid.grid-two.grid-padding
+		/ 		h3 = data.legroupe.membre1title
+		/ 		p.subtitle = data.legroupe.membre1subtitle
+		/ 		p.text-small = data.legroupe.membre1birthdate
+		/ 		p = data.legroupe.membre1texte
+		/ div.member.grid-table
+		/ 	div.grid.grid-two
+		/ 		= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre2image}", alt: "Les membres Rapsodie : #{data.legroupe.membre2title}", itemprop: 'image'
+		/ 	div.grid.grid-two.grid-padding
+		/ 		h3 = data.legroupe.membre2title
+		/ 		p.subtitle = data.legroupe.membre2subtitle
+		/ 		p.text-small = data.legroupe.membre2birthdate
+		/ 		p = data.legroupe.membre2texte
+		/ div.member.grid-table
+		/ 	div.grid.grid-two
+		/ 		= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre3image}", alt: "Les membres Rapsodie : #{data.legroupe.membre3title}", itemprop: 'image'
+		/ 	div.grid.grid-two.grid-padding
+		/ 		h3 = data.legroupe.membre3title
+		/ 		p.subtitle = data.legroupe.membre3subtitle
+		/ 		p.text-small = data.legroupe.membre3birthdate
+		/ 		p = data.legroupe.membre3texte
+		/ div.member.grid-table
+		/ 	div.grid.grid-two
+		/ 		= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre4image}", alt: "Les membres Rapsodie : #{data.legroupe.membre4title}", itemprop: 'image'
+		/ 	div.grid.grid-two.grid-padding
+		/ 		h3 = data.legroupe.membre4title
+		/ 		p.subtitle = data.legroupe.membre4subtitle
+		/ 		p.text-small = data.legroupe.membre4birthdate
+		/ 		p = data.legroupe.membre4texte
+		/ div.member.grid-table
+		/ 	div.grid.grid-two
+		/ 		= image_tag "#{data.settings.site.imagesurl}#{data.legroupe.membre5image}", alt: "Les membres Rapsodie : #{data.legroupe.membre5title}", itemprop: 'image'
+		/ 	div.grid.grid-two.grid-padding
+		/ 		h3 = data.legroupe.membre5title
+		/ 		p.subtitle = data.legroupe.membre5subtitle
+		/ 		p.text-small = data.legroupe.membre5birthdate
+		/ 		p = data.legroupe.membre5texte
 
 	.container-small.calltoaction
 		div.calltoaction-contenter
