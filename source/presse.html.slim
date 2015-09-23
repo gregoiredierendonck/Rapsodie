@@ -23,7 +23,7 @@ div.presse-content
 			h3 Documents techniques
 		div.container-xl
 			ul
-				- data.pressetechnique.each_with_index do |pressetechnique|
+				- data.presse.technique.each_with_index do |pressetechnique|
 					li.grid.grid-five.image-background
 						= link_to pressetechnique.link, target: '_blank' do
 							div.image
@@ -37,7 +37,7 @@ div.presse-content
 			h3 Sélection de photos
 		div.container-xl
 			ul
-				- data.pressephotos.each_with_index do |pressephotos|
+				- data.presse.photos.each_with_index do |pressephotos|
 					li.grid.grid-five.image-background
 						= link_to pressephotos.link, target: '_blank' do
 							div.image
