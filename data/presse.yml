@@ -10,21 +10,21 @@ technique:
     title: d
     type: d
     image: "http://placehold.it/318x318"
-    link: "http://www.google.com"
+    link: d
   -
     title: d
     type: d
     image: "http://placehold.it/318x318"
-    link: "http://www.google.com"
+    link: d
 
 photos:
   -
     title: d
     type: d
     image: "http://placehold.it/318x318"
-    link: "http://www.google.com"
+    link: d
   -
     title: d
     type: d
     image: "http://placehold.it/318x318"
-    link: "http://www.google.com"
+    link: d
