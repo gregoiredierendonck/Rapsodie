@@ -23,8 +23,8 @@ div.concerts-content
 		p class="introduction-text" = data.concerts.introduction
 
 	div.container-medium
-		= link_to 'http://www.youtube.com/watch?v=Mo-975XajAQ', class: 'videolink magnific-video-link' do
-			= image_tag "#{data.legroupe.imagevideo}", alt: "Rapsodie #{data.legroupe.titlevideo}", itemprop: 'image'
+		= link_to data.concerts.videolink, class: 'videolink magnific-video-link' do
+			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}", itemprop: 'image'
 
 	div.container-full
 		h2.visuallyhidden Liste des concerts
