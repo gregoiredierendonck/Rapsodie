@@ -65,6 +65,16 @@
       }
     }
   }
+  &.text-bottom {
+    .texte {
+      width: 80%;
+      min-height: auto;
+      top: auto;
+      bottom: -10px;
+      left: 10%;
+      margin-left: 0;
+    }
+  }
   a {
     width: 100%;
     height: auto;

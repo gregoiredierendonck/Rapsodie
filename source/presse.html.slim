@@ -24,7 +24,7 @@ div.presse-content
 		div.container-xl
 			ul
 				- data.pressetechnique.each_with_index do |pressetechnique|
-					li.grid.grid-five.image-background
+					li.grid.grid-five.image-background.text-bottom
 						= link_to pressetechnique.link, target: '_blank' do
 							div.image
 								= image_tag "#{pressetechnique.image}", alt: "Rapsodie - #{pressetechnique.title}", itemprop: 'image'
@@ -38,7 +38,7 @@ div.presse-content
 		div.container-xl
 			ul
 				- data.pressephotos.each_with_index do |pressephotos|
-					li.grid.grid-five.image-background
+					li.grid.grid-five.image-background.text-bottom
 						= link_to pressephotos.link, target: '_blank' do
 							div.image
 								= image_tag "#{pressephotos.image}", alt: "Rapsodie - #{pressephotos.title}", itemprop: 'image'
