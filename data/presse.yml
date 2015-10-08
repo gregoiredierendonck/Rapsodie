@@ -7,24 +7,54 @@ imagecomposition3: "http://www.rapsodie.pro/a/i/RAPSODIE-presse-3"
 
 technique:
   -
-    title: d
-    type: d
+    title: Concerts, la fiche technique
+    type: pdf, 1.2Mo
     image: "http://placehold.it/318x318"
     link: "http://www.google.com"
   -
-    title: d
-    type: d
+    title: Description complète du groupe
+    type: text, 2.0Ko
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Logo Rapsodie
+    type: svg, 48.0Ko
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Logo Rapsodie
+    type: png, 664.0Ko
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Logo Rapsodie
+    type: jpg, 864.0Ko
     image: "http://placehold.it/318x318"
     link: "http://www.google.com"
 
 photos:
   -
-    title: d
-    type: d
+    title: Rapsodie, photo 1
+    type: jpg, 5.5Mo
     image: "http://placehold.it/318x318"
     link: "http://www.google.com"
   -
-    title: d
-    type: d
+    title: Rapsodie, photo 2
+    type: jpg, 4.8Mo
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Rapsodie, photo 3
+    type: jpg, 6.0Mo
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Rapsodie, photo 4
+    type: jpg, 6.0Mo
+    image: "http://placehold.it/318x318"
+    link: "http://www.google.com"
+  -
+    title: Rapsodie, photo 5
+    type: jpg, 3.6Mo
     image: "http://placehold.it/318x318"
     link: "http://www.google.com"
