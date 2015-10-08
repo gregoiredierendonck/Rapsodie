@@ -7,54 +7,24 @@ imagecomposition3: "http://www.rapsodie.pro/a/i/RAPSODIE-presse-3"
 
 technique:
   -
-    title: 'Rapsodie - le logo'
-    type: 'svg, jpg, png, XXko'
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
+    title: d
+    type: d
+    image: "http://placehold.it/318x318"
+    link: d
   -
-    title: 'Rapsodie - Historique et description'
-    type: 'txt, XXko'
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Concerts : Plaquette de présentation'
-    type: 'txt, XXko'
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Concerts : La fiche technique'
-    type: 'txt, XXko'
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Ateliers : Plaquette de présentation'
-    type: 'txt, XXko'
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
+    title: d
+    type: d
+    image: "http://placehold.it/318x318"
+    link: d
 
 photos:
   -
-    title: 'Photo 1'
-    type: jpg, XXko
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
+    title: d
+    type: d
+    image: "http://placehold.it/318x318"
+    link: d
   -
-    title: 'Photo 2'
-    type: jpg, XXko
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Photo 3'
-    type: jpg, XXko
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Photo 4'
-    type: jpg, XXko
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
-  -
-    title: 'Photo 5'
-    type: jpg, XXko
-    image: 'http://placehold.it/318x318'
-    link: 'http://placehold.it/318x318'
+    title: d
+    type: d
+    image: "http://placehold.it/318x318"
+    link: d
