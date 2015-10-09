@@ -1,29 +1,20 @@
 .contact-contener {
   margin: 50px auto 80px;
+  padding: 30px 20px;
+  background-image: image-url('http://placehold.it/318x318');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
   p {
     margin-bottom: 30px;
   }
   .contact-bloc {
-    display: inline-block;
-    width: auto;
-    max-width: 80%;
-    background-color: $black;
-    color: $white;
-    padding: 50px;
-    margin: 0 auto 40px;
-    b {
-      color: $primary-color;
-    }
-    p {
-      margin-bottom: 20px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+    margin-bottom: 40px;
     a {
-      &:hover, &:focus {
-        color: $white;
-      }
+      text-transform: none;
+      font-size: 18px;
+      padding: 10px 30px 15px;
+      margin: 10px 0 40px;
     }
   }
 }

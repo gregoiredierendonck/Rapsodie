@@ -1,9 +1,24 @@
 .ateliers-content {
 	h2, .h2 {
 		margin-bottom: 10px;
+		text-align: left;
 	}
 	.ateliersdetails {
-		padding: 50px 0;
+		padding: 100px 0;
+		.ateliers-span {
+			margin-left: -10px;
+			span {
+				color: $primary-color;
+				font-weight: $font-weight-bold;
+				display: inline-block;
+				padding: 0 10px;
+				border-right: 1px solid $primary-color;
+				&:last-of-type {padding-right: 0;border-right: none;margin-bottom: 20px;}
+			}
+		}
+		&:nth-of-type(2) {
+			.ateliers-image {float: right;}
+		}
 	}
 }
 

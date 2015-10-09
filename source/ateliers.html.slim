@@ -34,9 +34,10 @@ div.ateliers-content
 							= image_tag "#{atelier.image}", alt: "Les ateliers Rapsodie : #{atelier.title}", itemprop: 'image'
 						div.grid.grid-two.grid-padding
 							h1 class="h2" = atelier.title
-							span = atelier.age
-							span = atelier.group
-							span = atelier.time
+							div class="ateliers-span"
+								span = atelier.age
+								span = atelier.group
+								span = atelier.time
 							p = atelier.text
 
 	.container-small.calltoaction

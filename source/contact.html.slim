@@ -24,12 +24,5 @@ div.contact-content
 	div.container-medium.text-center.contact-contener
 		p.h4 = data.contact.textone
 		div.contact-bloc
-			/ p.h2
-			/ 	= data.contact.tellabel
-			/ 	'&nbsp;:&nbsp;
-			/ 	b = data.contact.tel
 			p.h2
-				/ = data.contact.emaillabel
-				/ '&nbsp;:&nbsp;
-				b
-					a href="mailto:#{data.contact.email}" = data.contact.email
+				= link_to data.contact.email, "mailto:#{data.contact.email}", :class => "button button-primary"

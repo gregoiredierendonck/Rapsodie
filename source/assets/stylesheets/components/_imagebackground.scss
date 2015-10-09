@@ -66,13 +66,28 @@
     }
   }
   &.text-bottom {
+    .image, .texte {
+      border: 1px solid $grey-lighter;
+    }
     .texte {
-      width: 80%;
+      width: 100%;
       min-height: auto;
       top: auto;
-      bottom: -10px;
-      left: 10%;
+      bottom: 0;
+      left: 0;
       margin-left: 0;
+      background-color: $white;
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
+        color: $black;
+      }
+      h4 {
+        margin-bottom: 0;
+        margin-top: 5px;
+        padding-bottom: 0;
+      }
+      p {
+        vertical-align: bottom;
+      }
     }
   }
   a {
