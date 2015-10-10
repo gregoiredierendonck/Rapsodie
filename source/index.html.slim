@@ -48,3 +48,9 @@ div class="row row-3"
 		div.texte
 			h2 = data.index.box7title
 			p.date = data.index.box7baseline
+
+article class="row row-4 album-focus"
+	= image_tag "#{data.settings.album.image}", alt: "Rapsodie - #{data.settings.album.title}", itemprop: 'image'
+	h1 = data.settings.album.title
+	p = data.settings.album.texte
+
