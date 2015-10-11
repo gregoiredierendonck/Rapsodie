@@ -11,6 +11,4 @@ site:
 calltoaction: Une question, besoin de précision sur notre activité ?
 
 album:
-  image: 'http://placehold.it/60x60'
-  title: 'Fugue'
-  texte: 'Découvrez une sélection de notre dernier album'
+  texte: 'Découvrez une sélection de notre dernier album "Fugue"'

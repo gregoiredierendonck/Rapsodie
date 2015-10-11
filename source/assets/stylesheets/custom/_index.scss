@@ -2,55 +2,45 @@
 
 	/* STRUCTURE */
 
-	#container {
+	* {vertical-align: middle;}
+
+	#container, .content {
 		width: 100%;
 		height: 100%;
-		display: flex;
-		justify-content: center;
-		}
-		.content {
+		text-align: center;
+	}
+	.index-contener {
 		width: 100%;
 		max-width: $max-width;
 		height: 100%;
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: column;
+		display: table;
 	}
 
-	.row {display: flex;}
+	.row {display: table-row;}
 
-	.row-1 {flex: 2; flex-basis: 60%;}
-	.row-2 {flex-basis: 10%; flex-grow: 0; min-height: 100px;}
-	.row-3 {flex:1;flex-basis: 30%; flex-direction: row;}
-
-	.row-2-0 {display: flex; flex-direction: row;}
-	.row-2-1 {flex-basis: 50%;}
-	.row-2-2 {flex-basis: 50%;flex-direction: column;}
-
-	.box {
-		display: flex;
-		flex-basis: 100%;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
+	.table-2, .table-3, .table-4, .table-5, .box-5 {
+		width: 100%;
+		height: 100%;
+		display: table;
 	}
-	.box-1 {flex-basis:100%;}
-	.box-2 {flex-basis:50%;}
-	.box-3 {flex-basis:50%;}
-	.box-4 {flex-basis:100%;flex: 1;}
-	.box-5 {flex-basis: 100%;flex:1;}
-	.box-6 {flex-basis: 33.33%;}
-	.box-7 {flex-basis: 33.33%;}
-	.box-8 {flex-basis: 33.33%;}
+
+	.row-1 {height: 60%;}
+	.row-2 {height: 10%; min-height: 100px;}
+	.row-3 {height: 30%;}
+
+	.box-1, .row-2-2 {display: table-cell; width: 50%; height: 100%;}
+	.box-4 .row-2-3 {display: table-row; height: 50%;}
+	.box-4 {display: table-cell;}
+	.table-4 a {display: table-cell; width: 50%;}
+	.table-5 a {display: table-cell; width: 33.33%;}
+	.box-5 .container-medium {display: table-cell; width: 100%; height: 100%;}
 
 	@media screen and (max-width: $media-m) {
-		.row {flex-direction: inherit;}
-		.row-2 {display: none;}
-		.row-3 {flex: 4;}
-		#container{.content{height: auto; padding-bottom: calc(#{$player-height} + 5px)}}
+		#container, .content, .index-contener {height: auto;}
+		.box, .row-2-2, .row-2-3, .table-4 a, .table-5 a {display: inline-block;width: 100%; height: auto;}
 	}
-	@media screen and (max-height: $media-m) {
-		#container{.content{height: auto; min-height: 800px; padding-bottom: calc(#{$player-height} + 5px)}}
+	@media screen and (max-height: 730px) {
+		.index-contener {height: auto; padding-bottom: $player-height + 10;}
 	}
 
 	/* BACKGROUND-IMAGES */
@@ -120,6 +110,10 @@
 				box-shadow: 0 0 0 3px $black;
 			}
 		}
+	}
+	blockquote {
+		color: white;
+		padding: 15px;
 	}
 
 }
