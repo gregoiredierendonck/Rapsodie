@@ -41,35 +41,19 @@ album:
       -
         title: Prendre le large
   -
-    image: "http://placehold.it/400x400"
+    image: "http://www.rapsodie.pro/a/i/prelude.jpg"
     title: Prélude
     texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
     buttontext: Télécharger sur itunes
     buttonurl: http://www.google.com/
     playlist:
       -
-        title: Prélude
+        title: Street rappeur
       -
-        title: On court où
+        title: À la dérive
       -
-        title: Évasion
+        title: L'enfant prodige
       -
-        title: Le vent se lève
+        title: Sale journée
       -
-        title: Cocotte minute
-      -
-        title: Interlude
-      -
-        title: Rose noir
-      -
-        title: Tableau
-      -
-        title: Ziri
-      -
-        title: Et encore
-      -
-        title: Fantaisie
-      -
-        title: Jour et nuit
-      -
-        title: Prendre le large
+        title: Quand j'y pense

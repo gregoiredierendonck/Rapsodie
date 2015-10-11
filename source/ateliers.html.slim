@@ -30,9 +30,9 @@ div.ateliers-content
 		article.container-full.dark-panel.ateliersdetails
 			div.container-medium
 				div.grid-table
-						div.grid.grid-two.ateliers-image
+						div.grid.grid-cell.grid-two.ateliers-image
 							= image_tag "#{atelier.image}", alt: "Les ateliers Rapsodie : #{atelier.title}", itemprop: 'image'
-						div.grid.grid-two.grid-padding
+						div.grid.grid-cell.grid-two.grid-padding.ateliers-texte
 							h1 class="h2" = atelier.title
 							div class="ateliers-span"
 								span = atelier.age
