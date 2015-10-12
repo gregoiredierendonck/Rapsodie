@@ -12,7 +12,7 @@ div.index-contener
 
 	div class="row row-1 row-2-0"
 		div class="table-2"
-			= link_to "#{data.settings.site.url}/albums.html", class: 'changepage link-albums box box-1' do
+			= link_to "/albums.html", class: 'changepage link-albums box box-1' do
 				div.texte.texte-big
 					h2 = data.index.box1title
 					p.date = data.index.box1baseline
@@ -20,15 +20,15 @@ div.index-contener
 				div class="table-3"
 					div class="row row-2-3"
 						div class="table-4"
-							= link_to "#{data.settings.site.url}/concerts.html", class: 'changepage link-concerts box box-2' do
+							= link_to "/concerts.html", class: 'changepage link-concerts box box-2' do
 									div.texte
 										h2 = data.index.box2title
 										p.date = data.index.box2baseline
-							= link_to "#{data.settings.site.url}/legroupe.html", class: 'changepage link-legroupe box box-3' do
+							= link_to "/legroupe.html", class: 'changepage link-legroupe box box-3' do
 								div.texte
 									h2 = data.index.box3title
 									p.date = data.index.box3baseline
-					= link_to "#{data.settings.site.url}/ateliers.html", class: 'changepage link-ateliers box box-4' do
+					= link_to "/ateliers.html", class: 'changepage link-ateliers box box-4' do
 						div.texte
 							h2 = data.index.box4title
 							p.date = data.index.box4baseline
@@ -49,7 +49,7 @@ div.index-contener
 				div.texte
 					h2 = data.index.box6title
 					p.date = data.index.box6baseline
-			= link_to "#{data.settings.site.url}/contact.html", class: 'changepage link-contact box box-8' do
+			= link_to "/contact.html", class: 'changepage link-contact box box-8' do
 				div.texte
 					h2 = data.index.box7title
 					p.date = data.index.box7baseline
