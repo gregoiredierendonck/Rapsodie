@@ -1,11 +1,11 @@
 tracks:
-- title: Évasion
-  url: http://www.rapsodie.pro/a/mp3/01_Street_Rappeurs.mp3
-- title: Et encore
-  url: http://www.rapsodie.pro/a/mp3/01_Street_Rappeurs.mp3
-- title: Jour et nuit
-  url: http://www.rapsodie.pro/a/mp3/01_Street_Rappeurs.mp3
-- title: Prendre le large
-  url: http://www.rapsodie.pro/a/mp3/01_Street_Rappeurs.mp3
-- title: Ziri
-  url: http://www.rapsodie.pro/a/mp3/01_Street_Rappeurs.mp3
+- title: "Évasion"
+  url: "http://www.rapsodie.pro/a/mp3/Rapsodie-Fugue-Evasion.mp3"
+- title: "Et encore"
+  url: "http://www.rapsodie.pro/a/mp3/Rapsodie-Fugue-Etencore.mp3"
+- title: "Jour et nuit"
+  url: "http://www.rapsodie.pro/a/mp3/Rapsodie-Fugue-Jouretnuit.mp3"
+- title: "Prendre le large"
+  url: "http://www.rapsodie.pro/a/mp3/Rapsodie-Fugue-Prendrelelarge.mp3"
+- title: "Ziri"
+  url: "http://www.rapsodie.pro/a/mp3/Rapsodie-Fugue-Ziri.mp3"
