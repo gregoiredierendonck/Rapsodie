@@ -4,6 +4,7 @@ $blockquote-margin: 20px;
 .citation {
 	text-align: center;
 	blockquote {
+		vertical-align: middle;
 		display: inline-block;
 		font-size: $font-size-xl;
 		font-style: italic;
@@ -34,6 +35,7 @@ $blockquote-margin: 20px;
 			left: auto;
 			right: - $blockquote-margin;
 		}
+		p {text-align: center;}
 		footer {
 			width: 100%;
 			display: inline-block;

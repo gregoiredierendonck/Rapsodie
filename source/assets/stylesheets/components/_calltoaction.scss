@@ -1,5 +1,5 @@
 .calltoaction {
-	margin: 50px auto 100px;
+	margin: 50px auto;
 	.calltoaction-contenter {
 		width: 100%;
 		display: table;
@@ -23,6 +23,7 @@
 				color: $white;
 				margin-right: 30px;
 				margin-bottom: 15px;
+				text-align: center;
 			}
 		}
 	}

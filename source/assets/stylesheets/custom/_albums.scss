@@ -13,7 +13,7 @@
 		-webkit-column-count: 2;
 		column-count: 2;
 		counter-reset: ol-counter;
-		padding-left: 30px;
+		padding-left: 0;
 		float: left;
 		li {
 			list-style: none;
@@ -29,9 +29,8 @@
 	}
 	.albums-contener {
 		margin-bottom: 100px;
-		img {
-			max-width: 400px;
-		}
+		a.button {text-align: left;float: left;}
+		img {max-width: 400px;}
 	}
 	.introduction-text {
 		margin-bottom: 60px;

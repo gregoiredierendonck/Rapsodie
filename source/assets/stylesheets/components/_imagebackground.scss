@@ -37,6 +37,7 @@
       font-size: $font-size-xs;
       line-height: 120%;
       color: $white;
+      text-align: center;
       &:last-child {
         margin-bottom: 10px;
       }
@@ -45,8 +46,8 @@
       margin: 0;
       float: left;
     }
-    h2 {font-size: $font-size-l + 1;}
-    h4 {font-size: $font-size; line-height: 100%;}
+    h2 {font-size: $font-size-l + 1;text-align: center;}
+    h4 {font-size: $font-size; line-height: 100%;text-align: center;}
     .subline {color: $grey-light;}
     &.h1-title {
       width: $h1titlesize;

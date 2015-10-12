@@ -1,9 +1,9 @@
-# RemoveImage = ->
-# 	if window.matchMedia('(max-width: 768px)').matches
-# 		$(".element-remove").remove();
+RemoveImage = ->
+	if window.matchMedia('(max-width: 768px)').matches
+		$(".element-remove").remove();
 
 $(document).ready ->
-	# RemoveImage()
+	RemoveImage()
 
 	anchorClick = (link) ->
 		linkSplit = link.split('/').pop()
@@ -21,5 +21,5 @@ $(document).ready ->
 	window.addEventListener 'popstate', (e) ->
 		anchorClick location.pathname
 
-# $(window).smartresize ->
-# 	RemoveImage()
+$(window).smartresize ->
+	RemoveImage()

@@ -18,7 +18,6 @@ html lang="#{data.settings.site.i18n}"
             = partial 'views/global/header'
             section.content#content
                 == yield
-            = partial 'views/global/player-focus'
             = partial 'views/global/player'
         = javascript_include_tag 'application'
         = yield_content :javascripts

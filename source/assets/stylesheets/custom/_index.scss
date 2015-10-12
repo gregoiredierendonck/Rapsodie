@@ -1,121 +1,126 @@
-.index {
+/* STRUCTURE */
 
-	/* STRUCTURE */
+* {vertical-align: middle;}
 
-	* {vertical-align: middle;}
-
-	#container, .content {
-		width: 100%;
-		height: 100%;
-		text-align: center;
-	}
-	.index-contener {
-		width: 100%;
-		max-width: $max-width;
-		height: 100%;
-		display: table;
-		margin: 0 auto;
-	}
-
-	.row {display: table-row;}
-
-	.table-2, .table-3, .table-4, .table-5, .box-5 {
-		width: 100%;
-		height: 100%;
-		display: table;
-	}
-
-	.row-1 {height: 60%;}
-	.row-2 {height: 10%; min-height: 100px;}
-	.row-3 {height: 30%;}
-
-	.box-1, .row-2-2 {display: table-cell; width: 50%; height: 100%;}
-	.box-4 .row-2-3 {display: table-row; height: 50%;}
-	.box-4 {display: table-cell;}
-	.table-4 a {display: table-cell; width: 50%;}
-	.table-5 a {display: table-cell; width: 33.33%;}
-	.box-5 .container-medium {display: table-cell; width: 100%; height: 100%;}
-
-	@media screen and (max-width: $media-m) {
-		#container, .content, .index-contener {height: auto;}
-		.box, .row-2-2, .row-2-3, .table-4 a, .table-5 a {display: inline-block;width: 100%; height: auto;}
-	}
-	@media screen and (max-height: 730px) {
-		.index-contener {height: auto; padding-bottom: $player-height + 10;}
-	}
-
-	/* BACKGROUND-IMAGES */
-	.box {
-		position: relative;
-		background-size: cover;
-		background-position: center;
-		border: 5px solid $white;
-		&:after {
-			content: '';
-			width: 100%;
-			height: 100%;
-			display: inline-block;
-			z-index: 2;
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: $black;
-			opacity: 0;
-			transition: opacity 0.4s ease-in-out;
-		}
-		&:hover:after {
-			opacity: 0.7;
-		}
-	}
-	.box-1 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-1');}
-	.box-2 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-2');}
-	.box-3 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-3');}
-	.box-4 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-4');}
-	.box-5 {background-color: $black; &:after{display: none;}}
-	.box-6 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-5');}
-	.box-7 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-6');}
-	.box-8 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-7');}
-
-	/* STYLE */
-
+#container, .content {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.index-contener {
+	width: 100%;
+	max-width: $max-width;
+	height: 100%;
+	display: table;
+	margin: 0 auto;
 	a {
-		text-decoration: none;
+		vertical-align: middle;
 	}
-	.box {
-		.texte {
-			position: relative;
-			z-index: 3;
-			background-color: $black;
-			color: $white;
-			width: 80%;
-			max-width: 200px;
-			padding: 15px 10px;
-			margin: 30px;
-			font-weight: 100;
-			box-shadow: 0 0 0 0 $black;
-			transition: box-shadow 0.4s ease-in-out;
-			&.texte-big {max-width: 350px;}
-			h2 {
-				font-size: 20px;
-				font-weight: 300;
-				margin: 0 0 5px;
-				text-transform: uppercase;
-			}
-			p {
-				font-size: $font-size-s;
-				line-height: $font-size-l;
-			}
-		}
-		&:hover {
-			.texte {
-				box-shadow: 0 0 0 3px $black;
-			}
-		}
+	.container-medium {
+		vertical-align: middle;
 	}
-	blockquote {
-		color: white;
-		padding: 15px;
-	}
-
+	p, h2, a {text-align: center;}
 }
 
+.row {display: table-row;}
+
+.table-2, .table-3, .table-4, .table-5, .box-5 {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+.row-1 {height: 60%;}
+.row-2 {height: 10%; min-height: 100px;}
+.row-3 {height: 30%;}
+
+.box-1, .row-2-2 {display: table-cell; width: 50%; height: 100%;}
+.box-4 .row-2-3 {display: table-row; height: 50%;}
+.box-4 {display: table-cell;}
+.table-4 a {display: table-cell; width: 50%;}
+.table-5 a {display: table-cell; width: 33.33%;}
+.box-5 .container-medium {display: table-cell; width: 100%; height: 100%;}
+
+@media screen and (max-width: $media-m) {
+	#container, .content, .index-contener {height: auto;}
+	.box, .row-2-2, .row-2-3, .table-4 a, .table-5 a {display: inline-block;width: 100%; height: auto;}
+}
+@media screen and (max-height: 730px) {
+	.index-contener {height: auto; padding-bottom: $player-height + 10;}
+}
+
+/* BACKGROUND-IMAGES */
+.box {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	border: 5px solid $white;
+	&:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $black;
+		opacity: 0;
+		transition: opacity 0.4s ease-in-out;
+	}
+	&:hover:after {
+		opacity: 0.7;
+	}
+}
+.box-1 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-1');}
+.box-2 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-2');}
+.box-3 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-3');}
+.box-4 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-4');}
+.box-5 {background-color: $black; &:after{display: none;}}
+.box-6 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-5');}
+.box-7 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-6');}
+.box-8 {background-image: image-url('http://www.rapsodie.pro/a/i/RAPSODIE-home-7');}
+
+/* STYLE */
+
+a {
+	text-decoration: none;
+}
+.box {
+	.texte {
+		position: relative;
+		z-index: 3;
+		background-color: $black;
+		color: $white;
+		width: 80%;
+		max-width: 200px;
+		padding: 15px 10px;
+		margin: 30px;
+		font-weight: 100;
+		box-shadow: 0 0 0 0 $black;
+		transition: box-shadow 0.4s ease-in-out;
+		&.texte-big {max-width: 350px;}
+		h2 {
+			font-size: 20px;
+			font-weight: 300;
+			margin: 0 0 5px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: $font-size-s;
+			line-height: $font-size-l;
+		}
+	}
+	&:hover {
+		.texte {
+			box-shadow: 0 0 0 3px $black;
+		}
+	}
+}
+blockquote {
+	color: white;
+	padding: 15px;
+	p {
+		text-align: center;
+	}
+}
