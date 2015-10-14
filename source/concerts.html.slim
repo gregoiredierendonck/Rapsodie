@@ -23,7 +23,7 @@ div.concerts-content
 		p class="introduction-text" = data.concerts.introduction
 
 	div.container-medium
-		= link_to data.concerts.videolink, class: 'videolink magnific-video-link' do
+		= link_to "http://www.youtube.com/watch?v=ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
 			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}", itemprop: 'image'
 
 	div.container-full
