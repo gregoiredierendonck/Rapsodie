@@ -78,7 +78,7 @@
       top: auto;
       bottom: 0;
       left: 0;
-      margin-left: 0;
+      margin: -1px 0 0 0;
       background-color: $white;
       h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p {
         color: $black;
