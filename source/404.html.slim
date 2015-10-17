@@ -1,0 +1,15 @@
+---
+title: 404
+description: La page demandée n'existe plus...
+keywords: rapsodie, musique, rap, musique classique, concerts, ateliers
+changefreq: "yearly"
+priority: "0.8"
+---
+
+div.quatrecentquatre-content.container-xl
+	
+	div.quatrecentquatre-contener
+		div.quatrecentquatre-text
+			h1 = data.quatrecentquatre.title
+			p class="h3" = data.quatrecentquatre.texte
+			= link_to data.quatrecentquatre.link, "#{data.settings.site.url}/index.html", :class => "changepage button button-primary"
