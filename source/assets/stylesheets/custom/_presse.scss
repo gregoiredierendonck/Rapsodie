@@ -1,9 +1,9 @@
 .presse-content {
   h3 {text-align: center;}
   .image-background {
-    background-image: image-url("http://www.rapsodie.pro/a/i/RAPSODIE-contact.jpg");
-    background-size: 100% auto;
-    background-attachment: fixed;
-    background-poition: top center
+  	&:hover, &:focus {
+  		.image, .texte {border-color: $grey;}
+  		.texte {border-top: 1px solid $grey-lighter;}
+  	}
   }
 }

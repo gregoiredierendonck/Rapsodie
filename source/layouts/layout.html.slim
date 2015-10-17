@@ -5,15 +5,17 @@ html lang="#{data.settings.site.i18n}"
         meta charset="utf-8"
         meta name="viewport" content="width=device-width,initial-scale=1"
 
-        title #{data.settings.site.title} - #{current_page.data.title}
+        title #{data.settings.site.title}
         meta name="description" content="#{current_page.data.description}"
         meta name="keywords" content="#{current_page.data.keywords}"
 
-        = partial 'views/global/favicon'
+        link rel="icon" type="image/png" href="http://www.rapsodie.pro/favicon.png"
+        link rel="icon" type="image/x-icon" href="http://www.rapsodie.pro/favicon.ico"
         link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,100,400' rel='stylesheet' type='text/css'
         = stylesheet_link_tag 'application'
 
     body class='#{page_classes}'
+        h1.visuallyhidden = data.settings.site.title
         div#container
             = partial 'views/global/header'
             section.content#content

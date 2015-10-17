@@ -1,7 +1,7 @@
 header.globalheader.headroom#header
 
 	div.container-xl#header-contener
-		h1#header-logo = link_to "#{data.settings.site.title} <small>- #{current_page.data.title}</small>", '/index.html', class: "changepage link-index"
+		div#header-logo = link_to "#{data.settings.site.title}", '/index.html', class: "changepage link-index"
 		nav#header-menu.open
 			h1.visuallyhidden First navigation
 			ul#header-menu-list

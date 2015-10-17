@@ -15,6 +15,8 @@
 	top: 0;
 	left: 0;
 	z-index: 3;
+	font-weight: $font-weight-bold;
+	text-transform: uppercase;
 	background-color: $white;
 	color: $black;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -27,7 +29,7 @@
 	}
 
 	// LOGO
-	h1 {
+	#header-logo {
 		width: $logo-width;
 		max-width: calc(100% - $menu-button-size);
 		height: $header-height;
@@ -182,7 +184,7 @@
 
 	// SMALL VERSION
 	&.small {
-		h1 {
+		#header-logo {
 			z-index: 1;
 		}
 		nav {

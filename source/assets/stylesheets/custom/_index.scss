@@ -47,7 +47,7 @@
 	.box, .row-2-2, .row-2-3, .table-4 a, .table-5 a {display: inline-block;width: 100%; height: auto;}
 }
 @media screen and (max-height: 730px) {
-	.index-contener {height: auto; padding-bottom: $player-height + 10;}
+	.index-contener {height: auto; padding-bottom: 0;}
 }
 
 /* BACKGROUND-IMAGES */
