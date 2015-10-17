@@ -25,7 +25,8 @@ div.albums-content
 	- data.albums.album.each_with_index do |album|
 		div.container-medium.grid-table.albums-contener
 			div.grid.grid-two
-				= image_tag "#{album.image}", alt: "Rapsodie #{album.title}"
+				div.album-image-contener
+					= image_tag "#{album.image}", alt: "Rapsodie #{album.title}"
 			div.grid.grid-two.grid-padding
 				h2 = album.title
 				p = album.texte

@@ -18,7 +18,7 @@ div.presse-content
 			div.grid.grid-one.grid-border
 				= image_tag "#{data.presse.imagecomposition3}", alt: "Rapsodie #{data.presse.title}", class: 'columns-1'
 
-	div.container-full
+	div.container-full.presse-list
 		div.container-small.text-center
 			h3 Documents techniques
 		div.container-xl
@@ -32,7 +32,7 @@ div.presse-content
 								h4 = pressetechnique.title
 								p.type = pressetechnique.type
 
-	div.container-full
+	div.container-full.presse-list
 		div.container-small.text-center
 			h3 Sélection de photos
 		div.container-xl

@@ -21,3 +21,9 @@
     }
   }
 }
+
+@media screen and (max-width: $media-s) {
+  .contact-contener {
+    margin: 0 auto;
+  }
+}

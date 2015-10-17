@@ -12,20 +12,25 @@
 	left: 0;
   p {
   	text-align: right;
-  	padding-right: 10px;
     width: 100%;
     max-width: $max-width;
     margin: 0 auto;
+    display: inline-block;
+    padding-right: 60px;
+    line-height: 16px;
+    vertical-align: middle;
+    position: relative;
   	&:after {
-  		content: '';
-  		width: 50px;
-  		height: 30px;
-  		display: inline-block;
-  		background-image: image-url('http://www.rapsodie.pro/a/i/player-focus-arrow.svg');
-  		background-repeat: no-repeat;
-  		background-position: center;
-  		position: relative;
-  		top: 16px;
+      content: '';
+      width: 50px;
+      height: 30px;
+      display: inline-block;
+      background-image: image-url('http://www.rapsodie.pro/a/i/player-focus-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      bottom: -5px;
+      right: 10px;
   	}
   }
 }

@@ -11,6 +11,7 @@
   }
   .texte {
     width: $imagebackgroundtextwidth;
+    max-width: 100%;
     height: auto;
     min-height: $imagebackgroundtextheight;
     display: inline-block;

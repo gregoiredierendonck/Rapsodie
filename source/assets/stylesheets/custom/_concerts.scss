@@ -1,3 +1,29 @@
 .concerts-content {
   h3 {text-align: center;}
 }
+
+@media screen and (max-width: $media-xs) {
+	.concerts-list {
+		.image-background {
+			display: table;
+			width: 100%;
+			background-color: $black;
+			.texte {
+				width: 130px;
+				min-width: 130px;
+				max-width: 130px;
+				display: table-cell;
+				margin: 0;
+				position: relative;
+				top: 0;
+				left: 0;
+				margin: 0;
+				vertical-align: middle;
+			}
+			.image {
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+}

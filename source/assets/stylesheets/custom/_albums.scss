@@ -17,6 +17,8 @@
 		float: left;
 		li {
 			list-style: none;
+			position: relative;
+			padding-left: 20px;
 			&:before {
 				content: counter(ol-counter);
 				counter-increment: ol-counter;
@@ -24,13 +26,22 @@
 				height: auto;
 				display: inline-block;
 				color: $grey;
+				position: absolute;
+				top: 0;
+				left: 0;
 			}
 		}
 	}
 	.albums-contener {
 		margin-bottom: 100px;
 		a.button {text-align: left;float: left;}
-		img {max-width: 400px;}
+		.album-image-contener {
+			width: 100%;
+			max-width: 400px;
+			img {
+				max-width: 100%;
+			}
+		}
 	}
 	.introduction-text {
 		margin-bottom: 60px;

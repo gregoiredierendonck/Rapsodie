@@ -1,5 +1,6 @@
 @mixin buttons {
 	font-family: $font-family;
+	line-height: $line-height-h1;
 	color: $white;
 	text-decoration: none;
 	display: inline-block;

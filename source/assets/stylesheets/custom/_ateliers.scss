@@ -36,3 +36,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: $media-s) {
+	.ateliers-content {
+		.ateliersdetails {
+			padding: 30px 0;
+		}
+	}
+}

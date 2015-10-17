@@ -26,7 +26,7 @@ div.concerts-content
 		= link_to "http://www.youtube.com/watch?v=ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
 			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}"
 
-	div.container-full
+	div.container-full.concerts-list
 		h2.visuallyhidden Liste des concerts
 		div.container-small.text-center
 			h3 International
@@ -41,7 +41,7 @@ div.concerts-content
 						div.image
 							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}"
 
-	div.container-full
+	div.container-full.concerts-list
 		div.container-small.text-center
 			h3 France
 		div.container-xl
