@@ -7,11 +7,13 @@
 	</IfModule>
 
 # MOVE PERMANENTLY
+	# First website
 	Redirect 301 http://www.rapsodiepro.com/index.html http://www.rapsodie.pro/index.html
 	Redirect 301 http://www.rapsodiepro.com/videos.html http://www.rapsodie.pro/videos.html
 	Redirect 301 http://www.rapsodiepro.com/galerie.html http://www.rapsodie.pro/galerie.html
 	Redirect 301 http://www.rapsodiepro.com/membres.html http://www.rapsodie.pro/membres.html
 	Redirect 301 http://www.rapsodiepro.com/concerts.html http://www.rapsodie.pro/actus.html
+	# Second website
 	Redirect 301 http://www.rapsodie.pro/videos.html http://www.rapsodie.pro/concerts.html
 	Redirect 301 http://www.rapsodie.pro/galerie.html http://www.rapsodie.pro/legroupe.html
 	Redirect 301 http://www.rapsodie.pro/membres.html http://www.rapsodie.pro/legroupe.html
@@ -22,19 +24,59 @@
 
 # Gzip compression
 	<ifmodule mod_deflate.c>
-		AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript image/svg+xml
+		SetOutputFilter DEFLATE
+		AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript application/javascript image/svg+xml application/x-httpd-php
+		BrowserMatch ^Mozilla/4 gzip-only-text/html
+		BrowserMatch ^Mozilla/4\.0[678] no-gzip
+		BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+		BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+		SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip
+		Header append Vary User-Agent env=!dont-vary
 	</ifmodule>
 
 # Cache control
-	# 480 weeks
-	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg)$">
-	Header set Cache-Control "max-age=290304000, public, must-revalidate"
-	</FilesMatch>
-	# 2 DAYS
-	<FilesMatch "\.(xml|txt)$">
-	Header set Cache-Control "max-age=172800, public, must-revalidate"
-	</FilesMatch>
-	# 2 HOURS
-	<FilesMatch "\.(html|htm)$">
-	Header set Cache-Control "max-age=7200, must-revalidate"
-	</FilesMatch>
+	
+	# Expire headers
+	<IfModule mod_expires.c>
+		ExpiresActive On
+		ExpiresDefault "access plus 7200 seconds"
+		ExpiresByType image/jpg "access plus 2592000 seconds"
+		ExpiresByType image/jpeg "access plus 2592000 seconds"
+		ExpiresByType image/png "access plus 2592000 seconds"
+		ExpiresByType image/gif "access plus 2592000 seconds"
+		ExpiresByType image/svg "access plus 2592000 seconds"
+		AddType image/x-icon .ico
+		ExpiresByType image/ico "access plus 2592000 seconds"
+		ExpiresByType image/icon "access plus 2592000 seconds"
+		ExpiresByType image/x-icon "access plus 2592000 seconds"
+		ExpiresByType text/css "access plus 2592000 seconds"
+		ExpiresByType text/javascript "access plus 2592000 seconds"
+		ExpiresByType text/html "access plus 7200 seconds"
+		ExpiresByType application/xhtml+xml "access plus 7200 seconds"
+		ExpiresByType application/javascript A2592000
+		ExpiresByType application/x-javascript "access plus 2592000 seconds"
+		ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+	</IfModule>
+	
+	# Cache control headers
+	<IfModule mod_headers.c>
+		<FilesMatch "\.(ico|jpe?g|png|gif|svg|swf|css|gz)$">
+			Header set Cache-Control "max-age=2592000, public, must-revalidate"
+		</FilesMatch>
+		<FilesMatch "\.(js)$">
+			Header set Cache-Control "max-age=2592000, private, must-revalidate"
+		</FilesMatch>
+		<FilesMatch "\.(xml|txt)$">
+			Header set Cache-Control "max-age=172800, public, must-revalidate"
+		</FilesMatch>
+		<FilesMatch "\.(html|htm)$">
+			Header set Cache-Control "max-age=7200, public, must-revalidate"
+		</FilesMatch>
+		<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+			Header unset Cache-Control
+		</FilesMatch>
+	</IfModule>
+
+	# KILL THEM ETAGS
+	Header unset ETag
+	FileETag none
