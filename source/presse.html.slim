@@ -11,12 +11,12 @@ div.presse-content
 		div.texte.h1-title
 			h1 = data.presse.title
 		div.grid.grid-two.grid-cell.grid-border
-			= image_tag "#{data.presse.imagecomposition1}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
+			= image_tag "#{data.presse.imagecomposition1}", alt: "Rapsodie #{data.presse.title}", class: 'columns-1'
 		div.grid.grid-two.grid-cell.element-remove
 			div.grid.grid-one.grid-vertical.grid-border
-				= image_tag "#{data.presse.imagecomposition2}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.presse.imagecomposition2}", alt: "Rapsodie #{data.presse.title}", class: 'columns-1'
 			div.grid.grid-one.grid-border
-				= image_tag "#{data.presse.imagecomposition3}", alt: "Rapsodie #{data.presse.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.presse.imagecomposition3}", alt: "Rapsodie #{data.presse.title}", class: 'columns-1'
 
 	div.container-full
 		div.container-small.text-center
@@ -27,7 +27,7 @@ div.presse-content
 					li.grid.grid-five.image-background.text-bottom
 						= link_to pressetechnique.link, target: '_blank' do
 							div.image
-								= image_tag "#{pressetechnique.image}", alt: "Rapsodie - #{pressetechnique.title}", itemprop: 'image'
+								= image_tag "#{pressetechnique.image}", alt: "Rapsodie - #{pressetechnique.title}"
 							div.texte
 								h4 = pressetechnique.title
 								p.type = pressetechnique.type
@@ -41,7 +41,7 @@ div.presse-content
 					li.grid.grid-five.image-background.text-bottom
 						= link_to pressephotos.link, target: '_blank' do
 							div.image
-								= image_tag "#{pressephotos.image}", alt: "Rapsodie - #{pressephotos.title}", itemprop: 'image'
+								= image_tag "#{pressephotos.image}", alt: "Rapsodie - #{pressephotos.title}"
 							div.texte
 								h4 = pressephotos.title
 								p.type = pressephotos.type

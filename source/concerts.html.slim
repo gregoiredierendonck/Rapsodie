@@ -13,18 +13,18 @@ div.concerts-content
 			h1 = data.concerts.title
 		div.grid.grid-two.grid-cell.grid-border.element-remove
 			div.grid.grid-one.grid-vertical
-				= image_tag "#{data.concerts.imagecomposition1}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.concerts.imagecomposition1}", alt: "Rapsodie #{data.concerts.title}", class: 'columns-1'
 			div.grid.grid-one
-				= image_tag "#{data.concerts.imagecomposition2}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.concerts.imagecomposition2}", alt: "Rapsodie #{data.concerts.title}", class: 'columns-1'
 		div.grid.grid-two.grid-cell.grid-border
-			= image_tag "#{data.concerts.imagecomposition3}", alt: "Rapsodie #{data.concerts.title}", itemprop: 'image', class: 'columns-1'
+			= image_tag "#{data.concerts.imagecomposition3}", alt: "Rapsodie #{data.concerts.title}", class: 'columns-1'
 
 	div.container-small
 		p class="introduction-text" = data.concerts.introduction
 
 	div.container-medium
 		= link_to "http://www.youtube.com/watch?v=ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
-			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}", itemprop: 'image'
+			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}"
 
 	div.container-full
 		h2.visuallyhidden Liste des concerts
@@ -39,7 +39,7 @@ div.concerts-content
 							p.lieu = concert.title
 							p.subline = concert.date
 						div.image
-							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}"
 
 	div.container-full
 		div.container-small.text-center
@@ -53,7 +53,7 @@ div.concerts-content
 							p.lieu = concert.title
 							p.subline = concert.date
 						div.image
-							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}", itemprop: 'image'
+							= image_tag "#{concert.image}", alt: "Les concerts Rapsodie - #{concert.title}"
 
 	.container-small.calltoaction
 		div.calltoaction-contenter

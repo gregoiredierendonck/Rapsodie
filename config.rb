@@ -22,7 +22,7 @@ after_configuration do
 end
 
 # Redirections on "pages" folder
-['index', 'legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact', 'merci'].each do |name|
+['index', 'legroupe', 'concerts', 'albums', 'ateliers', 'presse', 'contact'].each do |name|
 	proxy "/pages/#{name}.html", "#{name}.html", layout: nil
 end
 

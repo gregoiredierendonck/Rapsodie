@@ -12,12 +12,12 @@ div.albums-content
 		div.texte.h1-title
 			h1 = data.albums.title
 		div.grid.grid-two.grid-cell.grid-border
-			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+			= image_tag "#{data.albums.imagecomposition1}", alt: "Rapsodie #{data.albums.title}", class: 'columns-1'
 		div.grid.grid-two.grid-cell.element-remove
 			div.grid.grid-two.grid-cell.grid-border
-				= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.albums.imagecomposition2}", alt: "Rapsodie #{data.albums.title}", class: 'columns-1'
 			div.grid.grid-two.grid-cell.grid-border
-				= image_tag "#{data.albums.imagecomposition3}", alt: "Rapsodie #{data.albums.title}", itemprop: 'image', class: 'columns-1'
+				= image_tag "#{data.albums.imagecomposition3}", alt: "Rapsodie #{data.albums.title}", class: 'columns-1'
 
 	div.container-small
 		p.introduction-text = data.albums.introduction
@@ -25,7 +25,7 @@ div.albums-content
 	- data.albums.album.each_with_index do |album|
 		div.container-medium.grid-table.albums-contener
 			div.grid.grid-two
-				= image_tag "#{album.image}", alt: "Rapsodie #{album.title}", itemprop: 'image'
+				= image_tag "#{album.image}", alt: "Rapsodie #{album.title}"
 			div.grid.grid-two.grid-padding
 				h2 = album.title
 				p = album.texte
