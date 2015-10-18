@@ -17,7 +17,7 @@ div.concerts-content
 			div.grid.grid-one
 				= image_tag "#{data.concerts.imagecomposition2}", alt: "Rapsodie #{data.concerts.title}", class: 'columns-1'
 		div.grid.grid-two.grid-cell.grid-border
-			= image_tag "#{data.concerts.imagecomposition3}", alt: "Rapsodie #{data.concerts.title}", class: 'columns-1'
+			= image_tag data.concerts.imagecomposition3, alt: "data.concerts.title", class: 'columns-1'
 
 	div.container-small
 		p class="introduction-text" = data.concerts.introduction
@@ -25,6 +25,12 @@ div.concerts-content
 	div.container-medium
 		= link_to "http://www.youtube.com/watch?v=ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
 			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}"
+			
+	div.container-small.calltoaction
+		div.calltoaction-contenter
+			div.calltoaction-content
+				p = data.concerts.buttonintro
+				= link_to "#{data.concerts.buttontext}", "#{data.concerts.buttonlink}", target:"_blank", :class => "button button-primary"
 
 	div.container-full.concerts-list
 		h2.visuallyhidden Liste des concerts
