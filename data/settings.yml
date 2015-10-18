@@ -5,8 +5,8 @@ site:
   url: http://gregoiredierendonck.github.io/Rapsodie
   domain: rapsodie.pro
   author: Grégoire Dierendonck
-  imagesurl: http://www.rapsodie.pro/a/i/
-  mp3url: http://www.rapsodie.pro/a/mp3/
+  imagesurl: http://www.rapsodie.pro/assets/images/
+  mp3url: http://www.rapsodie.pro/assets/mp3/
 
 calltoaction: Une question, besoin de précision sur notre activité ?
 

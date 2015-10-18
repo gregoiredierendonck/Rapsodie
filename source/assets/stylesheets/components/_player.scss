@@ -48,7 +48,7 @@
 		.play, .loading, .pause, .error {
 			width: $player-height;
 			height: $player-height;
-			background: image-url("http://www.rapsodie.pro/a/i/icon-sprite.svg");
+			background: image-url("http://www.rapsodie.pro/assets/images/icon-sprite.svg");
 			margin: 0 !important;
 			position: relative;
 		}
@@ -171,7 +171,7 @@
 	text-indent: -999999px;
 	cursor: pointer;
 	overflow: hidden;
-	background: image-url("http://www.rapsodie.pro/a/i/icon-sprite.svg") $player-background-color !important;
+	background: image-url("http://www.rapsodie.pro/assets/images/icon-sprite.svg") $player-background-color !important;
 	background-position: 5px (- $sprite-e-size * 2) !important;
 	transition: all 0.2s ease-in-out;
 	&.tracklist-opened {

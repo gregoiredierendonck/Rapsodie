@@ -6,27 +6,27 @@ introduction:  |
 
 citation: C’est le devoir de chaque homme<br/>de rendre au monde au moins autant qu'il en a reçu.
 
-imagecomposition1: http://www.rapsodie.pro/a/i/RAPSODIE-ateliers-1
-imagecomposition2: http://www.rapsodie.pro/a/i/RAPSODIE-ateliers-2
-imagecomposition3: http://www.rapsodie.pro/a/i/RAPSODIE-ateliers-3
+imagecomposition1: http://www.rapsodie.pro/assets/images/RAPSODIE-ateliers-1
+imagecomposition2: http://www.rapsodie.pro/assets/images/RAPSODIE-ateliers-2
+imagecomposition3: http://www.rapsodie.pro/assets/images/RAPSODIE-ateliers-3
 
 atelier:
   -
-    image: 'http://www.rapsodie.pro/a/i/ateliers-1.jpg'
+    image: 'http://www.rapsodie.pro/assets/images/ateliers-1.jpg'
     title: 'Écrire, interpréter et s’enregistrer'
     age: 14-17 ans
     group: 6 à 10 personnes
     time: Séances de 3h
     text: Les artistes du groupe Rapsodie interviennent en lycée depuis 4 ans pour permettre à de jeunes adolescents de s’exprimer et de découvrir le processus de production d’un CD. Les expertises de musicien et de chanteurs des membres sont mis à disposition d’élèves de classes de secondes ou de première. Les ateliers donnent lieu à des débats sur l’actualité, les valeurs, les préoccupations sentimentales des jeunes et permettent de développer par l’art une pensée citoyenne. A l’issue de ce travail, les lycéens interprètent leurs oeuvres le temps d’un spectacle et repartent avec un enregistrement professionnel de leurs créations.
   -
-    image: 'http://www.rapsodie.pro/a/i/ateliers-2.jpg'
+    image: 'http://www.rapsodie.pro/assets/images/ateliers-2.jpg'
     title: 'Présentation des instruments'
     age: 7-10 ans
     group: 25 à 100 personnes
     time: Séances de 45min
     text: Par l’accroche d’une musique moderne qui brise les frontières stylistiques, Rapsodie propose une initiation aux différents instruments utilisés dans ses projets à destination des plus petits. Des instruments à cordes à la basse électrique, du piano à la batterie, Rapsodie s’implique dans la défense d’une vision transdiciplinaire pour l’enfant et éveille son intérêt pour les différentes façons de produire un son et de jouer de la musique. Facture instrumentale, modes de jeux, anecdotes, interprétation d’extraits musicaux, questions - réponses didactiques…
   -
-    image: 'http://www.rapsodie.pro/a/i/ateliers-3.jpg'
+    image: 'http://www.rapsodie.pro/assets/images/ateliers-3.jpg'
     title: 'La musique comme support d’apprentissage de la langue française'
     age: Adolescents et adultes
     group: public étranger

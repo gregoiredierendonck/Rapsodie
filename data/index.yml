@@ -6,25 +6,25 @@ h1: "Rapsodie, l’alliance entre rap et musique classique"
 
 box1title: "Fugue"
 box1baseline: "Nouvel album de Rapsodie"
-box1image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-1"
+box1image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-1"
 box1link: "Voir tous les albums"
 box1linkpath: "albums"
 
 box2title: "Concerts"
 box2baseline: "Les rats en live"
-box2image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-2"
+box2image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-2"
 box2link: "Rapsodie en live"
 box2linkpath: "concerts"
 
 box3title: "Le groupe"
 box3baseline: "L'histoire, les membres"
-box3image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-3"
+box3image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-3"
 box3link: "En savoir plus"
 box3linkpath: "legroupe"
 
 box4title: "Ateliers"
 box4baseline: "L'éveille des sens"
-box4image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-4"
+box4image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-4"
 box4link: "Plus d'info"
 box4linkpath: "ateliers"
 
@@ -32,14 +32,14 @@ citation: "Nous n’avons qu’une seule bonne qualité, c’est la persistante 
 
 box5title: "Facebook"
 box5baseline: "L’actualité Rapsodie"
-box5image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-5"
+box5image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-5"
 
 box6title: "YouTube"
 box6baseline: "Rapsodie en vidéo"
-box6image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-6"
+box6image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-6"
 
 box7title: "Contact"
 box7baseline: "Concrétisons nos projets."
-box7image: "http://www.rapsodie.pro/a/i/RAPSODIE-home-7"
+box7image: "http://www.rapsodie.pro/assets/images/RAPSODIE-home-7"
 box7link: "Contact"
 box7linkpath: "contact"

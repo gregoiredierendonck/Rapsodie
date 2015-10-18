@@ -2,13 +2,13 @@ title: Albums
 description: Tous les albums du groupe Lillois Rapsodie. L'alliance rap et musique classique qui vous plaira !
 introduction: De la conception au mastering, le groupe mène à ce jour ses projets en entière indépendance. Les textes sont écris par les deux Mcs Tikaby et Paranoyan, les musiques composées par le pianiste Sofiane Pamart et arrangées par Théotime Dierendonck le batteur et Emmanuel Audu le bassiste.
 
-imagecomposition1: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-1"
-imagecomposition2: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-2"
-imagecomposition3: "http://www.rapsodie.pro/a/i/RAPSODIE-albums-3"
+imagecomposition1: "http://www.rapsodie.pro/assets/images/RAPSODIE-albums-1"
+imagecomposition2: "http://www.rapsodie.pro/assets/images/RAPSODIE-albums-2"
+imagecomposition3: "http://www.rapsodie.pro/assets/images/RAPSODIE-albums-3"
 
 album:
   -
-    image: "http://www.rapsodie.pro/a/i/fugue.jpg"
+    image: "http://www.rapsodie.pro/assets/images/fugue.jpg"
     title: Fugue
     texte: Après leur EP Prélude en 2013, "Fugue" est le premier album du collectif lillois Rapsodie. Mélange détonnant qui puise sa force dans l’originalité de ses compositions, ce disque est un voyage métissé entre rap et musique classique. Rapsodie y propose un rap orchestral porteur d'un regard authentique et lucide sur ce qui fait son environnement - les parcours de vie de ses créateurs de pur rappeur à élève du conservatoire. De deux styles situés aux antipodes, Rapsodie fait naitre "Fugue," un album de rap tout simplement inédit.
     buttontext: Acheter l'album sur lafnac.fr
@@ -41,7 +41,7 @@ album:
       -
         title: Prendre le large
   -
-    image: "http://www.rapsodie.pro/a/i/prelude.jpg"
+    image: "http://www.rapsodie.pro/assets/images/prelude.jpg"
     title: Prélude
     texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
     buttontext: Télécharger sur itunes
