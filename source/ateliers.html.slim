@@ -22,10 +22,6 @@ div.ateliers-content
 	div.container-small
 		p class="introduction-text" = data.ateliers.introduction
 
-	div.container-medium.citation
-		blockquote
-			p = data.ateliers.citation
-
 	- data.ateliers.atelier.each_with_index do |atelier|
 		article.container-full.dark-panel.ateliersdetails
 			div.container-medium

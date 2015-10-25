@@ -25,17 +25,11 @@ div.concerts-content
 	div.container-medium
 		= link_to "http://www.youtube.com/watch?v=ZmuUYlZxZWw", class: 'videolink magnific-video-link' do
 			= image_tag "#{data.concerts.videoimage}", alt: "Rapsodie #{data.concerts.videotitle}"
-			
-	div.container-small.calltoaction
-		div.calltoaction-contenter
-			div.calltoaction-content
-				p = data.concerts.buttonintro
-				= link_to "#{data.concerts.buttontext}", "#{data.concerts.buttonlink}", target:"_blank", :class => "button button-primary"
 
 	div.container-full.concerts-list
 		h2.visuallyhidden Liste des concerts
 		div.container-small.text-center
-			h3 International
+			h3 International : nos dernières dates
 		div.container-xl
 			ul
 				- data.concertslistinternational.each_with_index do |concert|
@@ -49,7 +43,7 @@ div.concerts-content
 
 	div.container-full.concerts-list
 		div.container-small.text-center
-			h3 France
+			h3 France : nos dernières dates
 		div.container-xl
 			ul
 				- data.concertslistfrance.each_with_index do |concert|

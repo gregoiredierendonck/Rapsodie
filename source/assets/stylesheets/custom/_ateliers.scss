@@ -21,6 +21,9 @@
 			direction: rtl;
 			.ateliers-image, .ateliers-texte {direction: ltr;}
 		}
+		&:nth-of-type(1) {
+			margin-top: 60px;
+		}
 	}
 }
 
