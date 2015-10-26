@@ -21,6 +21,7 @@
 		vertical-align: middle;
 	}
 	p, h2, a {text-align: center;}
+	p.date {font-weight: $font-weight;}
 }
 
 .row {display: table-row;}

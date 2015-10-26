@@ -11,6 +11,11 @@ set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 set :layouts_dir, 'layouts'
 
+# Google Analytics
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-69304119-1'
+end
+
 # Remove the layout on specific pages
 page "/sitemap.xml", :layout => false
 page ".htaccess.apache", :layout => false

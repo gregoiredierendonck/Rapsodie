@@ -105,6 +105,23 @@
   }
 }
 
+@media screen and (max-width: $media-m) {
+  .image-background {
+    .texte {
+      &.h1-title {
+        top: auto;
+        bottom: 0;
+        width: calc(100% - 10px);
+        max-width: calc(100% - 10px);
+        height: auto;
+        left: 5px;
+        margin: 0;
+        border-top: 5px solid $white;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $media-xs) {
   .image-background .texte.h1-title {
     height: auto;

@@ -5,21 +5,21 @@
   link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-logo.zip'
 -
   title: 'Rapsodie <br/> Description'
-  type: 'txt, 2.0ko'
-  image: 'http://www.rapsodie.pro/assets/images/Rapsodie-presse-description.svg'
-  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-description.txt'
--
-  title: 'Concerts <br/> Présentation'
-  type: 'pdf, 788.0ko'
+  type: 'pdf, 651ko'
   image: 'http://www.rapsodie.pro/assets/images/Rapsodie-presse-concerts-p.svg'
-  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-concerts-presentation.pdf'
+  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-presentationdugroupe.pdf.zip'
 -
   title: 'Concerts <br/> Fiche technique'
-  type: 'pdf, XXko'
+  type: 'pdf, 788ko'
   image: 'http://www.rapsodie.pro/assets/images/Rapsodie-presse-concerts-t.svg'
-  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-fichetechnique.pdf'
+  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-concerts-fichetechnique.pdf'
 -
   title: 'Ateliers <br/> Présentation'
-  type: 'pdf, XXko'
+  type: 'pdf, 1.2Mo'
   image: 'http://www.rapsodie.pro/assets/images/Rapsodie-presse-ateliers-p.svg'
   link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-ateliers-presentation.pdf'
+-
+  title: 'Musique & <br/> Francophonie'
+  type: 'pdf, 956ko'
+  image: 'http://www.rapsodie.pro/assets/images/Rapsodie-presse-concerts-p.svg'
+  link: 'http://www.rapsodie.pro/assets/downloads/rapsodie-musiqueetfrancophonie.pdf.zip'

@@ -9,6 +9,7 @@ gem "middleman-favicon-maker", "~> 3.7"
 gem 'image_optim', '~> 0.11'
 gem 'image_optim_pack'
 gem 'middleman-imageoptim'
+gem "middleman-google-analytics"
 
 gem "sass", "~>3.4.3"
 gem "slim", "~> 2.0.3"
