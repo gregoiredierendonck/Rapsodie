@@ -43,9 +43,12 @@ end
 configure :build do
 	activate :minify_css
 	activate :minify_javascript
-	activate :imageoptim
-	activate :cache_buster
-	ignore 'imageoptim.manifest.yml'
+  activate :imageoptim
+  activate :asset_hash
+  activate :relative_assets
+  activate :cache_buster
+  set :relative_links, true
+  ignore 'imageoptim.manifest.yml'
 end
 
 # rename file after build
