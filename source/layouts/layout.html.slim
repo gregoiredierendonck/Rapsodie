@@ -15,7 +15,7 @@ html lang="#{data.settings.site.i18n}"
         = stylesheet_link_tag 'application'
 
     body class='#{page_classes}'
-        h1.visuallyhidden = data.settings.site.title
+        h1.visuallyhidden = "#{current_page.data.title}"
         div#container
             = partial 'views/global/header'
             section.content#content
