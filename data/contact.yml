@@ -1,11 +1,8 @@
 title: Contact
-description: Concerts - ateliers - partenariats... Contactez Rapsodie !
+description: "Concerts - ateliers - partenariats... Contactez Rapsodie par email !"
 
-textone: Une question, besoin de précision sur notre activité ?<br/>N‘hésitez pas à nous contacter, nous en discuterons ensemble !
-# tellabel: Téléphone (Sofiane Pamart)
-# tel: 01 45 65 98 75
-# emaillabel: Email
-email: contact@rapsodie.pro
+textone: "Une question, besoin de précision sur notre activité ?<br/>N‘hésitez pas à nous contacter, nous en discuterons ensemble !"
+email: "contact@rapsodie.pro"
 
 imagecomposition1: "http://www.rapsodie.pro/assets/images/RAPSODIE-contact-1"
 imagecomposition2: "http://www.rapsodie.pro/assets/images/RAPSODIE-contact-2"

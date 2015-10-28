@@ -1,5 +1,19 @@
 .concerts-content {
   h3 {text-align: center;}
+  .concerts-list {
+  	.image-background {
+  		.texte {
+  			h4 {
+					small {
+						    font-size: 12px;
+						    color: $grey;
+						    margin-bottom: 2px;
+						    display: inline-block;
+					}
+				}
+  		}
+  	}
+  }
 }
 
 @media screen and (max-width: $media-xs) {
