@@ -13,8 +13,6 @@
 # Ignore NPM debug
 .npm-debug.log
 
-# Ignore Bower Folder
-
 # Ignore Sublime preferences
 /slimmer.sublime-project
 
