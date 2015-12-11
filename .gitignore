@@ -4,6 +4,9 @@
 # Ignore the build directory
 /build
 
+# Ignore CNAME file
+/CNAME
+
 # Ignore Sass' cache
 /.sass-cache
 
