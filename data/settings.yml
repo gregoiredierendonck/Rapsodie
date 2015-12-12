@@ -5,8 +5,8 @@ site:
   url: http://www.rapsodie.pro
   domain: rapsodie.pro
   author: Grégoire Dierendonck
-  imagesurl: images/
-  mp3url: mp3/
+  imagesurl: http://projets.gregoiredierendonck.fr/rapsodie/assets/images/
+  mp3url: http://projets.gregoiredierendonck.fr/rapsodie/assets/mp3/
 
 calltoaction: Une question, besoin de précision sur notre activité ?
 
