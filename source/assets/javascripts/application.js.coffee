@@ -6,3 +6,4 @@
 #= require "magnific-popup/dist/jquery.magnific-popup"
 #= require "player"
 #= require "history-api"
+#= require "parse"
