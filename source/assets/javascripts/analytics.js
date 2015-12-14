@@ -26,7 +26,12 @@ gaTrack('/presse.html', 'Presse');
 gaTrack('/contact.html', 'Contact');
 gaTrack('/404.html', '404');
 
-// Track an event on contact button click
+// Event tracking on contact button click
 $('#contactbutton').click(function() {
-  ga('send', 'event', 'Contact', 'click', 'contact button click');
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Contact',
+    eventAction: 'click',
+    eventLabel: 'contact button click'
+  });
 });
