@@ -27,6 +27,6 @@ gaTrack('/contact.html', 'Contact');
 gaTrack('/404.html', '404');
 
 // Track an event on contact button click
-$('#contactbutton').click({
+$('#contactbutton').click(function() {
   ga('send', 'event', 'Contact', 'click', 'contact button click');
 });
