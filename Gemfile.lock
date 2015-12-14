@@ -80,8 +80,6 @@ GEM
       middleman-core (>= 3.0.0)
     middleman-gh-pages (0.0.3)
       rake (> 0.9.3)
-    middleman-google-analytics (0.1.1)
-      middleman-core (>= 3.0.6)
     middleman-imageoptim (0.2.1)
       image_optim (~> 0.20.2)
       image_optim_pack (~> 0.2.1)
