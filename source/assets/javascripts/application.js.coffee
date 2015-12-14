@@ -7,3 +7,4 @@
 #= require "player"
 #= require "history-api"
 #= require "parse"
+#= require "analytics"
