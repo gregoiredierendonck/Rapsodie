@@ -41,11 +41,11 @@ div.index-contener
 
 	div class="row row-3"
 		div class="table-5"
-			= link_to "http://www.facebook.com/RapsodiePro", class: 'box box-6', target: '_blank' do
+			= link_to "http://www.facebook.com/RapsodiePro", class: 'box box-6', id: 'facebook-button', target: '_blank' do
 				div.texte
 					h2 = data.index.box5title
 					p.date = data.index.box5baseline
-			= link_to "http://www.youtube.com/user/RapsodiePro", class: 'box box-7', target: '_blank' do
+			= link_to "http://www.youtube.com/user/RapsodiePro", class: 'box box-7', id: 'youtube-button', target: '_blank' do
 				div.texte
 					h2 = data.index.box6title
 					p.date = data.index.box6baseline

@@ -55,3 +55,25 @@ $('#prelude-button').click(function() {
     eventLabel: 'buy prelude'
   });
 });
+
+// Event tracking for "visit YouTube" page
+$('#youtube-button').click(function() {
+  // ga('send', {
+  //   hitType: 'event',
+  //   eventCategory: 'Social',
+  //   eventAction: 'click',
+  //   eventLabel: 'YouTube'
+  // });
+  alert('YouTube');
+});
+
+// Event tracking for "visit Facebook" page
+$('#facebook-button').click(function() {
+  // ga('send', {
+  //   hitType: 'event',
+  //   eventCategory: 'Social',
+  //   eventAction: 'click',
+  //   eventLabel: 'Facebook'
+  // });
+  alert('Facebook');
+});
