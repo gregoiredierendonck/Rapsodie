@@ -34,7 +34,7 @@ div.albums-content
 				ol.list
 					- album.playlist.each_with_index do |song|
 						li = song.title
-				= link_to album.buttontext, album.buttonurl, target: '_blank', :class => "button button-primary"
+				= link_to album.buttontext, album.buttonurl, target: '_blank', :class => "button button-primary", :id => "#{album.id}"
 
 	div.container-small.calltoaction
 		div.calltoaction-contenter

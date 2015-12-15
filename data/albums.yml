@@ -13,6 +13,7 @@ album:
     texte: Après leur EP Prélude en 2013, "Fugue" est le premier album du collectif lillois Rapsodie. Mélange détonnant qui puise sa force dans l’originalité de ses compositions, ce disque est un voyage métissé entre rap et musique classique. Rapsodie y propose un rap orchestral porteur d'un regard authentique et lucide sur ce qui fait son environnement - les parcours de vie de ses créateurs de pur rappeur à élève du conservatoire. De deux styles situés aux antipodes, Rapsodie fait naitre "Fugue," un album de rap tout simplement inédit.
     buttontext: Acheter l'album sur lafnac.fr
     buttonurl: "http://musique.fnac.com/a8453252/Rapsodie-Fugue-CD-album"
+    id: "fugue-button"
     playlist:
       -
         title: Prélude
@@ -46,6 +47,7 @@ album:
     texte: Prélude, EP, 5 titres où les rimes coulent, les mélodies montent, et les univers explorés varient. Des rimes aiguisées de Street Rappeur, à la poésie de L’Enfant Prodige, le groupe a souhaité explorer cinq couleurs différentes pour y dénicher la patte sonore à approfondir.
     buttontext: Télécharger sur itunes
     buttonurl: "http://itunes.apple.com/fr/album/prelude-ep/id739404389"
+    id: "prelude-button"
     playlist:
       -
         title: Street rappeur

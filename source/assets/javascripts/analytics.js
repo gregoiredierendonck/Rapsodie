@@ -26,12 +26,32 @@ gaTrack('/presse.html', 'Presse');
 gaTrack('/contact.html', 'Contact');
 gaTrack('/404.html', '404');
 
-// Event tracking on contact button click
+// Event tracking on "contact button" click
 $('#contactbutton').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Contact',
     eventAction: 'click',
     eventLabel: 'contact button click'
+  });
+});
+
+// Event tracking on "buy Fugue album" button click
+$('#fugue-button').click(function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Achat',
+    eventAction: 'click',
+    eventLabel: 'buy fugue'
+  });
+});
+
+// Event tracking on "buy Prelude album" button click
+$('#prelude-button').click(function() {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Achat',
+    eventAction: 'click',
+    eventLabel: 'buy prelude'
   });
 });
