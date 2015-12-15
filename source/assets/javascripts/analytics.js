@@ -58,22 +58,20 @@ $('#prelude-button').click(function() {
 
 // Event tracking for "visit YouTube" page
 $('#youtube-button').click(function() {
-  // ga('send', {
-  //   hitType: 'event',
-  //   eventCategory: 'Social',
-  //   eventAction: 'click',
-  //   eventLabel: 'YouTube'
-  // });
-  alert('YouTube');
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Social',
+    eventAction: 'click',
+    eventLabel: 'YouTube'
+  });
 });
 
 // Event tracking for "visit Facebook" page
 $('#facebook-button').click(function() {
-  // ga('send', {
-  //   hitType: 'event',
-  //   eventCategory: 'Social',
-  //   eventAction: 'click',
-  //   eventLabel: 'Facebook'
-  // });
-  alert('Facebook');
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Social',
+    eventAction: 'click',
+    eventLabel: 'Facebook'
+  });
 });
