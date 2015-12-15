@@ -31,7 +31,7 @@ $('#contactbutton').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Contact',
-    eventAction: 'click',
+    eventAction: 'contact button click',
     eventLabel: 'contact button click'
   });
 });
@@ -41,7 +41,7 @@ $('#fugue-button').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Achat',
-    eventAction: 'click',
+    eventAction: 'buy fugue',
     eventLabel: 'buy fugue'
   });
 });
@@ -51,7 +51,7 @@ $('#prelude-button').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Achat',
-    eventAction: 'click',
+    eventAction: 'buy prelude',
     eventLabel: 'buy prelude'
   });
 });
@@ -61,7 +61,7 @@ $('#youtube-button').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Social',
-    eventAction: 'click',
+    eventAction: 'YouTube',
     eventLabel: 'YouTube'
   });
 });
@@ -71,7 +71,7 @@ $('#facebook-button').click(function() {
   ga('send', {
     hitType: 'event',
     eventCategory: 'Social',
-    eventAction: 'click',
+    eventAction: 'Facebook',
     eventLabel: 'Facebook'
   });
 });
