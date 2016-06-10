@@ -1,7 +1,7 @@
 .quatrecentquatre-content {
 	width: 100%;
 	max-width: 100%;
-	height: calc(100vh - (#{$header-height} + #{$player-height} + 5px));
+	height: 100vh;
 	display: table;
 	margin: 0;
 	background-image: image-url("http://projets.gregoiredierendonck.fr/rapsodie/assets/images/404.jpg");
